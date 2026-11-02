@@ -35,6 +35,39 @@ indexed draws (currently only every 500 `DrawPrimitive` calls), then compare UV-
 draw counts against the FVF table. Only then decide between a UV/vertex-declaration
 fix and a material/texture-hash investigation.
 
+## 2026-11-02 — operator corrections to the record
+
+The operator reports, for the same builds: **the menu rendered fine and the game was
+quit normally**; the world **renders largely correctly**; there is a visible
+**skinning-like artifact** on animated objects; there are **too few light sources**;
+and surfaces are **not reflective**.
+
+Corrections to earlier entries in this file that were wrong or over-generalised:
+
+- The claim that the runtime skips the UI (`FVF 0x144`, 351,534 draws) and that the
+  game therefore cannot be quit from its menu is **wrong**. The single
+  `Skipped drawcall ... pre-transformed` line in the renderer log was a one-off, not
+  the UI path. The menu renders and quit works. Do not repeat that inference.
+- "Missing textures" was the operator's earlier description; the current observation is
+  that the world renders but materials look unlit and non-reflective. Treat texture
+  binding, lighting and material response as separate questions rather than one.
+
+Open observations, in the operator's priority order:
+
+1. **Skinning-like artifact.** Rayman 3 has no vertex skinning (the world vertex
+   formats carry no bone data: `XYZ|NORMAL|DIFFUSE|TEX1..3`, strides 24-52). Animated
+   characters are rigid parts driven by per-part world matrices. So this artifact is
+   most likely transform/hash reuse of animated instances, not GPU skinning. Not yet
+   investigated in the renderer logs.
+2. **Too few lights.** Nothing currently supplies light data to the runtime. The
+   game does call fixed-function `SetLight`/`LightEnable` (device vtable slots 0x9c,
+   0xa4), which the proxy could hook and forward via `remixapi_CreateLight` /
+   `remixapi_DrawLightInstance`.
+3. **Non-reflective materials.** No PBR materials exist; the runtime uses defaults.
+   Real keys in this build include `rtx.opaqueMaterial`, `rtx.legacyMaterial`,
+   `rtx.legacyMaterial.roughnessConstant`, `rtx.translucentMaterial` (enumerated from
+   the shipped ARM64 `d3d9.dll`, not guessed).
+
 ## 2026-11-02 late — UV warning ruled out by measurement
 
 Capture-free run `tests/run_drawcounters_QoiiJgU` (no screen recording). Per-FVF draw
