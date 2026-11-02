@@ -4,6 +4,37 @@
 > Binaries, staged Remix runtimes, installers and `backups/` are ignored; source,
 > scripts, analysis and per-run evidence text are tracked. No remote is configured.
 
+## 2026-11-02 late — textures: the smoking gun is not yet proven
+
+Running with `exposeRemixApi = True` in `.trex/bridge.conf` and
+`.trex_arm64/bridge.conf` (backup `backups/before_exposeRemixApi_*`):
+`RemixAPI: InitializeLibrary -> 0` now succeeds, and the export probe resolved
+`CreateMaterial`, `CreateMesh`, `DrawInstance`. `SetupCamera` resolved to 0 and needs
+re-checking against `remix_c.h` before any camera submission work.
+
+Renderer log (`rtx-remix/logs/remix-dxvk.log`) contains exactly one
+`[RTX-Compatibility-Info] Trying to bind a texture to a mesh without UVs. Was this
+intended?` and one `not detecting a valid camera`. The message sits in the geometry
+cluster beside `processGeometryInfo: no position data on input detected`,
+`processGeometryInfo: input data is violating some assumptions` and
+`Found a null sampler. Fallback to linear-repeat`.
+
+**Do not treat the UV warning as the cause yet.** The proxy saw a position-only FVF
+(`0x002`, stride 12) draw, which would produce exactly one such warning benignly. The
+proxy keeps per-FVF draw counts (`g_seenCount`) and prints them in `DumpSummary`, but
+this run's log has **no summary**: desktop screen capture crashed the ARM64 bridge
+server (`0xc0000005`) and the process was terminated before detach. So the count of
+UV-less draws versus textured draws is still unknown.
+
+Operator-reported corrections: the world was **not** fully black, and starting an
+NVIDIA screen recording crashes the run. Both ~35 s exits match the capture crash,
+not game logic. PBR is premature while UVs are unverified.
+
+Next: run once **without** any screen capture, with periodic summaries enabled for
+indexed draws (currently only every 500 `DrawPrimitive` calls), then compare UV-less
+draw counts against the FVF table. Only then decide between a UV/vertex-declaration
+fix and a material/texture-hash investigation.
+
 ## FIRST WORKING GAME RUN — 2026-11-02
 
 Rayman 3 **ran** under RTX Remix with no abort. Operator-confirmed: it ran, **no
