@@ -50,6 +50,8 @@ Start with `STATUS.md` — it is the authoritative resume record.
 | Mod hook audit | `analysis/mod-hook-analysis.md` |
 | Methodology borrowed from the NieR project | `analysis/methodology-reuse-from-nier.md` |
 | Earlier probes and negative results | `analysis/lifecycle-probe.md`, `analysis/fullscreen-probe-findings.md`, `analysis/exit-trace-findings.md` |
+| Light submission attempt (negative result) | `analysis/light-submission-attempt.md` |
+| Plan: read level light/texture data via RayCarrot libraries | `analysis/raycarrot-data-plan.md` |
 
 ## Repo layout
 
