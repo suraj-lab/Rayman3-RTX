@@ -4,6 +4,37 @@
 > Binaries, staged Remix runtimes, installers and `backups/` are ignored; source,
 > scripts, analysis and per-run evidence text are tracked. No remote is configured.
 
+## Resume here (session ended 2026-11-02, operator went to bed)
+
+Read `analysis/light-submission-attempt.md` first. State at session end:
+
+- Game runs reliably under Remix; world renders; **lighting is still wrong** (too dark
+  versus the reference, which is night-but-lit).
+- The proxy forwards the game's fixed-function light via `remixapi_CreateLight` /
+  `DrawLightInstance`; it **succeeds** (`rc=0`) but the image did **not** change. The game
+  sets exactly one directional light, diffuse `(0.20 0.21 0.80)`; the torches in the
+  reference art are emissive geometry, not lights.
+- Installed proxy `D3D8.dll` SHA256
+  `4a3ae46502aa34c9f18899ec4c7425136498f2914e9aa84bb11e447a14e06793`.
+  Backups: `backups/before_lights/`, `before_drawcounters_*`, `before_exposeRemixApi_*`.
+
+**Fix before more light work:** the light is re-created every frame (145,456
+`CreateLight` calls in one session) because `memcmp` over the whole `D3DLIGHT8` still
+reports a change. Log a per-field diff to find the varying member, or throttle.
+
+**Decisive next experiment:** submit an absurdly bright red light. If the image is
+identical, API lights do not reach the runtime's compat-rendered scene and the approach
+must change; if it turns red, it is only tuning.
+
+**Ideas recorded for next session:** use Rayman Control Panel / RayCarrot's Rayman 3
+libraries to read level data offline — the level's own light list (positions, colours,
+ranges) and texture set would give real values to submit as lights and real albedo/
+normal/roughness to build PBR materials, instead of guessing from a single D3D light.
+
+Still open: `SetupCamera` is NULL in this build despite being declared in `remix_c.h`;
+the "skinning-like" artifact on animated parts (Rayman 3 has no vertex skinning, so it
+is likely transform/hash reuse); surface textures/materials.
+
 ## 2026-11-02 late — textures: the smoking gun is not yet proven
 
 Running with `exposeRemixApi = True` in `.trex/bridge.conf` and

@@ -1,0 +1,8 @@
+harness pid=40572 tid=41132
+FIRSTCHANCE C++ throw tid=41132 addr=7558FE35 params=3
+  exception object=02EFF238 throwInfo=71096A60
+  catchable types=1
+  catchable type[0] name=.?AV_com_error@@
+  throw stack: 0 frames
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1

@@ -1,0 +1,11 @@
+harness pid=26144 tid=40712
+FIRSTCHANCE C++ throw tid=40712 addr=7558FE35 params=3
+  exception object=0337F7F8 throwInfo=71096A60
+  catchable types=1
+  catchable type[0] name=.?AV_com_error@@
+  throw stack: 0 frames
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x8876086C device=00000000 present=320x240 windowed=1 flags=0x20
+slot 15 CreateDevice(HAL, HW) -> hr=0x8876086C device=00000000 present=320x240 windowed=1 flags=0x40
+FAIL: no device

@@ -1,0 +1,15 @@
+17120 23:48:12.359 Starting dxwrapper v1.0.990.18 DDrawCompat v0.2.1 DxWnd v2.03.60
+17120 23:48:12.363 Windows 10 64-bit (10.0.28000)
+17120 23:48:12.363 d3d8abi.exe (PID:18864)
+17120 23:48:12.363 Reading config file: d3d8.ini
+17120 23:48:12.365 Set exception handler
+17120 23:48:12.365 HotPatch: 'UnhandledExceptionFilter' is not patch aware at addr=75936250
+17120 23:48:12.365 HotPatch: 'SetUnhandledExceptionFilter' is not patch aware at addr=75935EF0
+17120 23:48:12.365 Disabling High DPI Scaling...
+17120 23:48:12.372 Enabling D3d8to9 function (220)
+17120 23:48:12.372 Loading d3d9.dll library
+17120 23:48:12.510 Enabling D3d8to9 function (220)
+17120 23:48:12.527 Redirecting 'IDirect3D8::CreateDevice(036D2B88, 0, 1, WND(00150860,D3D8AbiTest,R(0,0,320,240)), 32, 030FF90C, 030FF874=null)' ...
+
+17120 23:48:12.696 Quiting dxwrapper
+17120 23:48:12.705 dxwrapper terminated!

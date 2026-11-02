@@ -1,0 +1,67 @@
+[
+  {
+    "case": "dgvoodoo_direct",
+    "exit": 3221226356,
+    "passed": false
+  },
+  {
+    "case": "dgvoodoo_proxy",
+    "exit": 7,
+    "passed": false
+  },
+  {
+    "case": "remix_bundled_d3d8to9_direct",
+    "exit": 0,
+    "passed": true
+  },
+  {
+    "case": "remix_bundled_d3d8to9_direct_exit",
+    "exit": 73,
+    "passed": true
+  },
+  {
+    "case": "remix_bundled_d3d8to9_proxy",
+    "exit": 0,
+    "passed": true
+  },
+  {
+    "case": "remix_bundled_d3d8to9_proxy_exit",
+    "exit": 73,
+    "passed": true
+  },
+  {
+    "case": "crosire_d3d8to9_direct",
+    "exit": 0,
+    "passed": true
+  },
+  {
+    "case": "crosire_d3d8to9_direct_exit",
+    "exit": 73,
+    "passed": true
+  },
+  {
+    "case": "crosire_d3d8to9_proxy",
+    "exit": 0,
+    "passed": true
+  },
+  {
+    "case": "crosire_d3d8to9_proxy_exit",
+    "exit": 73,
+    "passed": true
+  },
+  {
+    "case": "br3_dxwrapper_direct",
+    "exit": 0,
+    "passed": true
+  },
+  {
+    "case": "br3_dxwrapper_direct_exit",
+    "exit": 73,
+    "passed": true
+  },
+  {
+    "case": "br3_dxwrapper_proxy",
+    "exit": 3221225477,
+    "passed": false
+  }
+]

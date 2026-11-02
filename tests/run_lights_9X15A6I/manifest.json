@@ -1,0 +1,14 @@
+{
+  "tag": "9X15A6I",
+  "what": "light submission attempt: SetLight/LightEnable -> remixapi CreateLight/DrawLightInstance",
+  "operator": "lighting visually unchanged",
+  "stats": {
+    "create_light_calls": 145456,
+    "uv_note": "see prior run",
+    "frames": [
+      "RemixAPI: 9600 frames, lights submitted"
+    ]
+  },
+  "game_stopped": "gone",
+  "installed_D3D8_sha256": "4a3ae46502aa34c9f18899ec4c7425136498f2914e9aa84bb11e447a14e06793"
+}

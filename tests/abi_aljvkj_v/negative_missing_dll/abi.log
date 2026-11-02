@@ -1,0 +1,2 @@
+harness pid=17688 tid=24012
+FAIL: LoadLibrary(.\missing.dll) error=126

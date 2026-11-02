@@ -57,7 +57,9 @@ static_assert(sizeof(D3DPRESENT_PARAMETERS) == 52, "D3D8 presentation ABI mismat
 enum {
     DEV_SetTransform = 37,
     DEV_DrawPrimitive = 70, DEV_DrawIndexedPrimitive = 71, DEV_DrawPrimitiveUP = 72,
-    DEV_SetVertexShader = 76, DEV_SetStreamSource = 83
+    DEV_SetVertexShader = 76, DEV_SetStreamSource = 83,
+    DEV_EndScene = 35,
+    DEV_SetLight = 44, DEV_LightEnable = 46
 };
 
 typedef IDirect3D8 *(__stdcall *Direct3DCreate8_t)(UINT);
@@ -68,6 +70,17 @@ typedef HRESULT (__stdcall *SetStream_t)(IDirect3DDevice8 *, UINT, IDirect3DVert
 typedef HRESULT (__stdcall *DrawPrim_t)(IDirect3DDevice8 *, D3DPRIMITIVETYPE, UINT, UINT);
 typedef HRESULT (__stdcall *DrawPrimUP_t)(IDirect3DDevice8 *, D3DPRIMITIVETYPE, UINT, const void *, UINT);
 typedef HRESULT (__stdcall *DrawIdx_t)(IDirect3DDevice8 *, D3DPRIMITIVETYPE, UINT, UINT, UINT, UINT);
+typedef HRESULT (__stdcall *EndScene_t)(IDirect3DDevice8 *);
+typedef HRESULT (__stdcall *SetLight_t)(IDirect3DDevice8 *, DWORD, const void *);
+typedef HRESULT (__stdcall *LightEnable_t)(IDirect3DDevice8 *, DWORD, BOOL);
+
+// Layout from Wine's d3d8types.h _D3DLIGHT8 (x86): 100 bytes, verified field order.
+struct D3DLIGHT8X {
+    DWORD Type;                       // 1=point 2=spot 3=directional
+    float Diffuse[4], Specular[4], Ambient[4];
+    float Position[3], Direction[3];
+    float Range, Falloff, Attenuation0, Attenuation1, Attenuation2, Theta, Phi;
+};
 
 static Direct3DCreate8_t o_Create8 = NULL;
 static CreateDevice_t    o_CreateDevice = NULL;
@@ -77,6 +90,21 @@ static SetStream_t       o_SetStream = NULL;
 static DrawPrim_t        o_DrawPrimitive = NULL;
 static DrawPrimUP_t      o_DrawPrimitiveUP = NULL;
 static DrawIdx_t         o_DrawIndexedPrimitive = NULL;
+static EndScene_t        o_EndScene = NULL;
+static SetLight_t        o_SetLight = NULL;
+static LightEnable_t     o_LightEnable = NULL;
+
+// Lights: the game drives fixed-function SetLight/LightEnable. Forwarding those to
+// the runtime is what restores the intended lighting (a dark scene has neither lights
+// nor sky, which is why it reads black rather than moonlit).
+static remixapi_Interface g_api = {};
+static int g_apiOk = 0;
+static D3DLIGHT8X g_lightDef[8];
+static int g_lightHave[8];
+static remixapi_LightHandle g_lightH[8];
+struct LightExt { remixapi_LightInfoSphereEXT sphere; remixapi_LightInfoDistantEXT distant; };
+static LightExt g_lightExt[8];
+static unsigned long g_lightFrames = 0;
 
 static FILE *g_log = NULL;
 static DWORD g_fvf = 0;
@@ -245,9 +273,12 @@ static void ProbeRemixApi(void)
     remixapi_ErrorCode rc = init(&info, &iface);
     L("RemixAPI: InitializeLibrary -> %d  (0=SUCCESS, 11=NOT_INITIALIZED)", (int)rc);
     if (rc == REMIXAPI_ERROR_CODE_SUCCESS) {
+        g_api = iface; g_apiOk = 1;
         L("RemixAPI: Shutdown=%p CreateMaterial=%p CreateMesh=%p SetupCamera=%p DrawInstance=%p",
           (void *)iface.Shutdown, (void *)iface.CreateMaterial, (void *)iface.CreateMesh,
           (void *)iface.SetupCamera, (void *)iface.DrawInstance);
+        L("RemixAPI: CreateLight=%p DrawLightInstance=%p",
+          (void *)iface.CreateLight, (void *)iface.DrawLightInstance);
     }
 }
 
@@ -334,6 +365,71 @@ static HRESULT __stdcall hDrawIdx(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT
     return o_DrawIndexedPrimitive(d, pt, mi, nv, si, pc);
 }
 
+// Build one Remix light from the game's current fixed-function light state.
+static void MakeLight(DWORD idx)
+{
+    if (!g_apiOk || !g_api.CreateLight || idx > 7 || !g_lightHave[idx] || g_lightH[idx]) return;
+    D3DLIGHT8X *d = &g_lightDef[idx];
+    remixapi_LightInfo info = {};
+    info.sType = REMIXAPI_STRUCT_TYPE_LIGHT_INFO;
+    info.hash = (uint64_t)idx + 1;
+    info.radiance.x = d->Diffuse[0];
+    info.radiance.y = d->Diffuse[1];
+    info.radiance.z = d->Diffuse[2];
+    g_lightExt[idx] = LightExt();
+    if (d->Type == 3) {                                  // D3DLIGHT_DIRECTIONAL
+        g_lightExt[idx].distant.sType = REMIXAPI_STRUCT_TYPE_LIGHT_INFO_DISTANT_EXT;
+        g_lightExt[idx].distant.direction.x = d->Direction[0];
+        g_lightExt[idx].distant.direction.y = d->Direction[1];
+        g_lightExt[idx].distant.direction.z = d->Direction[2];
+        g_lightExt[idx].distant.angularDiameterDegrees = 0.53f;
+        info.pNext = &g_lightExt[idx].distant;
+    } else {                                             // point / spot
+        g_lightExt[idx].sphere.sType = REMIXAPI_STRUCT_TYPE_LIGHT_INFO_SPHERE_EXT;
+        g_lightExt[idx].sphere.position.x = d->Position[0];
+        g_lightExt[idx].sphere.position.y = d->Position[1];
+        g_lightExt[idx].sphere.position.z = d->Position[2];
+        g_lightExt[idx].sphere.radius = d->Range > 0.0f ? d->Range : 100.0f;
+        info.pNext = &g_lightExt[idx].sphere;
+    }
+    remixapi_ErrorCode rc = g_api.CreateLight(&info, &g_lightH[idx]);
+    if (rc != REMIXAPI_ERROR_CODE_SUCCESS) g_lightH[idx] = NULL;
+    L("RemixAPI: light[%lu] type=%lu diffuse=(%.2f %.2f %.2f) -> rc=%d handle=%p",
+      (unsigned long)idx, (unsigned long)d->Type, d->Diffuse[0], d->Diffuse[1], d->Diffuse[2],
+      (int)rc, (void *)g_lightH[idx]);
+}
+
+static HRESULT __stdcall hSetLight(IDirect3DDevice8 *d, DWORD idx, const void *light)
+{
+    if (idx < 8 && light) {
+        // The game re-sets the same light every frame; only rebuild when it changes,
+        // otherwise this creates a Remix light object per frame.
+        if (!g_lightHave[idx] || memcmp(&g_lightDef[idx], light, sizeof(D3DLIGHT8X)) != 0) {
+            memcpy(&g_lightDef[idx], light, sizeof(D3DLIGHT8X));
+            g_lightHave[idx] = 1;
+            if (g_lightH[idx]) { g_api.DestroyLight(g_lightH[idx]); g_lightH[idx] = NULL; }
+        }
+    }
+    return o_SetLight(d, idx, light);
+}
+
+static HRESULT __stdcall hLightEnable(IDirect3DDevice8 *d, DWORD idx, BOOL enable)
+{
+    if (enable && idx < 8) MakeLight(idx);
+    return o_LightEnable(d, idx, enable);
+}
+
+// Lights must be submitted every frame, like instances.
+static HRESULT __stdcall hEndScene(IDirect3DDevice8 *d)
+{
+    if (g_apiOk && g_api.DrawLightInstance) {
+        for (int i = 0; i < 8; i++)
+            if (g_lightH[i]) g_api.DrawLightInstance(g_lightH[i]);
+    }
+    if ((++g_lightFrames % 600) == 0) L("RemixAPI: %lu frames, lights submitted", g_lightFrames);
+    return o_EndScene(d);
+}
+
 // Opt-in: D3DCREATE_NOWINDOWCHANGES (0x800) makes the Remix bridge skip its window
 // management inside gSwapChainMapMutex, which is where the fullscreen abort comes from.
 // Value 0x800 verified against the installed shim guard `test [ebp-74h],800h`.
@@ -370,6 +466,9 @@ static HRESULT __stdcall hCreateDevice(IDirect3D8 *d3d, UINT adapter, D3DDEVTYPE
         PatchSlot(vt, DEV_DrawPrimitive,        (void *)hDraw,                 (void **)&o_DrawPrimitive);
         PatchSlot(vt, DEV_DrawPrimitiveUP,      (void *)hDrawUP,               (void **)&o_DrawPrimitiveUP);
         PatchSlot(vt, DEV_DrawIndexedPrimitive, (void *)hDrawIdx,              (void **)&o_DrawIndexedPrimitive);
+        PatchSlot(vt, DEV_SetLight,             (void *)hSetLight,             (void **)&o_SetLight);
+        PatchSlot(vt, DEV_LightEnable,          (void *)hLightEnable,          (void **)&o_LightEnable);
+        PatchSlot(vt, DEV_EndScene,             (void *)hEndScene,             (void **)&o_EndScene);
         L("device vtable hooked");
     }
     return hr;

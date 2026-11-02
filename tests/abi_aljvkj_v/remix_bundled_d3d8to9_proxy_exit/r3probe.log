@@ -1,0 +1,35 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8_real.dll, Direct3DCreate8=71351010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 04353038
+  patched CreateDevice slot 15: 71351850 -> 723C1850
+Direct3DCreate8(220) call #2 -> 04318F50
+  patched CreateDevice slot 15: 723C1850 -> 723C1850
+CreateDevice: adapter=0 type=1 behaviour=0x00000020 backbuffer=320x240 fmt=0 windowed=1
+  R3_NO_WINDOW_CHANGES: behaviour 0x00000020 -> 0x00000820
+CreateDevice -> hr=0x00000000
+device vtable hooked
+SetTransform VIEW       [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000044 pos=XYZRHW tex=0 nrm=0 dif=1 stride=20
+RemixAPI: shim present but no remixapi_InitializeLibrary export
+EXCEPTION code=0xE0420001 flags=0x00000001 count=2 tid=2448 caller=008E1D2B module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8abi.exe offset=0x00001D2B
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE0420002 flags=0x00000000 count=2 tid=2448 caller=008E1D85 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8abi.exe offset=0x00001D85
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE06D7363 flags=0x00000001 count=3 tid=2448 caller=008E3C5D module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8abi.exe offset=0x00003C5D
+  exception arg[0]=0x19930520
+  exception arg[1]=0x02CFF874
+  exception arg[2]=0x0090F618
+EXITPROCESS code=73 tid=2448 caller=008E2BD7
+  exit stack: 2 Windows-captured frames (may be incomplete)
+  exit frame[0]=723C1BCF module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8.dll offset=0x00001BCF
+  exit frame[1]=008E2BD7 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_aljvkj_v\remix_bundled_d3d8to9_proxy_exit\d3d8abi.exe offset=0x00002BD7
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=1
+  draws with UVs=0  without UVs=1  vertex-shader handles=0
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: no
+  FVF 0x00000044 pos=XYZRHW stride=20  draws=1
