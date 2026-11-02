@@ -1,0 +1,10 @@
+harness pid=3096 tid=3824
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1
+FIRSTCHANCE C++ throw tid=3824 addr=7558FE35 params=3
+  exception object=00000000 throwInfo=00000000
+  throw stack: 0 frames
+UNHANDLED code=0xE06D7363 flags=0x00000001 addr=7558FE35 module=C:\Windows\System32\KERNELBASE.dll offset=0x36FE35 params=3
+  unhandled arg[0]=0x19930520
+  unhandled arg[1]=0x0
+  unhandled arg[2]=0x0

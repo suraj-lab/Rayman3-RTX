@@ -1,0 +1,8 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_iswsbr90\dgvoodoo_proxy\d3d8_real.dll, Direct3DCreate8=70E78986
+ExceptionTrace: host RaiseException import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 06DBE9A8
+  patched CreateDevice slot 15: 70E7860D -> 70F816D0
+Direct3DCreate8(220) call #2 -> 0C16C8D8
+  patched CreateDevice slot 15: 70F816D0 -> 70F816D0
+CreateDevice: adapter=0 type=1 behaviour=0x00000020 backbuffer=320x240 fmt=0 windowed=1

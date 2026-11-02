@@ -1,0 +1,139 @@
+
+=== ALchemy-dsound.dll
+00-open.json ev= None keys= []
+01-overview.json ev= ev_270f8dc710b44fc39061748bcc9f9310be44bf0e30b1a53aba58f27fba3667cf keys= ['document', 'segments', 'segment_count', 'procedure_count', 'string_count']
+ LIST segments 8 [{"name": "Headers", "start": "0x10000000", "end": "0x10001000", "length": 4096}, {"name": ".text", "start": "0x10001000", "end": "0x1009e000", "length": 643072}, {"name": ".rdata", "start": "0x1009e000", "end": "0x100c2000", "length": 147456}, {"name": ".data", "start": "0x100c2000", "end": "0x100d6828", "length": 84008}, {"name": "_PDATA", "start": "0x100d7000", "end": "0x1012c000", "length": 348160}, {"name": ".rsrc", "start": "0x1012c000", "end": "0x1012d000", "length": 4096}, {"name": ".reloc", "start": "0x1012d000", "end": "0x10137000", "length": 40960}, {"name": "tdb", "start": "0xffdff000", "end": "0xffe00000", "length": 4096}]
+  segment_count = 8
+  procedure_count = 2251
+  string_count = 1321
+02-hook-symbols.json ev= ev_8d417e88594d08f2add926ad462a1670b0f4b9cda0e2ea9d4c2e7cebc927ad0a keys= list
+03-hook-strings.json ev= ev_f6f582b45e06954c98334c6700267fa54f6977b326d4e35c5224126fc14a5f82 keys= list
+04-xref-0.json ev= ev_8ba7e3c835aa223d716f42dc48e066dc6354bb5033495968604dfa4e670e5860 keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = SetWindowLongA
+  reason = name_not_found
+04-xref-1.json ev= ev_01d0fd3ffe0bec3e9ecadaf9c5fa70bc0172b90293127e7a48af966b2d0c0b1f keys= ['status', 'name', 'address', 'xrefs']
+  status = resolved
+  name = DirectSoundCreate8
+  address = 0x10001be0
+ LIST xrefs 1 ["0x100c1e00"]
+04-xref-2.json ev= ev_f3104b348ac687da25b19377d50176c076b2c93af94d63282ebd4528525c07fa keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = LoadLibraryA
+  reason = name_not_found
+05-entry.json ev= ev_212d0b33a235297c1fc8d9bf68f0efe23ae438f4b3c350f4826df51655073823 keys= ['procedure', 'pseudocode', 'assembly', 'comments', 'callers', 'callees', 'incoming_references', 'outgoing_references', 'referenced_strings', 'referenced_names', 'basic_blocks', 'native_api', 'native_value_flow', 'limitations']
+  pseudocode = 
+void entry(HMODULE param_1,int param_2,int param_3)
+
+{
+  if (param_2 == 1) {
+    ___security_init_cookie();
+  }
+  ___DllMainCRTStartup(param_3,param_2,param_1);
+  return;
+}
+
+
+ LIST assembly 9 ["0x10087e0f: CMP dword ptr [ESP + 0x8], 0x1", "0x10087e14: JNZ 0x10087e1b", "0x10087e16: CALL 0x1008fd21", "0x10087e1b: PUSH dword ptr [ESP + 0x4]", "0x10087e1f: MOV ECX, dword ptr [ESP + 0x10]", "0x10087e23: MOV EDX, dword ptr [ESP + 0xc]", "0x10087e27: CALL 0x10087d19", "0x10087e2c: POP ECX", "0x10087e2d: RET 0xc"]
+ LIST callees 2 [{"address": "0x10087d19", "name": "___DllMainCRTStartup", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087d19", "end": "0x10087deb"}, {"start": "0x10087e00", "end": "0x10087e0e"}], "total_bytes": 226, "span_bytes": 246, "non_contiguous": true, "contains_entry": true}}, {"address": "0x1008fd21", "name": "___security_init_cookie", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1008fd21", "end": "0x1008fdb4"}], "total_bytes": 148, "span_bytes": 148, "non_contiguous": false, "contains_entry": true}}]
+ LIST incoming_references 1 [{"source_address": "0x10000118", "target_address": "0x10087e0f", "source_procedure": null, "target_procedure": {"address": "0x10087e0f", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087e0f", "end": "0x10087e2f"}], "total_bytes": 33, "span_bytes": 33, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "DATA", "flow": false, "call": false, "jump": false, "data": true, "read": false, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}]
+ LIST outgoing_references 7 [{"source_address": "0x10087e0f", "target_address": "stack:0x8", "source_procedure": {"address": "0x10087e0f", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087e0f", "end": "0x10087e2f"}], "total_bytes": 33, "span_bytes": 33, "non_contiguous": false, "contains_entry": true}}, "target_procedure": null, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "READ", "flow": false, "call": false, "jump": false, "data": true, "read": true, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x10087e14", "target_address": "0x10087e1b", "source_procedure": {"address": "0x10087e0f", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087e0f", "end": "0x10087e2f"}], "total_bytes": 33, "span_bytes": 33, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x10087e0f", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087e0f", "end": "0x10087e2f"}], "total_bytes": 33, "span_bytes": 33, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "CONDITIONAL_JUMP", "flow": true, "call": false, "jump": true, "data": false, "read": false, "write": false, "indirect": false, "computed": false, "conditional": true, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x10087e16", "target_address": "0x1008fd21", "source_procedure": {"address": "0x10087e0f", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x10087e0f", "end": "0x10087e2f"}], "total_bytes": 33, "span_bytes": 33, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x1008fd21", "name": "___security_init_cookie", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1008fd21", "end": "0x1008fdb4"}], "total_bytes": 148, "span_bytes": 148, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "UNCONDITIONAL_CALL",
+ LIST referenced_names 3 [{"address": "0x10087d19", "value": "___DllMainCRTStartup", "source_address": "0x10087e27"}, {"address": "0x10087e1b", "value": "LAB_10087e1b", "source_address": "0x10087e14"}, {"address": "0x1008fd21", "value": "___security_init_cookie", "source_address": "0x10087e16"}]
+ LIST basic_blocks 3 [{"start": "0x10087e0f", "end": "0x10087e16", "successors": ["0x10087e16", "0x10087e1b"]}, {"start": "0x10087e16", "end": "0x10087e1b", "successors": ["0x10087e1b"]}, {"start": "0x10087e1b", "end": "0x10087e30", "successors": []}]
+ LIST limitations 4 ["Unresolved computed or indirect flows without target addresses are not represented as reference edges.", "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.", "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.", "Synthetic Ghidra entry-point references without actionable memory sources are omitted."]
+06-export.json ev= None keys= []
+07-close.json ev= None keys= []
+analysis-snapshot.json ev= None keys= []
+evidence-bundle.json ev= None keys= []
+
+=== BetterRayman3.dll
+00-open.json ev= None keys= []
+01-overview.json ev= ev_03b34693c5097462960e425f82d543c5b40cdda6e1fab0cfec398120427ec117 keys= ['document', 'segments', 'segment_count', 'procedure_count', 'string_count']
+ LIST segments 6 [{"name": "Headers", "start": "0x10000000", "end": "0x10000400", "length": 1024}, {"name": ".text", "start": "0x10001000", "end": "0x1002ce00", "length": 179712}, {"name": ".rdata", "start": "0x1002d000", "end": "0x1003ca00", "length": 64000}, {"name": ".data", "start": "0x1003d000", "end": "0x1003edf0", "length": 7664}, {"name": ".reloc", "start": "0x1003f000", "end": "0x10041800", "length": 10240}, {"name": "tdb", "start": "0xffdff000", "end": "0xffe00000", "length": 4096}]
+  segment_count = 6
+  procedure_count = 1290
+  string_count = 592
+02-hook-symbols.json ev= ev_f6cce173f0e81d2f18126fe6deff1ad7d9b6ca57c0f10a0daa8e61a7519936ae keys= list
+03-hook-strings.json ev= ev_2a3c866eeb5172794d5814be57ff27598355376c48fd9936b250aa6a766e4aae keys= list
+04-xref-0.json ev= ev_7ff205dfe98a1a9b3516ae3434ee31d17faad4079429e23ed0c34d6ca0c853a8 keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = VirtualProtect
+  reason = name_not_found
+04-xref-1.json ev= ev_d867d167b1fe5e8057997cc0516f2538d596a6e24054d619873e3cb2a4deac5d keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = GetProcAddress
+  reason = name_not_found
+04-xref-2.json ev= ev_e461e33148c1b02d81aa1317366d1dd145570a52ad5fd9bf56129ea793f50a9a keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = SetWindowLongA
+  reason = name_not_found
+05-entry.json ev= ev_46b5f39cc6bded2776c2ad39ffe6ae47a307853a29b1e1b6e0340701e50846c3 keys= ['procedure', 'pseudocode', 'assembly', 'comments', 'callers', 'callees', 'incoming_references', 'outgoing_references', 'referenced_strings', 'referenced_names', 'basic_blocks', 'native_api', 'native_value_flow', 'limitations']
+  pseudocode = 
+void entry(HINSTANCE__ *param_1,ulong param_2,void *param_3)
+
+{
+  if (param_2 == 1) {
+    FUN_1000c6ea();
+  }
+  dllmain_dispatch(param_1,param_2,param_3);
+  return;
+}
+
+
+ LIST assembly 12 ["0x1000be5c: PUSH EBP", "0x1000be5d: MOV EBP, ESP", "0x1000be5f: CMP dword ptr [EBP + 0xc], 0x1", "0x1000be63: JNZ 0x1000be6a", "0x1000be65: CALL 0x1000c6ea", "0x1000be6a: PUSH dword ptr [EBP + 0x10]", "0x1000be6d: PUSH dword ptr [EBP + 0xc]", "0x1000be70: PUSH dword ptr [EBP + 0x8]", "0x1000be73: CALL 0x1000bd36", "0x1000be78: ADD ESP, 0xc", "0x1000be7b: POP EBP", "0x1000be7c: RET 0xc"]
+ LIST callees 2 [{"address": "0x1000bd36", "name": "dllmain_dispatch", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000bd36", "end": "0x1000bdfb"}, {"start": "0x1000be20", "end": "0x1000be31"}], "total_bytes": 216, "span_bytes": 252, "non_contiguous": true, "contains_entry": true}}, {"address": "0x1000c6ea", "name": "FUN_1000c6ea", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000c6ea", "end": "0x1000c73c"}], "total_bytes": 83, "span_bytes": 83, "non_contiguous": false, "contains_entry": true}}]
+ LIST incoming_references 1 [{"source_address": "0x10000118", "target_address": "0x1000be5c", "source_procedure": null, "target_procedure": {"address": "0x1000be5c", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000be5c", "end": "0x1000be7e"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "DATA", "flow": false, "call": false, "jump": false, "data": true, "read": false, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}]
+ LIST outgoing_references 7 [{"source_address": "0x1000be5f", "target_address": "stack:0x8", "source_procedure": {"address": "0x1000be5c", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000be5c", "end": "0x1000be7e"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": null, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "READ", "flow": false, "call": false, "jump": false, "data": true, "read": true, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x1000be63", "target_address": "0x1000be6a", "source_procedure": {"address": "0x1000be5c", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000be5c", "end": "0x1000be7e"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x1000be5c", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000be5c", "end": "0x1000be7e"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "CONDITIONAL_JUMP", "flow": true, "call": false, "jump": true, "data": false, "read": false, "write": false, "indirect": false, "computed": false, "conditional": true, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x1000be65", "target_address": "0x1000c6ea", "source_procedure": {"address": "0x1000be5c", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000be5c", "end": "0x1000be7e"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x1000c6ea", "name": "FUN_1000c6ea", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1000c6ea", "end": "0x1000c73c"}], "total_bytes": 83, "span_bytes": 83, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "UNCONDITIONAL_CALL", "flow": true
+ LIST referenced_names 3 [{"address": "0x1000bd36", "value": "dllmain_dispatch", "source_address": "0x1000be73"}, {"address": "0x1000be6a", "value": "LAB_1000be6a", "source_address": "0x1000be63"}, {"address": "0x1000c6ea", "value": "FUN_1000c6ea", "source_address": "0x1000be65"}]
+ LIST basic_blocks 3 [{"start": "0x1000be5c", "end": "0x1000be65", "successors": ["0x1000be65", "0x1000be6a"]}, {"start": "0x1000be65", "end": "0x1000be6a", "successors": ["0x1000be6a"]}, {"start": "0x1000be6a", "end": "0x1000be7f", "successors": []}]
+ LIST limitations 4 ["Unresolved computed or indirect flows without target addresses are not represented as reference edges.", "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.", "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.", "Synthetic Ghidra entry-point references without actionable memory sources are omitted."]
+06-export.json ev= None keys= []
+07-close.json ev= None keys= []
+analysis-snapshot.json ev= None keys= []
+evidence-bundle.json ev= None keys= []
+
+=== UltimateASILoader-winmm.dll
+00-open.json ev= None keys= []
+01-overview.json ev= ev_b829d185c462708b2735db4c8022c45f6c845bfadf9b8ea9934ef0dced772803 keys= ['document', 'segments', 'segment_count', 'procedure_count', 'string_count']
+ LIST segments 7 [{"name": "Headers", "start": "0x10000000", "end": "0x10000400", "length": 1024}, {"name": ".text", "start": "0x10001000", "end": "0x1005ac00", "length": 367616}, {"name": ".rdata", "start": "0x1005b000", "end": "0x10081600", "length": 157184}, {"name": ".data", "start": "0x10082000", "end": "0x10115928", "length": 604456}, {"name": ".rsrc", "start": "0x10116000", "end": "0x102a0c00", "length": 1616896}, {"name": ".reloc", "start": "0x102a1000", "end": "0x102a6000", "length": 20480}, {"name": "tdb", "start": "0xffdff000", "end": "0xffe00000", "length": 4096}]
+  segment_count = 7
+  procedure_count = 3368
+  string_count = 3071
+02-hook-symbols.json ev= ev_33f3be080e4fd9f12c123cc8b0e4d86a798bc3b4da4f9b6fa7dd384262a75e82 keys= list
+03-hook-strings.json ev= ev_9467ff755f328a5c7f1a55bb45229a72e4067a72e249a0cb8a806fb202d0755a keys= list
+04-xref-0.json ev= ev_144ec61d5877496c2d117f198c5a7cb007c3ba0c5251713073a1247395d97c69 keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = SetWindowLongA
+  reason = name_not_found
+04-xref-1.json ev= ev_dc2cc698db3379a64b010933ebc535d8e396f20184968a226765c64e61db4ed8 keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = SetWindowsHookExA
+  reason = name_not_found
+04-xref-2.json ev= ev_97463786775fa428df509f07ead258487384dc532761bcad98bfda520341dd13 keys= ['status', 'name', 'reason']
+  status = unresolved
+  name = LoadLibraryExW
+  reason = name_not_found
+05-entry.json ev= ev_77952b2d6e0d1f81079658835e4fa4293e42e427edfcbfeda7aa90b7cdd7fa63 keys= ['procedure', 'pseudocode', 'assembly', 'comments', 'callers', 'callees', 'incoming_references', 'outgoing_references', 'referenced_strings', 'referenced_names', 'basic_blocks', 'native_api', 'native_value_flow', 'limitations']
+  pseudocode = 
+void entry(HINSTANCE__ *param_1,ulong param_2,void *param_3)
+
+{
+  if (param_2 == 1) {
+    ___security_init_cookie();
+  }
+  dllmain_dispatch(param_1,param_2,param_3);
+  return;
+}
+
+
+ LIST assembly 12 ["0x1002d9fb: PUSH EBP", "0x1002d9fc: MOV EBP, ESP", "0x1002d9fe: CMP dword ptr [EBP + 0xc], 0x1", "0x1002da02: JNZ 0x1002da09", "0x1002da04: CALL 0x1002dffe", "0x1002da09: PUSH dword ptr [EBP + 0x10]", "0x1002da0c: PUSH dword ptr [EBP + 0xc]", "0x1002da0f: PUSH dword ptr [EBP + 0x8]", "0x1002da12: CALL 0x1002d8c5", "0x1002da17: ADD ESP, 0xc", "0x1002da1a: POP EBP", "0x1002da1b: RET 0xc"]
+ LIST callees 2 [{"address": "0x1002d8c5", "name": "dllmain_dispatch", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d8c5", "end": "0x1002d98f"}, {"start": "0x1002d9b4", "end": "0x1002d9cf"}], "total_bytes": 231, "span_bytes": 267, "non_contiguous": true, "contains_entry": true}}, {"address": "0x1002dffe", "name": "___security_init_cookie", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002dffe", "end": "0x1002e048"}], "total_bytes": 75, "span_bytes": 75, "non_contiguous": false, "contains_entry": true}}]
+ LIST incoming_references 1 [{"source_address": "0x10000148", "target_address": "0x1002d9fb", "source_procedure": null, "target_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "DATA", "flow": false, "call": false, "jump": false, "data": true, "read": false, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}]
+ LIST outgoing_references 7 [{"source_address": "0x1002d9fe", "target_address": "stack:0x8", "source_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": null, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "READ", "flow": false, "call": false, "jump": false, "data": true, "read": true, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x1002da02", "target_address": "0x1002da09", "source_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "CONDITIONAL_JUMP", "flow": true, "call": false, "jump": true, "data": false, "read": false, "write": false, "indirect": false, "computed": false, "conditional": true, "terminal": false, "primary": true, "operand_index": 0, "external": false}}, {"source_address": "0x1002da04", "target_address": "0x1002dffe", "source_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "target_procedure": {"address": "0x1002dffe", "name": "___security_init_cookie", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002dffe", "end": "0x1002e048"}], "total_bytes": 75, "span_bytes": 75, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "UNCONDITIONAL_CALL", "
+ LIST referenced_names 3 [{"address": "0x1002d8c5", "value": "dllmain_dispatch", "source_address": "0x1002da12"}, {"address": "0x1002da09", "value": "LAB_1002da09", "source_address": "0x1002da02"}, {"address": "0x1002dffe", "value": "___security_init_cookie", "source_address": "0x1002da04"}]
+ LIST basic_blocks 3 [{"start": "0x1002d9fb", "end": "0x1002da04", "successors": ["0x1002da04", "0x1002da09"]}, {"start": "0x1002da04", "end": "0x1002da09", "successors": ["0x1002da09"]}, {"start": "0x1002da09", "end": "0x1002da1e", "successors": []}]
+ LIST limitations 4 ["Unresolved computed or indirect flows without target addresses are not represented as reference edges.", "Thunk and external classifications are Ghidra FunctionManager observations; they do not resolve targetless calls.", "Pseudocode and assembly are Ghidra-specific representations, not original source or Hopper-equivalent text.", "Synthetic Ghidra entry-point references without actionable memory sources are omitted."]
+06-export.json ev= None keys= []
+07-close.json ev= None keys= []
+analysis-snapshot.json ev= None keys= []
+evidence-bundle.json ev= None keys= []

@@ -1,0 +1,168 @@
+
+=== ALchemy-dsound.dll
+10-sound-api.json ev ev_982e7380817cd84986cf0f4a01ccbe6b33b7bb427e7ccb3d503d7ca83a7b983f matches 13
+  {"address": "EXTERNAL:0xc", "value": "KERNEL32.DLL::GetProcAddress"}
+  {"address": "EXTERNAL:0x15", "value": "KERNEL32.DLL::LoadLibraryA"}
+  {"address": "EXTERNAL:0x1d", "value": "KERNEL32.DLL::LoadLibraryW"}
+  {"address": "EXTERNAL:0x67", "value": "OLE32.DLL::CoCreateInstance"}
+  {"address": "0x10001a90", "value": "DirectSoundCreate"}
+  {"address": "0x10001be0", "value": "DirectSoundCreate8"}
+  {"address": "0x10001d30", "value": "DirectSoundEnumerateA"}
+  {"address": "0x10001e30", "value": "DirectSoundEnumerateW"}
+  {"address": "0x10001f30", "value": "DirectSoundCaptureCreate"}
+  {"address": "0x10001f90", "value": "DirectSoundCaptureEnumerateA"}
+  {"address": "0x10001ff0", "value": "DirectSoundCaptureEnumerateW"}
+  {"address": "0x10002050", "value": "DirectSoundCaptureCreate8"}
+  {"address": "0x100020b0", "value": "DirectSoundFullDuplexCreate"}
+11-sound-strings.json ev ev_441efaab62340977d40f241b63e53bc37f259d7779137b626f3da2b2389853ba matches 198
+  {"address": "0x100a6270", "value": " Base Class Array'"}
+  {"address": "0x100a767c", "value": "DirectSoundCreate\n"}
+  {"address": "0x100a7690", "value": "DirectSoundCreate : Failed to initialize Creative ALchemy, falling back to dsound.dll\n"}
+  {"address": "0x100a76e8", "value": "DirectSoundCreate"}
+  {"address": "0x100a76fc", "value": "DirectSoundCreate : Failed to load original dsound.dll"}
+  {"address": "0x100a7734", "value": "DirectSoundCreate8\n"}
+  {"address": "0x100a7748", "value": "DirectSoundCreate8 : Failed to initialize Creative ALchemy, falling back to dsound.dll\n"}
+  {"address": "0x100a77a0", "value": "DirectSoundCreate8"}
+  {"address": "0x100a77b4", "value": "DirectSoundCreate8 : Failed to load original dsound.dll"}
+  {"address": "0x100a77ec", "value": "DirectSoundEnumerateA\n"}
+  {"address": "0x100a7828", "value": "DirectSoundEnumerateA : Failed to initialize Creative ALchemy, falling back to dsound.dll\n"}
+  {"address": "0x100a7884", "value": "DirectSoundEnumerateA"}
+  {"address": "0x100a78c0", "value": "DirectSoundEnumerateW\n"}
+  {"address": "0x100a7920", "value": "DirectSoundEnumerateW : Failed to initialize Creative ALchemy, falling back to dsound.dll\n"}
+  {"address": "0x100a797c", "value": "DirectSoundEnumerateW"}
+  {"address": "0x100a7994", "value": "DirectSoundCaptureCreate - Passing to real dsound.dll\n"}
+  {"address": "0x100a79cc", "value": "DirectSoundCaptureCreate"}
+  {"address": "0x100a79e8", "value": "DirectSoundCaptureEnumerateA - Passing to real dsound.dll\n"}
+  {"address": "0x100a7a24", "value": "DirectSoundCaptureEnumerateA"}
+  {"address": "0x100a7a44", "value": "DirectSoundCaptureEnumerateW - Passing to real dsound.dll\n"}
+  {"address": "0x100a7a80", "value": "DirectSoundCaptureEnumerateW"}
+  {"address": "0x100a7aa0", "value": "DirectSoundCaptureCreate8 - Passing to real dsound.dll\n"}
+  {"address": "0x100a7ad8", "value": "DirectSoundCaptureCreate8"}
+  {"address": "0x100a7af4", "value": "DirectSoundFullDuplexCreate - Passing to real dsound.dll\n"}
+  {"address": "0x100a7b30", "value": "DirectSoundFullDuplexCreate"}
+  {"address": "0x100a7b60", "value": "GetDeviceID : Failed to initialize Creative ALchemy, falling back to dsound.dll\n"}
+  {"address": "0x100b0174", "value": "DirectSoundBuffer[%d]::Deconstructor - Destroying Object\n"}
+  {"address": "0x100b01b0", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IDirectSound3DListener\n"}
+  {"address": "0x100b01f8", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IDirectSoundBuffer\n"}
+  {"address": "0x100b0240", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IDirectSound3DBuffer\n"}
+  {"address": "0x100b0288", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IDirectSoundBuffer8\n"}
+  {"address": "0x100b02cc", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IKsPropertySet\n"}
+  {"address": "0x100b0310", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IDirectSoundNotify\n"}
+  {"address": "0x100b0354", "value": "DirectSoundBuffer[%d]::QueryInterface for IID_IUnknown\n"}
+  {"address": "0x100b0390", "value": "DirectSoundBuffer[%d]::QueryInterface for unsupported interface %X-%X-%X-%X-%X-%X-%X-%X-%X-%X-%X\n"}
+  {"address": "0x100b03f4", "value": "DirectSoundBuffer[%d]::AddRef\n"}
+  {"address": "0x100b0414", "value": "DirectSoundBuffer[%d]::Release\n"}
+  {"address": "0x100b0434", "value": "DirectSoundBuffer[%d]::GetCaps\n"}
+  {"address": "0x100b0454", "value": "DirectSoundBuffer[%d]::GetCurrentPosition "}
+  {"address": "0x100b04a0", "value": "DirectSoundBuffer[%d]::GetFormat\n"}
+
+=== BetterRayman3.dll
+10-imported-apis.json ev ev_378c38a5eff70eadb3cd2a9a30ded9dd344ceead6f1d1bead63ce9c30e12ffce matches 3
+  {"address": "EXTERNAL:0x2", "value": "KERNEL32.DLL::VirtualProtect"}
+  {"address": "EXTERNAL:0x16", "value": "KERNEL32.DLL::GetProcAddress"}
+  {"address": "EXTERNAL:0x30", "value": "KERNEL32.DLL::LoadLibraryExW"}
+11-behaviour-strings.json ev ev_22790a41d732a2150e2eb2639ec49e3abbda3c698f204cc16cc74a486d9888e4 matches 17
+  {"address": "0x10032f80", "value": "api-ms-win-rtcore-ntuser-window-l1-1-0"}
+  {"address": "0x100330c8", "value": "ext-ms-win-ntuser-windowstation-l1-1-0"}
+  {"address": "0x1003319c", "value": "GetActiveWindow"}
+  {"address": "0x100331e0", "value": "GetProcessWindowStation"}
+  {"address": "0x100395f8", "value": "D:\\Users\\RibShark\\Documents\\Projects\\BetterRayman3\\Rayman3.WidescreenFix\\external\\Hooking.Patterns\\Hooking.Patterns.h"}
+  {"address": "0x10039734", "value": "C:\\Windows\\Ubisoft\\Ubi.ini"}
+  {"address": "0x10039770", "value": "Rayman3"}
+  {"address": "0x10039798", "value": "BetterRayman3"}
+  {"address": "0x1003daf0", "value": ".?AV?$basic_stringstream@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@"}
+  {"address": "0x1003db64", "value": ".?AV?$basic_filebuf@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003dbec", "value": ".?AV?$basic_ifstream@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003dc28", "value": ".?AV?$basic_stringbuf@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@"}
+  {"address": "0x1003dd28", "value": ".?AV?$basic_iostream@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003de10", "value": ".?AV?$basic_streambuf@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003de98", "value": ".?AV?$basic_istream@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003ded4", "value": ".?AV?$basic_ios@DU?$char_traits@D@std@@@std@@"}
+  {"address": "0x1003df50", "value": ".?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@"}
+12-api-names.json ev ev_3e8a5a7126f729f710702f86f0666205b8d2e3bc1ac9e9bbef0ccc7a9a46840b matches 3
+  {"address": "0x1003c24c", "value": "VirtualProtect"}
+  {"address": "0x1003c3c4", "value": "GetProcAddress"}
+  {"address": "0x1003c5b8", "value": "LoadLibraryExW"}
+
+=== UltimateASILoader-winmm.dll
+10-loader-api.json ev ev_231e16aa41cee72fbf73474c3d7cfd651ef1c857284fa83194ff332798045a16 matches 35
+  {"address": "EXTERNAL:0x8", "value": "KERNEL32.DLL::GetProcAddress"}
+  {"address": "EXTERNAL:0x9", "value": "KERNEL32.DLL::LoadLibraryA"}
+  {"address": "EXTERNAL:0xb", "value": "KERNEL32.DLL::LoadLibraryW"}
+  {"address": "EXTERNAL:0x3d", "value": "KERNEL32.DLL::LoadLibraryExW"}
+  {"address": "EXTERNAL:0x87", "value": "USER32.DLL::SetWindowPos"}
+  {"address": "EXTERNAL:0x90", "value": "USER32.DLL::SetWindowTextW"}
+  {"address": "0x10024420", "value": "PlaySound"}
+  {"address": "0x10024430", "value": "PlaySoundA"}
+  {"address": "0x10024440", "value": "PlaySoundW"}
+  {"address": "0x100258b0", "value": "mmioAdvance"}
+  {"address": "0x100258c0", "value": "mmioAscend"}
+  {"address": "0x100258d0", "value": "mmioClose"}
+  {"address": "0x100258e0", "value": "mmioCreateChunk"}
+  {"address": "0x100258f0", "value": "mmioDescend"}
+  {"address": "0x10025900", "value": "mmioFlush"}
+  {"address": "0x10025910", "value": "mmioGetInfo"}
+  {"address": "0x10025920", "value": "mmioInstallIOProcA"}
+  {"address": "0x10025930", "value": "mmioInstallIOProcW"}
+  {"address": "0x10025940", "value": "mmioOpenA"}
+  {"address": "0x10025950", "value": "mmioOpenW"}
+  {"address": "0x10025960", "value": "mmioRead"}
+  {"address": "0x10025970", "value": "mmioRenameA"}
+  {"address": "0x10025980", "value": "mmioRenameW"}
+  {"address": "0x10025990", "value": "mmioSeek"}
+  {"address": "0x100259a0", "value": "mmioSendMessage"}
+  {"address": "0x100259b0", "value": "mmioSetBuffer"}
+  {"address": "0x100259c0", "value": "mmioSetInfo"}
+  {"address": "0x100259d0", "value": "mmioStringToFOURCCA"}
+  {"address": "0x100259e0", "value": "mmioStringToFOURCCW"}
+  {"address": "0x100259f0", "value": "mmioWrite"}
+  {"address": "0x10025c60", "value": "sndPlaySoundA"}
+  {"address": "0x10025c70", "value": "sndPlaySoundW"}
+  {"address": "0x10025cd0", "value": "timeGetTime"}
+  {"address": "0x1002a990", "value": "XLiveProtectedLoadLibrary"}
+  {"address": "0x1002aa00", "value": "XLiveSecureLoadLibraryW"}
+11-loader-strings.json ev ev_555553b4dbdbf38fabdf5d7b346ef5dde9ddb45e86791b72448cb091e7b7c753 matches 24
+  {"address": "0x10062254", "value": "dinput8.dll"}
+  {"address": "0x100622ec", "value": "winmm.dll"}
+  {"address": "0x100623b4", "value": "dinput.dll"}
+  {"address": "0x100624ec", "value": "*.asi"}
+  {"address": "0x100625a4", "value": ".\\modloader\\modupdater.asi"}
+  {"address": "0x100625dc", "value": ".\\modloader\\modloader.asi"}
+  {"address": "0x1006261c", "value": "loadplugins"}
+  {"address": "0x10062634", "value": "loadfromscriptsonly"}
+  {"address": "0x1006265c", "value": "scripts\\"}
+  {"address": "0x10062670", "value": "plugins\\"}
+  {"address": "0x10062718", "value": "GetProcAddress"}
+  {"address": "0x1006275c", "value": "LoadLibraryA"}
+  {"address": "0x1006276c", "value": "LoadLibraryW"}
+  {"address": "0x100628a0", "value": "scripts\\global.ini"}
+  {"address": "0x100628c8", "value": "plugins\\global.ini"}
+  {"address": "0x1007dad6", "value": "XLiveProtectedLoadLibrary"}
+  {"address": "0x1007db68", "value": "XLiveSecureLoadLibraryW"}
+  {"address": "0x1008098e", "value": "VirtualProtect"}
+  {"address": "0x100809bc", "value": "GetProcAddress"}
+  {"address": "0x100809ce", "value": "LoadLibraryA"}
+  {"address": "0x100809ee", "value": "LoadLibraryW"}
+  {"address": "0x10080d98", "value": "LoadLibraryExW"}
+  {"address": "0x10080e30", "value": "SetWindowPos"}
+  {"address": "0x10080e82", "value": "SetWindowTextW"}
+12-loader-exports.json ev ev_efc989214bf0f2be9258378ed4fd523badfb29ec58a2a58f9376b5599d1a87a5 matches 19
+  {"address": "EXTERNAL:0xe", "value": "KERNEL32.DLL::CreateFileW"}
+  {"address": "EXTERNAL:0x10", "value": "KERNEL32.DLL::FindFirstFileW"}
+  {"address": "EXTERNAL:0x5e", "value": "KERNEL32.DLL::ReadFile"}
+  {"address": "EXTERNAL:0x73", "value": "KERNEL32.DLL::FindFirstFileExW"}
+  {"address": "0x10022e50", "value": "FtpFindFirstFileA"}
+  {"address": "0x10022e60", "value": "FtpFindFirstFileW"}
+  {"address": "0x100231b0", "value": "GopherFindFirstFileA"}
+  {"address": "0x100231c0", "value": "GopherFindFirstFileW"}
+  {"address": "0x10023d10", "value": "InternetReadFile"}
+  {"address": "0x10023d20", "value": "InternetReadFileExA"}
+  {"address": "0x10023d30", "value": "InternetReadFileExW"}
+  {"address": "0x1002a820", "value": "XLiveProtectedCreateFile"}
+  {"address": "0x1002d203", "value": "___scrt_dllmain_after_initialize_c"}
+  {"address": "0x1002d23c", "value": "___scrt_dllmain_crt_thread_attach"}
+  {"address": "0x1002d25b", "value": "___scrt_dllmain_crt_thread_detach"}
+  {"address": "0x1002d268", "value": "___scrt_dllmain_exception_filter"}
+  {"address": "0x1002d6bb", "value": "dllmain_crt_dispatch"}
+  {"address": "0x1002d8c5", "value": "dllmain_dispatch"}
+  {"address": "0x1002d9d0", "value": "dllmain_raw"}

@@ -1,0 +1,256 @@
+[21:49:49.246] info:  Sentry: crash reporting initialized
+[21:49:49.254] info:  Sentry session id (Use this to search for uploaded crash reports): d55ca89b-e3e3-45de-60a1-75fc7dfb9654
+[21:49:49.254] info:  Attempting to parse option layer: C:\Users\suraj\AppData\Local\NVIDIA\RTXRemix\user_settings\0d2c1bd78ce261d7.conf...
+[21:49:49.255] info:  No config file found at: C:\Users\suraj\AppData\Local\NVIDIA\RTXRemix\user_settings\0d2c1bd78ce261d7.conf
+[21:49:49.264] info:  Game: d3d8abi.exe
+[21:49:49.264] info:  DXVK_Remix: remix-main+5a7eec84
+[21:49:49.272] info:  System Information Report:
+[21:49:49.272] info:    CPU: (NVIDIA) NVIDIA RTX Spark N1X (6144-core GPU, 20-core CPU)
+[21:49:49.276] info:    Memory: 15.47 GiB / 22.74 GiB physical, 21.04 GiB / 76.74 GiB committed, 5.03 GiB / 128.00 TiB virtual (current process)
+[21:49:49.279] info:    OS: Windows 10.0 Build 28000
+[21:49:49.282] info:  Initializing RtxOptions...
+[21:49:49.282] info:  Initializing RtxOption system layers...
+[21:49:49.282] info:  Attempting to parse option layer: dxvk.conf...
+[21:49:49.282] info:  No config file found at: dxvk.conf
+[21:49:49.291] info:  Did not find app config for executable: C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_snxkrde5\d3d8abi.exe
+[21:49:49.292] info:  Attempting to parse option layer: rtx.conf...
+[21:49:49.292] info:  No config file found at: rtx.conf
+[21:49:49.292] info:  Attempting to parse option layer: user.conf...
+[21:49:49.292] info:  No config file found at: user.conf
+[21:49:49.292] info:  RtxOption system layer initialization complete.
+[21:49:49.292] info:  [RTX Neural Radiance Cache] Selected Ultra preset mode.
+[21:49:49.292] info:  Geometry generation hash rule:
+[21:49:49.292] info:  	positions
+[21:49:49.292] info:  	indices
+[21:49:49.292] info:  	texcoords
+[21:49:49.292] info:  	geometrydescriptor
+[21:49:49.292] info:  	vertexlayout
+[21:49:49.292] info:  	vertexshader
+[21:49:49.292] info:  Geometry asset hash rule:
+[21:49:49.292] info:  	positions
+[21:49:49.292] info:  	indices
+[21:49:49.292] info:  	geometrydescriptor
+[21:49:49.292] info:  Effective RtxOption values (after all config layers and migrations):
+[21:49:49.292] info:    rtx.neuralRadianceCache.trainingMaxPathBounces = 9
+[21:49:49.292] info:  Built-in extension providers:
+[21:49:49.292] info:    Win32 WSI
+[21:49:49.292] info:    OpenVR
+[21:49:49.292] info:    OpenXR
+[21:49:49.292] info:  OpenVR: could not open registry key, status 2
+[21:49:49.293] info:  OpenVR: Failed to locate module
+[21:49:49.440] info:  Enabled instance extensions:
+[21:49:49.440] info:    VK_KHR_external_memory_capabilities
+[21:49:49.440] info:    VK_KHR_external_semaphore_capabilities
+[21:49:49.440] info:    VK_KHR_get_physical_device_properties2
+[21:49:49.440] info:    VK_KHR_get_surface_capabilities2
+[21:49:49.440] info:    VK_KHR_surface
+[21:49:49.440] info:    VK_KHR_win32_surface
+[21:49:49.450] info:  Enabled Layer Names:
+[21:49:49.827] warn:  Skipping Emulated GPU adapter: Microsoft Direct3D12 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU))
+[21:49:49.827] warn:  Skipping CPU adapter: Microsoft Direct3D12 (Microsoft Basic Render Driver)
+[21:49:49.836] info:  Vulkan instance layers:
+[21:49:49.836] info:    GalaxyOverlayVkLayer
+[21:49:49.836] info:    GalaxyOverlayVkLayer_DEBUG
+[21:49:49.836] info:    GalaxyOverlayVkLayer_VERBOSE
+[21:49:49.836] info:    VK_LAYER_MSFT_driver_sorting
+[21:49:49.836] info:    VK_LAYER_NV_optimus
+[21:49:49.836] info:    VK_LAYER_NV_present
+[21:49:49.836] info:    VK_LAYER_VALVE_steam_fossilize
+[21:49:49.836] info:    VK_LAYER_VALVE_steam_overlay
+[21:49:49.836] info:  Vulkan instance extensions:
+[21:49:49.836] info:    VK_EXT_debug_report
+[21:49:49.836] info:    VK_EXT_debug_utils
+[21:49:49.836] info:    VK_EXT_direct_mode_display
+[21:49:49.836] info:    VK_EXT_surface_maintenance1
+[21:49:49.836] info:    VK_EXT_swapchain_colorspace
+[21:49:49.836] info:    VK_KHR_device_group_creation
+[21:49:49.836] info:    VK_KHR_display
+[21:49:49.836] info:    VK_KHR_external_fence_capabilities
+[21:49:49.836] info:    VK_KHR_external_memory_capabilities
+[21:49:49.836] info:    VK_KHR_external_semaphore_capabilities
+[21:49:49.836] info:    VK_KHR_get_display_properties2
+[21:49:49.836] info:    VK_KHR_get_physical_device_properties2
+[21:49:49.836] info:    VK_KHR_get_surface_capabilities2
+[21:49:49.836] info:    VK_KHR_portability_enumeration
+[21:49:49.836] info:    VK_KHR_surface
+[21:49:49.836] info:    VK_KHR_surface_maintenance1
+[21:49:49.836] info:    VK_KHR_surface_protected_capabilities
+[21:49:49.836] info:    VK_KHR_win32_surface
+[21:49:49.836] info:    VK_LUNARG_direct_driver_loading
+[21:49:49.836] info:    VK_NV_external_memory_capabilities
+[21:49:49.838] info:  D3D9: VK_FORMAT_D16_UNORM_S8_UINT -> VK_FORMAT_D24_UNORM_S8_UINT
+[21:49:49.838] info:  NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU):
+[21:49:49.843] info:    Driver: 617.69.0
+[21:49:49.843] info:    Vulkan: 1.4.351
+[21:49:49.843] info:    Memory Heap[0]: 
+[21:49:49.843] info:      Size: 40946 MiB
+[21:49:49.843] info:      Flags: 0x1
+[21:49:49.843] info:      Memory Type[1]: Property Flags = 0x1
+[21:49:49.843] info:    Memory Heap[1]: 
+[21:49:49.843] info:      Size: 11644 MiB
+[21:49:49.843] info:      Flags: 0x0
+[21:49:49.843] info:      Memory Type[0]: Property Flags = 0x0
+[21:49:49.843] info:      Memory Type[2]: Property Flags = 0x6
+[21:49:49.843] info:      Memory Type[3]: Property Flags = 0xe
+[21:49:49.848] info:  Process set as DPI aware
+[21:49:49.941] info:  Device properties:
+[21:49:49.941] info:    Device name:     : NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)
+[21:49:49.941] info:    Vendor name:     : NVIDIA
+[21:49:49.941] info:    Device ID:       : 0x2e03
+[21:49:49.941] info:    Vendor ID:       : 0x10de
+[21:49:49.941] info:    Driver version   : 617.69.0
+[21:49:49.941] info:  Enabled device extensions:
+[21:49:49.941] info:    VK_EXT_4444_formats
+[21:49:49.941] info:    VK_EXT_calibrated_timestamps
+[21:49:49.941] info:    VK_EXT_conservative_rasterization
+[21:49:49.941] info:    VK_EXT_custom_border_color
+[21:49:49.941] info:    VK_EXT_depth_clip_enable
+[21:49:49.941] info:    VK_EXT_extended_dynamic_state
+[21:49:49.941] info:    VK_EXT_full_screen_exclusive
+[21:49:49.941] info:    VK_EXT_memory_priority
+[21:49:49.941] info:    VK_EXT_opacity_micromap
+[21:49:49.941] info:    VK_EXT_robustness2
+[21:49:49.941] info:    VK_EXT_shader_atomic_float
+[21:49:49.941] info:    VK_EXT_shader_demote_to_helper_invocation
+[21:49:49.941] info:    VK_EXT_shader_viewport_index_layer
+[21:49:49.941] info:    VK_EXT_transform_feedback
+[21:49:49.941] info:    VK_EXT_vertex_attribute_divisor
+[21:49:49.941] info:    VK_KHR_acceleration_structure
+[21:49:49.941] info:    VK_KHR_buffer_device_address
+[21:49:49.941] info:    VK_KHR_create_renderpass2
+[21:49:49.941] info:    VK_KHR_deferred_host_operations
+[21:49:49.941] info:    VK_KHR_depth_stencil_resolve
+[21:49:49.941] info:    VK_KHR_draw_indirect_count
+[21:49:49.941] info:    VK_KHR_driver_properties
+[21:49:49.941] info:    VK_KHR_external_memory
+[21:49:49.941] info:    VK_KHR_external_memory_win32
+[21:49:49.941] info:    VK_KHR_external_semaphore
+[21:49:49.941] info:    VK_KHR_external_semaphore_win32
+[21:49:49.941] info:    VK_KHR_image_format_list
+[21:49:49.941] info:    VK_KHR_maintenance4
+[21:49:49.941] info:    VK_KHR_pipeline_library
+[21:49:49.941] info:    VK_KHR_push_descriptor
+[21:49:49.941] info:    VK_KHR_ray_query
+[21:49:49.941] info:    VK_KHR_ray_tracing_pipeline
+[21:49:49.941] info:    VK_KHR_sampler_mirror_clamp_to_edge
+[21:49:49.941] info:    VK_KHR_shader_float16_int8
+[21:49:49.941] info:    VK_KHR_shader_float_controls
+[21:49:49.941] info:    VK_KHR_swapchain
+[21:49:49.941] info:    VK_KHR_synchronization2
+[21:49:49.941] info:    VK_NVX_binary_import
+[21:49:49.941] info:    VK_NVX_image_view_handle
+[21:49:49.941] info:    VK_NV_low_latency
+[21:49:49.941] info:    VK_NV_present_metering
+[21:49:49.941] info:    VK_NV_ray_tracing_invocation_reorder
+[21:49:49.941] info:  Device features:
+[21:49:49.941] info:    robustBufferAccess                     : 1
+[21:49:49.941] info:    fullDrawIndexUint32                    : 1
+[21:49:49.941] info:    imageCubeArray                         : 1
+[21:49:49.941] info:    independentBlend                       : 1
+[21:49:49.941] info:    geometryShader                         : 1
+[21:49:49.941] info:    tessellationShader                     : 0
+[21:49:49.941] info:    sampleRateShading                      : 1
+[21:49:49.941] info:    dualSrcBlend                           : 0
+[21:49:49.941] info:    logicOp                                : 0
+[21:49:49.941] info:    multiDrawIndirect                      : 0
+[21:49:49.941] info:    drawIndirectFirstInstance              : 0
+[21:49:49.941] info:    depthClamp                             : 1
+[21:49:49.941] info:    depthBiasClamp                         : 1
+[21:49:49.941] info:    fillModeNonSolid                       : 1
+[21:49:49.941] info:    depthBounds                            : 1
+[21:49:49.941] info:    multiViewport                          : 1
+[21:49:49.941] info:    samplerAnisotropy                      : 1
+[21:49:49.941] info:    textureCompressionBC                   : 1
+[21:49:49.941] info:    occlusionQueryPrecise                  : 1
+[21:49:49.941] info:    pipelineStatisticsQuery                : 1
+[21:49:49.941] info:    vertexPipelineStoresAndAtomics         : 1
+[21:49:49.941] info:    fragmentStoresAndAtomics               : 0
+[21:49:49.941] info:    shaderImageGatherExtended              : 0
+[21:49:49.941] info:    shaderStorageImageExtendedFormats      : 0
+[21:49:49.941] info:    shaderStorageImageReadWithoutFormat    : 1
+[21:49:49.941] info:    shaderStorageImageWriteWithoutFormat   : 1
+[21:49:49.941] info:    shaderClipDistance                     : 1
+[21:49:49.941] info:    shaderCullDistance                     : 1
+[21:49:49.941] info:    shaderFloat64                          : 0
+[21:49:49.941] info:    shaderInt64                            : 1
+[21:49:49.941] info:    variableMultisampleRate                : 0
+[21:49:49.941] info:    hostQueryReset                         : 1
+[21:49:49.941] info:    scalarBlockLayout                      : 1
+[21:49:49.941] info:    uniformBufferStandardLayout            : 1
+[21:49:49.941] info:  VK_EXT_4444_formats
+[21:49:49.941] info:    formatA4R4G4B4                         : 1
+[21:49:49.941] info:    formatA4B4G4R4                         : 1
+[21:49:49.941] info:  VK_EXT_custom_border_color
+[21:49:49.941] info:    customBorderColors                     : 1
+[21:49:49.941] info:    customBorderColorWithoutFormat         : 1
+[21:49:49.941] info:  VK_EXT_depth_clip_enable
+[21:49:49.941] info:    depthClipEnable                        : 1
+[21:49:49.941] info:  VK_EXT_extended_dynamic_state
+[21:49:49.941] info:    extendedDynamicState                   : 1
+[21:49:49.941] info:  VK_EXT_memory_priority
+[21:49:49.941] info:    memoryPriority                         : 1
+[21:49:49.941] info:  VK_EXT_robustness2
+[21:49:49.941] info:    robustBufferAccess2                    : 1
+[21:49:49.941] info:    robustImageAccess2                     : 0
+[21:49:49.941] info:    nullDescriptor                         : 1
+[21:49:49.941] info:  VK_EXT_shader_demote_to_helper_invocation
+[21:49:49.941] info:    shaderDemoteToHelperInvocation         : 1
+[21:49:49.941] info:  VK_EXT_transform_feedback
+[21:49:49.941] info:    transformFeedback                      : 1
+[21:49:49.941] info:    geometryStreams                        : 0
+[21:49:49.941] info:  VK_EXT_vertex_attribute_divisor
+[21:49:49.941] info:    vertexAttributeInstanceRateDivisor     : 1
+[21:49:49.941] info:    vertexAttributeInstanceRateZeroDivisor : 1
+[21:49:49.941] info:  VK_KHR_buffer_device_address
+[21:49:49.941] info:    bufferDeviceAddress                    : 1
+[21:49:49.942] info:  Queue families:
+[21:49:49.942] info:    Graphics : 0
+[21:49:49.942] info:    Transfer : 1
+[21:49:49.942] info:    Async Compute : 2
+[21:49:49.942] info:    Present : 2
+[21:49:50.290] warn:  DXVK: No state cache file found
+[21:49:50.290] warn:  DXVK: Creating new state cache file
+[21:49:50.300] info:  DXVK: Using 13 compiler threads
+[21:49:50.323] info:  [RTX info] Neural Radiance Cache: supported
+[21:49:55.431] info:  Reflex initialized successfully.
+[21:49:55.806] info:  [GPU Profile] NVIDIA integrated GPU with 2 memory heap(s), 40946 MiB device-local, current budget 40946 MiB.
+[21:49:55.808] info:  [GPU Profile] NVAPI GPU type 1, 6144 cores, architecture 0x1b0.
+[21:49:55.808] info:  [GPU Profile] RTX Spark detected (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU), 6144 cores, 40946 MiB device-local memory).
+[21:49:55.808] info:  Automatic Graphics Preset in use (Set rtx.graphicsPreset to something other than Auto use a non-automatic preset)
+[21:49:55.808] info:  RTX Spark detected, setting default graphics settings to Medium
+[21:49:55.808] info:  Automatic Raytrace Mode Preset in use (Set rtx.raytraceModePreset to something other than Auto use a non-automatic preset)
+[21:49:55.808] info:  NVIDIA architecture detected, setting default raytrace modes to Trace Ray (Indirect Integrate) and Ray Query (GBuffer, Direct Integrate)
+[21:49:56.010] info:  [RTX info] Opacity Micromap: supported
+[21:49:56.010] info:  [RTX info] Shader Execution Reordering: supported
+[21:49:56.010] info:  [RTX info] Shader Execution Reordering: enabled
+[21:49:56.010] info:  CPU supports SIMD: SSE 4.1
+[21:49:56.020] info:  D3D9DeviceEx::ResetSwapChain:
+[21:49:56.020] info:    Requested Presentation Parameters
+[21:49:56.020] info:      - Width:              2880
+[21:49:56.020] info:      - Height:             1800
+[21:49:56.020] info:      - Format:             D3D9Format::A8R8G8B8
+[21:49:56.020] info:      - Auto Depth Stencil: false
+[21:49:56.020] info:                  ^ Format: D3D9Format::Unknown
+[21:49:56.020] info:      - Windowed:           false
+[21:49:56.064] info:  Presenter: Actual swap chain properties:
+[21:49:56.064] info:    Format:       VK_FORMAT_R8G8B8A8_UNORM
+[21:49:56.064] info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR
+[21:49:56.064] info:    Buffer size:  2880x1800
+[21:49:56.064] info:    Image count:  3
+[21:49:56.064] info:    Exclusive FS: 2
+[21:49:56.365] info:  Presenter: Actual swap chain properties:
+[21:49:56.365] info:    Format:       VK_FORMAT_R8G8B8A8_UNORM
+[21:49:56.365] info:    Present mode: VK_PRESENT_MODE_FIFO_KHR
+[21:49:56.365] info:    Buffer size:  2880x1800
+[21:49:56.365] info:    Image count:  3
+[21:49:56.365] info:    Exclusive FS: 2
+[21:49:56.376] info:  No winproc detected, initiating bridge message channel for: 000000000023039E
+[21:49:56.383] info:  [RTX-Compatibility-Info] Skipped drawcall, using pre-transformed vertices which isn't currently supported.
+[21:49:56.389] info:  Presenter: Actual swap chain properties:
+[21:49:56.389] info:    Format:       VK_FORMAT_R8G8B8A8_UNORM
+[21:49:56.389] info:    Present mode: VK_PRESENT_MODE_IMMEDIATE_KHR
+[21:49:56.389] info:    Buffer size:  2880x1800
+[21:49:56.389] info:    Image count:  3
+[21:49:56.389] info:    Exclusive FS: 2
+[21:49:56.402] info:  [RTX-Compatibility-Info] Trying to raytrace but not detecting a valid camera.
+[21:49:56.406] info:  Message channel UWM_REMIX_BRIDGE_REGISTER_THREADPROC_MSG established.

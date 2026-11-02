@@ -1,0 +1,305 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Users\suraj\Projects\Rayman 3 RTX\analysis\shim-symbols-1.6.1\d3d9.dll
+
+File Type: DLL
+
+WndProc::`anonymous namespace'::windowMsg:
+  1005FB30: push        ebp
+  1005FB31: mov         ebp,esp
+  1005FB33: push        0FFFFFFFFh
+  1005FB35: push        100A6405h
+  1005FB3A: mov         eax,dword ptr fs:[00000000h]
+  1005FB40: push        eax
+  1005FB41: sub         esp,0B8h
+  1005FB47: mov         eax,dword ptr [___security_cookie]
+  1005FB4C: xor         eax,ebp
+  1005FB4E: mov         dword ptr [ebp-10h],eax
+  1005FB51: push        esi
+  1005FB52: push        edi
+  1005FB53: push        eax
+  1005FB54: lea         eax,[ebp-0Ch]
+  1005FB57: mov         dword ptr fs:[00000000h],eax
+  1005FB5D: mov         eax,dword ptr [ebp+8]
+  1005FB60: push        offset ?gSwapChainMapMutex@@3Vmutex@std@@A
+  1005FB65: mov         dword ptr [ebp-54h],eax
+  1005FB68: mov         dword ptr [ebp-5Ch],offset ?gSwapChainMapMutex@@3Vmutex@std@@A
+  1005FB6F: call        __Mtx_lock
+  1005FB74: add         esp,4
+  1005FB77: test        eax,eax
+  1005FB79: jne         1005FEFE
+  1005FB7F: mov         edx,dword ptr [ebp-54h]
+  1005FB82: mov         dword ptr [ebp-4],eax
+  1005FB85: movzx       eax,dl
+  1005FB88: xor         eax,811C9DC5h
+  1005FB8D: imul        ecx,eax,1000193h
+  1005FB93: movzx       eax,dh
+  1005FB96: xor         ecx,eax
+  1005FB98: movzx       eax,byte ptr [ebp-52h]
+  1005FB9C: imul        ecx,ecx,1000193h
+  1005FBA2: xor         ecx,eax
+  1005FBA4: movzx       eax,byte ptr [ebp-51h]
+  1005FBA8: imul        ecx,ecx,1000193h
+  1005FBAE: xor         ecx,eax
+  1005FBB0: lea         eax,[ebp-54h]
+  1005FBB3: imul        edi,ecx,1000193h
+  1005FBB9: mov         ecx,offset ?gSwapChainMap@@3V?$unordered_map@PAUHWND__@@UWindowDisplayData@@U?$hash@PAUHWND__@@@std@@U?$equal_to@PAUHWND__@@@4@V?$allocator@U?$pair@QAUHWND__@@UWindowDisplayData@@@std@@@4@@std@@A
+  1005FBBE: push        edi
+  1005FBBF: push        eax
+  1005FBC0: lea         eax,[ebp-6Ch]
+  1005FBC3: push        eax
+  1005FBC4: call        ??$_Find_last@H@?$_Hash@V?$_Umap_traits@HPAUHHOOK__@@V?$_Uhash_compare@HU?$hash@H@std@@U?$equal_to@H@2@@std@@V?$allocator@U?$pair@$$CBHPAUHHOOK__@@@std@@@3@$0A@@std@@@std@@IBE?AU?$_Hash_find_last_result@PAU?$_List_node@U?$pair@$$CBHPAUHHOOK__@@@std@@PAX@std@@@1@ABHI@Z
+  1005FBC9: mov         eax,dword ptr [eax+4]
+  1005FBCC: test        eax,eax
+  1005FBCE: je          1005FED8
+  1005FBD4: mov         esi,dword ptr ds:[100D1194h]
+  1005FBDA: cmp         eax,esi
+  1005FBDC: je          1005FED8
+  1005FBE2: cmp         dword ptr [ebp+0Ch],2
+  1005FBE6: lea         eax,[ebp-54h]
+  1005FBE9: mov         ecx,offset ?gSwapChainMap@@3V?$unordered_map@PAUHWND__@@UWindowDisplayData@@U?$hash@PAUHWND__@@@std@@U?$equal_to@PAUHWND__@@@4@V?$allocator@U?$pair@QAUHWND__@@UWindowDisplayData@@@std@@@4@@std@@A
+  1005FBEE: jne         1005FC59
+  1005FBF0: push        edi
+  1005FBF1: push        eax
+  1005FBF2: lea         eax,[ebp-6Ch]
+  1005FBF5: push        eax
+  1005FBF6: call        ??$_Find_last@H@?$_Hash@V?$_Umap_traits@HPAUHHOOK__@@V?$_Uhash_compare@HU?$hash@H@std@@U?$equal_to@H@2@@std@@V?$allocator@U?$pair@$$CBHPAUHHOOK__@@@std@@@3@$0A@@std@@@std@@IBE?AU?$_Hash_find_last_result@PAU?$_List_node@U?$pair@$$CBHPAUHHOOK__@@@std@@PAX@std@@@1@ABHI@Z
+  1005FBFB: mov         edx,dword ptr [eax+4]
+  1005FBFE: test        edx,edx
+  1005FC00: je          1005FED8
+  1005FC06: and         edi,dword ptr ds:[100D11A8h]
+  1005FC0C: mov         eax,dword ptr ds:[100D119Ch]
+  1005FC11: lea         ecx,[eax+edi*8]
+  1005FC14: mov         eax,dword ptr [ecx]
+  1005FC16: cmp         dword ptr [ecx+4],edx
+  1005FC19: jne         1005FC2E
+  1005FC1B: cmp         eax,edx
+  1005FC1D: jne         1005FC26
+  1005FC1F: mov         dword ptr [ecx],esi
+  1005FC21: mov         dword ptr [ecx+4],esi
+  1005FC24: jmp         1005FC36
+  1005FC26: mov         esi,dword ptr [edx+4]
+  1005FC29: mov         dword ptr [ecx+4],esi
+  1005FC2C: jmp         1005FC36
+  1005FC2E: cmp         eax,edx
+  1005FC30: jne         1005FC36
+  1005FC32: mov         eax,dword ptr [edx]
+  1005FC34: mov         dword ptr [ecx],eax
+  1005FC36: mov         ecx,dword ptr [edx]
+  1005FC38: dec         dword ptr ds:[100D1198h]
+  1005FC3E: mov         eax,dword ptr [edx+4]
+  1005FC41: push        58h
+  1005FC43: push        edx
+  1005FC44: mov         dword ptr [eax],ecx
+  1005FC46: mov         eax,dword ptr [edx+4]
+  1005FC49: mov         dword ptr [ecx+4],eax
+  1005FC4C: call        ??3@YAXPAXI@Z
+  1005FC51: add         esp,8
+  1005FC54: jmp         1005FED8
+  1005FC59: push        eax
+  1005FC5A: lea         eax,[ebp-6Ch]
+  1005FC5D: push        eax
+  1005FC5E: call        ??$_Try_emplace@ABQAUHWND__@@$$V@?$_Hash@V?$_Umap_traits@PAUHWND__@@UWindowDisplayData@@V?$_Uhash_compare@PAUHWND__@@U?$hash@PAUHWND__@@@std@@U?$equal_to@PAUHWND__@@@3@@std@@V?$allocator@U?$pair@QAUHWND__@@UWindowDisplayData@@@std@@@4@$0A@@std@@@std@@IAE?AU?$pair@PAU?$_List_node@U?$pair@QAUHWND__@@UWindowDisplayData@@@std@@PAX@std@@_N@1@ABQAUHWND__@@@Z
+  1005FC63: mov         eax,dword ptr [eax]
+  1005FC65: movups      xmm0,xmmword ptr [eax+0Ch]
+  1005FC69: movups      xmmword ptr [ebp-0B8h],xmm0
+  1005FC70: movups      xmm0,xmmword ptr [eax+1Ch]
+  1005FC74: movups      xmmword ptr [ebp-0A8h],xmm0
+  1005FC7B: movups      xmm0,xmmword ptr [eax+2Ch]
+  1005FC7F: movups      xmmword ptr [ebp-98h],xmm0
+  1005FC86: movups      xmm0,xmmword ptr [eax+3Ch]
+  1005FC8A: movups      xmmword ptr [ebp-88h],xmm0
+  1005FC91: movq        xmm0,mmword ptr [eax+4Ch]
+  1005FC96: mov         eax,dword ptr [ebp+0Ch]
+  1005FC99: movq        mmword ptr [ebp-78h],xmm0
+  1005FC9E: cmp         eax,1Ch
+  1005FCA1: jne         1005FE9F
+  1005FCA7: cmp         dword ptr [ebp-98h],0
+  1005FCAE: jne         1005FED8
+  1005FCB4: test        dword ptr [ebp-74h],800h
+  1005FCBB: jne         1005FED8
+  1005FCC1: mov         al,byte ptr ds:[100D17F1h]
+  1005FCC6: nop
+  1005FCC7: test        al,al
+  1005FCC9: jne         1005FED8
+  1005FCCF: cmp         dword ptr [ebp+10h],0
+  1005FCD3: je          1005FE7E
+  1005FCD9: cmp         byte ptr ds:[100D17F0h],al
+  1005FCDF: jne         1005FED8
+  1005FCE5: lea         eax,[ebp-50h]
+  1005FCE8: push        eax
+  1005FCE9: call        ?GetDefaultMonitor@bridge_util@@YAPAUHMONITOR__@@XZ
+  1005FCEE: push        eax
+  1005FCEF: call        ?GetMonitorRect@bridge_util@@YAXPAUHMONITOR__@@PAUtagRECT@@@Z
+  1005FCF4: mov         esi,dword ptr [ebp-0B4h]
+  1005FCFA: add         esp,8
+  1005FCFD: mov         edi,dword ptr [ebp-0B8h]
+  1005FD03: push        4014h
+  1005FD08: push        esi
+  1005FD09: push        edi
+  1005FD0A: push        dword ptr [ebp-4Ch]
+  1005FD0D: push        dword ptr [ebp-50h]
+  1005FD10: push        0
+  1005FD12: push        dword ptr [ebp-54h]
+  1005FD15: call        dword ptr [__imp__SetWindowPos@28]
+  1005FD1B: xorps       xmm0,xmm0
+  1005FD1E: mov         dword ptr [ebp-18h],0
+  1005FD25: push        50h
+  1005FD27: lea         ecx,[ebp-28h]
+  1005FD2A: mov         dword ptr [ebp-14h],0Fh
+  1005FD31: movups      xmmword ptr [ebp-28h],xmm0
+  1005FD35: call        ?allocate@?$allocator@D@std@@QAEPADI@Z
+  1005FD3A: movups      xmm0,xmmword ptr [??_C@_0EF@OFIOEBLG@Window?8s?5position?5is?5reset?4?5Lef@]
+  1005FD41: mov         ecx,eax
+  1005FD43: mov         dword ptr [ebp-18h],44h
+  1005FD4A: mov         dword ptr [ebp-28h],ecx
+  1005FD4D: mov         dword ptr [ebp-14h],4Fh
+  1005FD54: movups      xmmword ptr [ecx],xmm0
+  1005FD57: movups      xmm0,xmmword ptr ds:[100B3BB8h]
+  1005FD5E: movups      xmmword ptr [ecx+10h],xmm0
+  1005FD62: movups      xmm0,xmmword ptr ds:[100B3BC8h]
+  1005FD69: movups      xmmword ptr [ecx+20h],xmm0
+  1005FD6D: movups      xmm0,xmmword ptr ds:[100B3BD8h]
+  1005FD74: movups      xmmword ptr [ecx+30h],xmm0
+  1005FD78: mov         eax,dword ptr ds:[100B3BE8h]
+  1005FD7D: mov         dword ptr [ecx+40h],eax
+  1005FD80: mov         byte ptr [ecx+44h],0
+  1005FD84: mov         ecx,dword ptr [ebp-4Ch]
+  1005FD87: lea         eax,[ebp-28h]
+  1005FD8A: cmp         dword ptr [ebp-14h],10h
+  1005FD8E: mov         edx,dword ptr [ebp-50h]
+  1005FD91: cmovae      eax,dword ptr [ebp-28h]
+  1005FD95: push        esi
+  1005FD96: push        edi
+  1005FD97: push        ecx
+  1005FD98: push        edx
+  1005FD99: push        eax
+  1005FD9A: push        0
+  1005FD9C: push        0
+  1005FD9E: mov         byte ptr [ebp-4],1
+  1005FDA2: mov         dword ptr [ebp-60h],ecx
+  1005FDA5: mov         dword ptr [ebp-64h],edx
+  1005FDA8: call        _snprintf
+  1005FDAD: add         esp,1Ch
+  1005FDB0: lea         edi,[eax+1]
+  1005FDB3: test        edi,edi
+  1005FDB5: jle         1005FF04
+  1005FDBB: push        edi
+  1005FDBC: call        ??_U@YAPAXI@Z
+  1005FDC1: mov         esi,eax
+  1005FDC3: add         esp,4
+  1005FDC6: test        esi,esi
+  1005FDC8: je          1005FDD8
+  1005FDCA: push        edi
+  1005FDCB: push        0
+  1005FDCD: push        esi
+  1005FDCE: call        _memset
+  1005FDD3: add         esp,0Ch
+  1005FDD6: jmp         1005FDDA
+  1005FDD8: xor         esi,esi
+  1005FDDA: mov         dword ptr [ebp-68h],esi
+  1005FDDD: push        dword ptr [ebp-0B4h]
+  1005FDE3: cmp         dword ptr [ebp-14h],10h
+  1005FDE7: lea         eax,[ebp-28h]
+  1005FDEA: push        dword ptr [ebp-0B8h]
+  1005FDF0: cmovae      eax,dword ptr [ebp-28h]
+  1005FDF4: push        dword ptr [ebp-60h]
+  1005FDF7: mov         byte ptr [ebp-4],2
+  1005FDFB: push        dword ptr [ebp-64h]
+  1005FDFE: push        eax
+  1005FDFF: push        edi
+  1005FE00: push        esi
+  1005FE01: call        _snprintf
+  1005FE06: add         esp,1Ch
+  1005FE09: lea         ecx,[ebp-55h]
+  1005FE0C: lea         eax,[edi-1]
+  1005FE0F: add         eax,esi
+  1005FE11: push        ecx
+  1005FE12: push        eax
+  1005FE13: push        esi
+  1005FE14: lea         ecx,[ebp-40h]
+  1005FE17: call        ??$?0PAD$0A@@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PAD0ABV?$allocator@D@1@@Z
+  1005FE1C: test        esi,esi
+  1005FE1E: je          1005FE29
+  1005FE20: push        esi
+  1005FE21: call        ??_V@YAXPAX@Z
+  1005FE26: add         esp,4
+  1005FE29: lea         eax,[ebp-40h]
+  1005FE2C: mov         byte ptr [ebp-4],3
+  1005FE30: push        eax
+  1005FE31: call        ?info@Logger@bridge_util@@SAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+  1005FE36: add         esp,4
+  1005FE39: lea         ecx,[ebp-40h]
+  1005FE3C: call        ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+  1005FE41: mov         ecx,dword ptr [ebp-14h]
+  1005FE44: cmp         ecx,10h
+  1005FE47: jb          1005FE75
+  1005FE49: mov         edx,dword ptr [ebp-28h]
+  1005FE4C: inc         ecx
+  1005FE4D: mov         eax,edx
+  1005FE4F: cmp         ecx,1000h
+  1005FE55: jb          1005FE6B
+  1005FE57: mov         edx,dword ptr [eax-4]
+  1005FE5A: add         ecx,23h
+  1005FE5D: sub         eax,edx
+  1005FE5F: add         eax,0FFFFFFFCh
+  1005FE62: cmp         eax,1Fh
+  1005FE65: ja          1005FF25
+  1005FE6B: push        ecx
+  1005FE6C: push        edx
+  1005FE6D: call        ??3@YAXPAXI@Z
+  1005FE72: add         esp,8
+  1005FE75: mov         byte ptr ds:[100D17F0h],1
+  1005FE7C: jmp         1005FED8
+  1005FE7E: push        dword ptr [ebp-54h]
+  1005FE81: call        dword ptr [__imp__IsWindowVisible@4]
+  1005FE87: test        eax,eax
+  1005FE89: je          1005FE96
+  1005FE8B: push        6
+  1005FE8D: push        dword ptr [ebp-54h]
+  1005FE90: call        dword ptr [__imp__ShowWindowAsync@8]
+  1005FE96: mov         byte ptr ds:[100D17F0h],0
+  1005FE9D: jmp         1005FED8
+  1005FE9F: cmp         eax,5
+  1005FEA2: jne         1005FED8
+  1005FEA4: test        dword ptr [ebp-74h],800h
+  1005FEAB: jne         1005FED8
+  1005FEAD: push        dword ptr [ebp-54h]
+  1005FEB0: call        dword ptr [__imp__IsIconic@4]
+  1005FEB6: test        eax,eax
+  1005FEB8: jne         1005FED8
+  1005FEBA: mov         al,byte ptr ds:[100D17F1h]
+  1005FEBF: nop
+  1005FEC0: test        al,al
+  1005FEC2: jne         1005FED8
+  1005FEC4: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1005FECA: push        eax
+  1005FECB: push        1
+  1005FECD: push        1Ch
+  1005FECF: push        dword ptr [ebp-54h]
+  1005FED2: call        dword ptr [__imp__PostMessageW@16]
+  1005FED8: push        dword ptr [ebp-5Ch]
+  1005FEDB: call        __Mtx_unlock
+  1005FEE0: add         esp,4
+  1005FEE3: mov         ecx,dword ptr [ebp-0Ch]
+  1005FEE6: mov         dword ptr fs:[0],ecx
+  1005FEED: pop         ecx
+  1005FEEE: pop         edi
+  1005FEEF: pop         esi
+  1005FEF0: mov         ecx,dword ptr [ebp-10h]
+  1005FEF3: xor         ecx,ebp
+  1005FEF5: call        @__security_check_cookie@4
+  1005FEFA: mov         esp,ebp
+  1005FEFC: pop         ebp
+  1005FEFD: ret
+  1005FEFE: push        eax
+  1005FEFF: call        ?_Throw_C_error@std@@YAXH@Z
+  1005FF04: push        offset ??_C@_0BJ@GBDJJHKN@Error?5during?5formatting?$CB@
+  1005FF09: lea         ecx,[ebp-0C4h]
+  1005FF0F: call        ??0runtime_error@std@@QAE@PBD@Z
+
+  Summary
+
+       A9000 .text

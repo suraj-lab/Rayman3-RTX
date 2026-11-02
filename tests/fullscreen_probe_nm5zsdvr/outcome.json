@@ -1,0 +1,28 @@
+{
+  "runtime_exit_decimal": 3221226525,
+  "runtime_exit_hex": "0xC000041D",
+  "runner_exit": 0,
+  "runner_exit_is_not_success_gate": true,
+  "first_chance_exception": "0xE06D7363",
+  "lifecycle_completed": false,
+  "stress_completed": false,
+  "exception_type_unverified": true,
+  "throw_stack_frames": 0,
+  "remaining_relevant_processes": null,
+  "installed_game_dlls_still_unchanged": true,
+  "runtime_artifact_sha256": {
+    "d3d8abi.exe": "8bf3b3d8919da59a3ee7e8ff1a7b8571c937bdfd9c0485ad82947029b0339332",
+    "d3d8.dll": "1978fcffa6e891482794bac9a696c614cbad4c9bc1b5571c296ae0f9bec0e1f3",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+    "NvRemixLauncher32.exe": "69698d2cc7ab6ce439eee02e6715aa5fc3c0b5520716541436ccfdaa79a80b78",
+    "abi.log": "0170337efd2547e345833ee55f2186f6411449cc8c35273fa16a11b03e0542b3",
+    "r3probe.log": "1afaa49c91b448c0dbaa6d53d93192c8e57e7bd26f733f79298e100d2f274e02",
+    "launcher.log": "b274fad84879d9553d297bd6b13c89f0d84697ddbde22d69481d13d9504b411a",
+    "rtx-remix/logs/bridge32.log": "455a32ccd7cd11512d184df232af9ccbc48a5fc8842e15ec9c60c2336ba9a7db",
+    "rtx-remix/logs/bridge64.log": "56254bce83bc38e94338584f917b8fbc51d9779f3592b6783ca3546ebd33399e",
+    "rtx-remix/logs/remix-dxvk.log": "b274fad84879d9553d297bd6b13c89f0d84697ddbde22d69481d13d9504b411a"
+  },
+  "parser_regression_evidence": "tests/exception_metadata_1k7xroe5",
+  "new_parser_not_used_in_this_run": true
+}

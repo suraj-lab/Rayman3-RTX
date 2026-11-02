@@ -1,0 +1,18 @@
+{
+  "tag": "AKKDFHGu",
+  "what": "First game run with D3DCREATE_NOWINDOWCHANGES (0x800) injected by the proxy",
+  "outcome": "game ran; no abort; user observed no textures",
+  "installed": {
+    "D3D8.dll": "062d2c7423cc02eefd68af764b91b554e4e7599ece243a763c21769f1cfc8cb4",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0"
+  },
+  "source": {
+    "src/d3d8proxy.cpp": "facfabdb3b743151e3625d394c1fac8ad6d14d2e6efd2f4ee6b05909da2caf76",
+    "tests/run_remix_abi.py": "9280c500e0d50f9c30d60bf14faf5072d4ffd381ad2e5763d92d93a6d5610972"
+  },
+  "logs": {
+    "r3probe.log": "d67f6d012cfc093844611c6fef68cdb335a67f79177afb6f7736a453495944ab",
+    "remix_launch.log": "b711a2a6eb2b2dbd7028d40893ac0b998be00c148da1b48194607c10e1eb16e6"
+  }
+}

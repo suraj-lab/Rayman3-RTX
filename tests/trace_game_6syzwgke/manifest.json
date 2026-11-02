@@ -1,0 +1,61 @@
+{
+  "captured": "2026-11-01T22:47:00.569981+00:00",
+  "game": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3",
+  "files": {
+    "r3probe.log": {
+      "bytes": 574,
+      "sha256": "28384859e3296bab19a8ed7f49f2560258cadb679c267b9de01e9e0d6ea9bd3b"
+    },
+    "remix_launch.log": {
+      "bytes": 15633,
+      "sha256": "12836dbb96ea0c79132acd51671b06b466af829fab182ecd657ad16772e21f5e"
+    },
+    "rtx-remix/logs/bridge32.log": {
+      "bytes": 4580,
+      "sha256": "faa815db863da6aacaa11a37eaf668733b652e2247003664625f7006be6872a5"
+    },
+    "rtx-remix/logs/bridge64.log": {
+      "bytes": 2884,
+      "sha256": "5358b0a7ca5138355cd3a5c51ff93b8f00d25f32f7aeb4942ba577a7157e8916"
+    },
+    "rtx-remix/logs/remix-dxvk.log": {
+      "bytes": 15633,
+      "sha256": "12836dbb96ea0c79132acd51671b06b466af829fab182ecd657ad16772e21f5e"
+    },
+    "Rayman3.exe": {
+      "bytes": 2916704,
+      "sha256": "64deefd3a7b14a32124aa9b31ebba84e1a7c9a4a54ee40d9b65b4043ff1be15c"
+    },
+    "D3D8.dll": {
+      "bytes": 128512,
+      "sha256": "bf7adbe3db012c79edfdf98fed8dad837f83e318b8cfa414c72c6b7eca14867e"
+    },
+    "d3d8_real.dll": {
+      "bytes": 134256,
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0"
+    },
+    "d3d9.dll": {
+      "bytes": 908400,
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750"
+    }
+  },
+  "changes_since_deployment": {
+    "C:\\Windows\\UbiSoft\\ubi.ini": {
+      "unchanged": true,
+      "sha256": "829631f6c880396207ad8f3a9bdf9757e892f0417d0768c4817780a36ea12bfd"
+    },
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d8_real.dll": {
+      "unchanged": true,
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0"
+    },
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d9.dll": {
+      "unchanged": true,
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750"
+    },
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\GAMEDATA\\SaveGame\\SUJ.sav": {
+      "unchanged": true,
+      "sha256": "931ffbf6d6522606dea22e79867726edc4ef73fcdd2fdc924dbe1888d2fee039"
+    }
+  },
+  "processes": []
+}

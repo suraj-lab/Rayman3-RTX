@@ -1,0 +1,49 @@
+{
+  "command": [
+    "C:\\Users\\suraj\\AppData\\Local\\Programs\\Python\\Python314-arm64\\python.exe",
+    "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\run_remix_abi.py",
+    "--lifecycle",
+    "--fullscreen",
+    "--stress"
+  ],
+  "started_unix": 1793656181.8053274,
+  "duration_seconds": 15.951,
+  "runner_exit": 0,
+  "runtime_case": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\remix_abi_snxkrde5",
+  "installed_dll_hashes_before": {
+    "binkw32.dll": "56fdf5e59562a946d140ad564ba2e843a7df7322f02f9cdf65ca15462972d43f",
+    "D3D8.dll": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+    "dsound.dll": "83a6c680a0575eaa6dc937fc7c193c336ea1f6bf2bb63e6fca282e127d3e57c1",
+    "MFC42D.DLL": "f21ea77d3fefbc3e1c9174234e498f0ff6d16a85c7146c8362140da2eb4a6d9f",
+    "MFCD42D.DLL": "9ddf03d07e41d3085b4723c1cdc81dd6ccbd32e5b0a5ea19d54b93d1385877c4",
+    "MFCN42D.DLL": "9adac631730e867aa021fd11b31726f28c5a4adfc15629944523869fdf570eb4",
+    "MFCO42D.DLL": "b1c614b71aa5a5a8fb7a066536300f57733ebe4988eb7061d749f8a1d29ab328",
+    "MSVCIRTD.DLL": "318142d1c350a73e886dc264319b90e319dc81bd921ffd4db73313d89eb88381",
+    "MSVCP60D.DLL": "68deb8cad3c055beebd3748aaed06e8ad4a365c18ac198ac6bc7c3ac7cd3496f",
+    "MSVCRTD.DLL": "df5feadc91d74d3e4b5cd77180ce80b31427b0f2c7a171b05c0cfdd669c6ef5c",
+    "winmm.dll": "baba99929487b005bb9b168acfd852550055f22e5f1059c9032765209bb185e5"
+  },
+  "installed_dll_hashes_after": {
+    "binkw32.dll": "56fdf5e59562a946d140ad564ba2e843a7df7322f02f9cdf65ca15462972d43f",
+    "D3D8.dll": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+    "dsound.dll": "83a6c680a0575eaa6dc937fc7c193c336ea1f6bf2bb63e6fca282e127d3e57c1",
+    "MFC42D.DLL": "f21ea77d3fefbc3e1c9174234e498f0ff6d16a85c7146c8362140da2eb4a6d9f",
+    "MFCD42D.DLL": "9ddf03d07e41d3085b4723c1cdc81dd6ccbd32e5b0a5ea19d54b93d1385877c4",
+    "MFCN42D.DLL": "9adac631730e867aa021fd11b31726f28c5a4adfc15629944523869fdf570eb4",
+    "MFCO42D.DLL": "b1c614b71aa5a5a8fb7a066536300f57733ebe4988eb7061d749f8a1d29ab328",
+    "MSVCIRTD.DLL": "318142d1c350a73e886dc264319b90e319dc81bd921ffd4db73313d89eb88381",
+    "MSVCP60D.DLL": "68deb8cad3c055beebd3748aaed06e8ad4a365c18ac198ac6bc7c3ac7cd3496f",
+    "MSVCRTD.DLL": "df5feadc91d74d3e4b5cd77180ce80b31427b0f2c7a171b05c0cfdd669c6ef5c",
+    "winmm.dll": "baba99929487b005bb9b168acfd852550055f22e5f1059c9032765209bb185e5"
+  },
+  "installed_dlls_unchanged": true,
+  "source_hashes": {
+    "src\\d3d8abi.cpp": "0247640faeb2595522db4167100339b9dad845b2b95860f5da88fd9c67ce4755",
+    "src\\d3d8proxy.cpp": "fb6e38f333b2875411532abf950edfe419b998391623d50d058b1fea018e1817",
+    "tests\\run_remix_abi.py": "9280c500e0d50f9c30d60bf14faf5072d4ffd381ad2e5763d92d93a6d5610972"
+  }
+}

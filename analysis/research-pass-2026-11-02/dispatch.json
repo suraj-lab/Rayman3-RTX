@@ -1,0 +1,52 @@
+{
+  "scope": "Read-only upstream research and static evidence review; no launches, installation or runtime patches",
+  "tasks": [
+    {
+      "task": "upstream-remix-research",
+      "agent": "researcher",
+      "model": "openai/gpt-6.1-sol",
+      "node": "cloud",
+      "run_id": "774139dc-ad2d-403a-a552-2e3b011bd87c",
+      "status": "completed_report_received",
+      "output_reference": "reports/remix-upstream-research.md",
+      "acceptance": "Partially read by lead; primary-source verification pending. No exact upstream mutex fix established by report."
+    },
+    {
+      "task": "source-lock-review-mini",
+      "agent": "scout",
+      "model": "openai/gpt-5.4-mini",
+      "node": "cloud",
+      "run_id": "bb81fea0-9b43-449d-8f3e-c7c465da2a17",
+      "status": "failed_before_work",
+      "notes": "Provider rejected mini model for ChatGPT/Codex account. No findings or source changes."
+    },
+    {
+      "task": "source-lock-review-spark-unregistered-prefix",
+      "agent": "scout",
+      "model": "openai-codex/gpt-5.3-codex-spark",
+      "node": "cloud",
+      "status": "dispatch_rejected",
+      "notes": "Exact provider/model identifier absent from active registry. No child started."
+    },
+    {
+      "task": "source-lock-review-spark",
+      "agent": "scout",
+      "model": "openai/gpt-5.3-codex-spark",
+      "node": "cloud",
+      "run_id": "8baf488c-f4a1-44d8-b967-88218243a2cc",
+      "status": "failed_before_work",
+      "notes": "Provider rejected Spark for this account. Retries stopped; lead handles source/binary lane."
+    },
+    {
+      "task": "arm64-x86-throw-capture-research",
+      "agent": "researcher",
+      "model": "openai/gpt-6.1-sol",
+      "node": "cloud",
+      "run_id": "1ded8436-a535-4dc2-a4b8-e5ab6b904bf2",
+      "status": "completed_report_received",
+      "output_reference": "reports/arm64-x86-exception-capture.md",
+      "acceptance": "Summary received; primary-source verification pending. Recommends preserving original VEH exception context, not treating in-handler backtrace as original context."
+    }
+  ],
+  "ledger_location_note": "Project-local record; shared Documents ledger was not modified outside repository scope."
+}

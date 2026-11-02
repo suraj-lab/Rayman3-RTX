@@ -1,0 +1,7 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8_real.dll, Direct3DCreate8=70251010
+Direct3DCreate8(220) call #1 -> 042946C8
+  patched CreateDevice slot 15: 70251850 -> 70A31490
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=2880x1800 fmt=21 windowed=0
+CreateDevice -> hr=0x00000000
+device vtable hooked

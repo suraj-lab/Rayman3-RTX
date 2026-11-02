@@ -1,0 +1,18 @@
+proc FUN_00472740 len 4595
+
+== SetVertexShader 0x130
+   ...AT_007eb1f0 * 0x18) = 0xffffffff; } (**(code **)(*DAT_005f5df0 + 0x30))(DAT_005f5df0); if (DAT_005f5e30 != 0) { if (_DAT_007eb040 != 0.0) { (**(code **)(*DAT_007edb18 + 0xfc))(DAT_007edb18,0,0x18,0); _DAT_007eb040 = 0.0; } DAT_005f5e30 = 0; } (**(code **)(*DAT_007edb18 + 0x154))(DAT_007edb18,DAT_00637dc4,DAT_007eb1f0); (**(code **)(*DAT_007edb18 + 0x14c))(DAT_007edb18,0,DAT_005f5df0,0x18); (**(code **)(*DAT_007edb18 + 0x130))(DAT_007edb18,0x142); (**(code **)(*DAT_007edb18 + 0x11c))(DAT_007edb18,4,0,4,0,2); DAT_007eb1f0 = DAT_007eb1f0 + 4; DA...
+
+== SetTransform 0x94
+   ...*(float *)(iVar3 + 0x5a6a4); *(float *)(param_4 + 0x34) = *(float *)(iVar3 + 0x5a678) * *pfVar2 + *(float *)(iVar3 + 0x5a688) * pfVar2[1] + *(float *)(iVar3 + 0x5a698) * pfVar2[2] + *(float *)(iVar3 + 0x5a6a8); *(float *)(param_4 + 0x38) = *(float *)(iVar3 + 0x5a67c) * *pfVar2 + *(float *)(iVar3 + 0x5a68c) * pfVar2[1] + *(float *)(iVar3 + 0x5a69c) * pfVar2[2] + *(float *)(iVar3 + 0x5a6ac); (**(code **)(*DAT_007edb18 + 0x94))(DAT_007edb18,0x100,param_4); if ((DAT_007eb1f0 + 4U & 0xfffffffc) < 0xfa1) { iVar3 = (**(code **)(*DAT_005f5df0 + 0x2c...
+
+== SetStreamSource 0x14c
+   ...AT_007eb1f0 * 0x18) = 0xffffffff; *(undefined4 *)(DAT_007eb1ec + 0xc + DAT_007eb1f0 * 0x18) = 0xffffffff; } (**(code **)(*DAT_005f5df0 + 0x30))(DAT_005f5df0); if (DAT_005f5e30 != 0) { if (_DAT_007eb040 != 0.0) { (**(code **)(*DAT_007edb18 + 0xfc))(DAT_007edb18,0,0x18,0); _DAT_007eb040 = 0.0; } DAT_005f5e30 = 0; } (**(code **)(*DAT_007edb18 + 0x154))(DAT_007edb18,DAT_00637dc4,DAT_007eb1f0); (**(code **)(*DAT_007edb18 + 0x14c))(DAT_007edb18,0,DAT_005f5df0,0x18); (**(code **)(*DAT_007edb18 + 0x130))(DAT_007edb18,0x142); (**(code **)(*DAT_007edb1...
+
+== DrawIndexedPrimitive 0x11c
+   ...5df0 + 0x30))(DAT_005f5df0); if (DAT_005f5e30 != 0) { if (_DAT_007eb040 != 0.0) { (**(code **)(*DAT_007edb18 + 0xfc))(DAT_007edb18,0,0x18,0); _DAT_007eb040 = 0.0; } DAT_005f5e30 = 0; } (**(code **)(*DAT_007edb18 + 0x154))(DAT_007edb18,DAT_00637dc4,DAT_007eb1f0); (**(code **)(*DAT_007edb18 + 0x14c))(DAT_007edb18,0,DAT_005f5df0,0x18); (**(code **)(*DAT_007edb18 + 0x130))(DAT_007edb18,0x142); (**(code **)(*DAT_007edb18 + 0x11c))(DAT_007edb18,4,0,4,0,2); DAT_007eb1f0 = DAT_007eb1f0 + 4; DAT_005f5dec = DAT_005f5dec + 4; } return; }...
+
+== SetIndices 0x154
+   ...c + DAT_007eb1f0 * 0x18) = 0xffffffff; *(undefined4 *)(DAT_007eb1ec + 0x24 + DAT_007eb1f0 * 0x18) = 0xffffffff; *(undefined4 *)(DAT_007eb1ec + 0xc + DAT_007eb1f0 * 0x18) = 0xffffffff; } (**(code **)(*DAT_005f5df0 + 0x30))(DAT_005f5df0); if (DAT_005f5e30 != 0) { if (_DAT_007eb040 != 0.0) { (**(code **)(*DAT_007edb18 + 0xfc))(DAT_007edb18,0,0x18,0); _DAT_007eb040 = 0.0; } DAT_005f5e30 = 0; } (**(code **)(*DAT_007edb18 + 0x154))(DAT_007edb18,DAT_00637dc4,DAT_007eb1f0); (**(code **)(*DAT_007edb18 + 0x14c))(DAT_007edb18,0,DAT_005f5df0,0x18); (**(c...
+
+== SetViewport 0xa0

@@ -1,0 +1,47 @@
+{
+  "captured": "2026-11-01T23:16:10.826141+00:00",
+  "files": {
+    "r3probe.log": {
+      "sha256": "2c695c3563383088093a589f7ea9d129db5d93a76254ad94065dd150a750b711",
+      "bytes": 2154
+    },
+    "remix_launch.log": {
+      "sha256": "80a11fbbf248590f19998850845fe5c6b1d6b7495302a5b6cb072df9cfa9629f",
+      "bytes": 15633
+    },
+    "rtx-remix/logs/bridge32.log": {
+      "sha256": "83bef4d3f18892563592523dbdc4128299cbce5cecb6380bd19a7ade2a623409",
+      "bytes": 4581
+    },
+    "rtx-remix/logs/bridge64.log": {
+      "sha256": "e9f53562d3e8c3331f9d2abfef0adcfc114f2e050777d5f013800f05a6457e9d",
+      "bytes": 2885
+    },
+    "rtx-remix/logs/remix-dxvk.log": {
+      "sha256": "80a11fbbf248590f19998850845fe5c6b1d6b7495302a5b6cb072df9cfa9629f",
+      "bytes": 15633
+    },
+    "Rayman3.exe": {
+      "sha256": "64deefd3a7b14a32124aa9b31ebba84e1a7c9a4a54ee40d9b65b4043ff1be15c",
+      "bytes": 2916704
+    },
+    "D3D8.dll": {
+      "sha256": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+      "bytes": 129024
+    },
+    "d3d8_real.dll": {
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+      "bytes": 134256
+    },
+    "d3d9.dll": {
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+      "bytes": 908400
+    }
+  },
+  "unchanged_files": {
+    "C:\\Windows\\UbiSoft\\ubi.ini": true,
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d8_real.dll": true,
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d9.dll": true,
+    "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\GAMEDATA\\SaveGame\\SUJ.sav": true
+  }
+}

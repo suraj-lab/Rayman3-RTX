@@ -1,0 +1,27 @@
+
+=== BetterRayman3.dll
+-- 00-open.json ev None
+-- 50-ubiini-string.json ev ev_a866e001f28f3bb1df1df1c69ba5292961642ea184f6722f5aa82d5f037ba193
+   ref "0x10001dce"
+   ref "0x10001de4"
+   ref "0x10001fb7"
+-- 51-widescreen-header-string.json ev ev_cbd1f022f3d98be94638cb309b6e62df1bf680570f92bafc7c563f8ac1ff0e4f
+   ref "0x10003325"
+   ref "0x1000335b"
+   ref "0x10003492"
+   ref "0x100034c8"
+   ref "0x100035ff"
+   ref "0x10003635"
+-- 52-bettername-string.json ev ev_16e0a625f9ef1f09570ce39b2898c0237277c364c8300df5f975cdbb853906d8
+   ref "0x100020ea"
+-- 99-close.json ev None
+-- snapshot.json ev None
+
+=== UltimateASILoader-winmm.dll
+-- 00-open.json ev None
+-- 40-windowpos-string.json ev ev_07d9fb744d959e2a6611948654754ed9c39121afdbc7fb2483eff2f4db0518a2
+-- 41-windowtext-string.json ev ev_1cf1e6922827ce50e5b34268e8f3b287e22a381d8fb4a017cdeb5cc523d4feac
+-- 42-asi-glob-string.json ev ev_898be7be6e9c3171aadb10f0c7b8850f2413a3cbf294fcc58b81cb1abe438af3
+   ref "0x10019a90"
+-- 99-close.json ev None
+-- snapshot.json ev None

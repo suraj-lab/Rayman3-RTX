@@ -1,0 +1,4 @@
+harness pid=14548 tid=23984
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1
+TERMINATE on tid=23984 (harness tid=23984)

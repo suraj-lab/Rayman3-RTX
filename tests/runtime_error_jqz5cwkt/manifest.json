@@ -1,0 +1,12 @@
+{
+  "pid": 24336,
+  "executable": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\Rayman3.exe",
+  "modules": {
+    "Rayman3.exe": "64deefd3a7b14a32124aa9b31ebba84e1a7c9a4a54ee40d9b65b4043ff1be15c",
+    "D3D8.dll": "bcf7fbf81d07092c0aa82dbe58ccec4a0488b49dff9445ca325bac28c8ed1ad3",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750"
+  },
+  "dump_success": true,
+  "win32_error": 0
+}

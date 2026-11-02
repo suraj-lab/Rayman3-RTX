@@ -1,0 +1,215 @@
+{
+  "scope": "Immediate game directory and project asi_off only; no active load attribution",
+  "files": [
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\binkw32.dll",
+      "name": "binkw32.dll",
+      "size": 291840,
+      "sha256": "56fdf5e59562a946d140ad564ba2e843a7df7322f02f9cdf65ca15462972d43f",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\D3D8.dll",
+      "name": "D3D8.dll",
+      "size": 129024,
+      "sha256": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d8_real.dll",
+      "name": "d3d8_real.dll",
+      "size": 134256,
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d9.dll",
+      "name": "d3d9.dll",
+      "size": 908400,
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\deutsch.ini",
+      "name": "deutsch.ini",
+      "size": 1193
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dgVoodoo.conf",
+      "name": "dgVoodoo.conf",
+      "size": 19480
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dgVoodooCpl.exe",
+      "name": "dgVoodooCpl.exe",
+      "size": 399872,
+      "sha256": "762e06b4d7aafa527ab04a2bb617cd2a70658ec3b64939b76548fd99c813d802",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dsound.dll",
+      "name": "dsound.dll",
+      "size": 1261568,
+      "sha256": "83a6c680a0575eaa6dc937fc7c193c336ea1f6bf2bb63e6fca282e127d3e57c1",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dsound.ini",
+      "name": "dsound.ini",
+      "size": 65
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\english.ini",
+      "name": "english.ini",
+      "size": 1140
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\espanol.ini",
+      "name": "espanol.ini",
+      "size": 1243
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\francais.ini",
+      "name": "francais.ini",
+      "size": 1256
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\goggame-galaxyFileList.ini",
+      "name": "goggame-galaxyFileList.ini",
+      "size": 15780
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\goglog.ini",
+      "name": "goglog.ini",
+      "size": 1213
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\italiano.ini",
+      "name": "italiano.ini",
+      "size": 1255
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\language.ini",
+      "name": "language.ini",
+      "size": 1140
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MFC42D.DLL",
+      "name": "MFC42D.DLL",
+      "size": 929844,
+      "sha256": "f21ea77d3fefbc3e1c9174234e498f0ff6d16a85c7146c8362140da2eb4a6d9f",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MFCD42D.DLL",
+      "name": "MFCD42D.DLL",
+      "size": 274485,
+      "sha256": "9ddf03d07e41d3085b4723c1cdc81dd6ccbd32e5b0a5ea19d54b93d1385877c4",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MFCN42D.DLL",
+      "name": "MFCN42D.DLL",
+      "size": 41013,
+      "sha256": "9adac631730e867aa021fd11b31726f28c5a4adfc15629944523869fdf570eb4",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MFCO42D.DLL",
+      "name": "MFCO42D.DLL",
+      "size": 798773,
+      "sha256": "b1c614b71aa5a5a8fb7a066536300f57733ebe4988eb7061d749f8a1d29ab328",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MSVCIRTD.DLL",
+      "name": "MSVCIRTD.DLL",
+      "size": 94285,
+      "sha256": "318142d1c350a73e886dc264319b90e319dc81bd921ffd4db73313d89eb88381",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MSVCP60D.DLL",
+      "name": "MSVCP60D.DLL",
+      "size": 516173,
+      "sha256": "68deb8cad3c055beebd3748aaed06e8ad4a365c18ac198ac6bc7c3ac7cd3496f",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\MSVCRTD.DLL",
+      "name": "MSVCRTD.DLL",
+      "size": 401484,
+      "sha256": "df5feadc91d74d3e4b5cd77180ce80b31427b0f2c7a171b05c0cfdd669c6ef5c",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\NvRemixLauncher32.exe",
+      "name": "NvRemixLauncher32.exe",
+      "size": 148592,
+      "sha256": "69698d2cc7ab6ce439eee02e6715aa5fc3c0b5520716541436ccfdaa79a80b78",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\R3_Setup_DX8.exe",
+      "name": "R3_Setup_DX8.exe",
+      "size": 450560,
+      "sha256": "bf7a5667aedd8aee63992e1c1186a22c2a6309b876986ef38b699c77afcd873f",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\Rayman3.exe",
+      "name": "Rayman3.exe",
+      "size": 2916704,
+      "sha256": "64deefd3a7b14a32124aa9b31ebba84e1a7c9a4a54ee40d9b65b4043ff1be15c",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\unins000.exe",
+      "name": "unins000.exe",
+      "size": 1343048,
+      "sha256": "5761e7789d813626cd68ee1e62429cfeb92bdd814cd29ef12fc4ae9ec1dbaff3",
+      "machine": "0x14c"
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\unins000.ini",
+      "name": "unins000.ini",
+      "size": 41
+    },
+    {
+      "scope": "installed-game-root",
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\winmm.dll",
+      "name": "winmm.dll",
+      "size": 2169856,
+      "sha256": "baba99929487b005bb9b168acfd852550055f22e5f1059c9032765209bb185e5",
+      "machine": "0x14c"
+    }
+  ]
+}

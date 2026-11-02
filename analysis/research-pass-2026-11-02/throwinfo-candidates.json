@@ -1,0 +1,51 @@
+{
+  "recorded_throwinfo": "0x70918018",
+  "method": "Scan file-backed x86 ThrowInfo candidates with same low 16 address bits, assuming 64KiB-aligned module load; validate pointer graph to ASCII MSVC type names. Candidate module bases are inferred, not recorded.",
+  "scope": [
+    {
+      "image": "d3d9.dll",
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+      "preferred_base": "0x10000000",
+      "size_of_image": "0xe5000"
+    },
+    {
+      "image": "d3d8_real.dll",
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+      "preferred_base": "0x10000000",
+      "size_of_image": "0x22000"
+    },
+    {
+      "image": "d3d8.dll",
+      "sha256": "1978fcffa6e891482794bac9a696c614cbad4c9bc1b5571c296ae0f9bec0e1f3",
+      "preferred_base": "0x10000000",
+      "size_of_image": "0x24000"
+    },
+    {
+      "image": "d3d8abi.exe",
+      "sha256": "8bf3b3d8919da59a3ee7e8ff1a7b8571c937bdfd9c0485ad82947029b0339332",
+      "preferred_base": "0x400000",
+      "size_of_image": "0x36000"
+    }
+  ],
+  "selfcheck": "Known shim RVA 0xc8018 resolves to std::system_error and three bases",
+  "candidates": [
+    {
+      "rva": "0xc8018",
+      "attributes": 0,
+      "unwind_va": "0x1000fbd0",
+      "catchable_names": [
+        ".?AVsystem_error@std@@",
+        ".?AV_System_error@std@@",
+        ".?AVruntime_error@std@@",
+        ".?AVexception@std@@"
+      ],
+      "inferred_live_module_base": "0x70850000",
+      "image": "d3d9.dll"
+    }
+  ],
+  "limitations": [
+    "No live module map was recorded for this pointer.",
+    "System DLLs and other loaded modules were not scanned.",
+    "Static candidates do not establish the dynamic throw origin, call stack or lock ownership."
+  ]
+}

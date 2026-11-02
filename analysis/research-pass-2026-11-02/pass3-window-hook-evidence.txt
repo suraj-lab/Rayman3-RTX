@@ -1,0 +1,36 @@
+
+=== BetterRayman3.dll
+-- 00-open.json ev None
+-- 30-widescreen-strings.json ev ev_350c084de2ea039ba1ed9bd20864ec3646cde74cd2688d0b289e96848730eebf
+   {"address": "0x100395f8", "value": "D:\\Users\\RibShark\\Documents\\Projects\\BetterRayman3\\Rayman3.WidescreenFix\\external\\Hooking.Patterns\\Hooking.Patterns.h"}
+   {"address": "0x10039734", "value": "C:\\Windows\\Ubisoft\\Ubi.ini"}
+-- 31-xref-0.json ev ev_6c9464016c44a1037bfd65f1dbd5c58493760845f6af89a62d2ae14022cb7c33
+   status : "unresolved"
+   name : "GetActiveWindow"
+-- 31-xref-1.json ev ev_85003e840c16ff9c8ae25481ff1f771919e6605e8b8ad036bea5a1cdf3a6d9c4
+   status : "unresolved"
+   name : "GetProcessWindowStation"
+-- 99-close.json ev None
+-- snapshot.json ev None
+
+=== UltimateASILoader-winmm.dll
+-- 00-open.json ev None
+-- 20-xref-0.json ev ev_564e9cc6fcd57c828c08a48358243165e8c04249925576cdfb9ce414fd62ac9c
+   status : "unresolved"
+   name : "SetWindowPos"
+-- 20-xref-1.json ev ev_91a93ec22392e57cb0d1d1eb96967b52e210539f4a24fb6191affca583321238
+   status : "unresolved"
+   name : "SetWindowTextW"
+-- 20-xref-2.json ev ev_831d09fc39ed11b3004888cddf3656173b2b0148a9f3abef793732f2f8bdff1f
+   status : "unresolved"
+   name : "GetProcAddress"
+-- 20-xref-3.json ev ev_97463786775fa428df509f07ead258487384dc532761bcad98bfda520341dd13
+   status : "unresolved"
+   name : "LoadLibraryExW"
+-- 21-window-strings.json ev ev_363525bd34cb9f33aaf9cf8d66373e7858f60fcf3cec510b8b0d477342c79360
+-- 22-entry.json ev ev_77952b2d6e0d1f81079658835e4fa4293e42e427edfcbfeda7aa90b7cdd7fa63
+   referenced_strings : []
+   referenced_names : [{"address": "0x1002d8c5", "value": "dllmain_dispatch", "source_address": "0x1002da12"}, {"address": "0x1002da09", "value": "LAB_1002da09", "source_address": "0x1002da02"}, {"address": "0x1002dffe", "value": "___security_init_cookie", "source_address": "0x1002da04"}]
+   incoming_references : [{"source_address": "0x10000148", "target_address": "0x1002d9fb", "source_procedure": null, "target_procedure": {"address": "0x1002d9fb", "name": "entry", "classification": {"external": false, "thunk": false, "thunk_target": null, "provenance": "ghidra-function-manager"}, "body": {"available": true, "provenance": "ghidra-function-body-address-set", "ranges": [{"start": "0x1002d9fb", "end": "0x1002da1d"}], "total_bytes": 35, "span_bytes": 35, "non_contiguous": false, "contains_entry": true}}, "kind": {"available": true, "provenance": "ghidra-reference-manager", "type": "DATA", "flow": false, "call": false, "jump": false, "data": true, "read": false, "write": false, "indirect": false, "computed": false, "conditional": false, "terminal": false, "primary": true, "operand_index": 0, "external": false}}]
+-- 99-close.json ev None
+-- snapshot.json ev None

@@ -1,0 +1,17 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_8inyihr6\d3d8_real.dll, Direct3DCreate8=70CB1010
+Direct3DCreate8(220) call #1 -> 04214AC8
+  patched CreateDevice slot 15: 70CB1850 -> 70CE1490
+Direct3DCreate8(220) call #2 -> 042144D8
+  patched CreateDevice slot 15: 70CE1490 -> 70CE1490
+CreateDevice: adapter=0 type=1 behaviour=0x00000020 backbuffer=320x240 fmt=0 windowed=1
+CreateDevice -> hr=0x00000000
+device vtable hooked
+SetTransform VIEW       [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000044 pos=XYZRHW tex=0 nrm=0 dif=1 stride=20
+RemixAPI: InitializeLibrary -> 11  (0=SUCCESS, 11=NOT_INITIALIZED)
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=1
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: no
+  FVF 0x00000044 pos=XYZRHW stride=20  draws=1

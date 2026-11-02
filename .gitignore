@@ -1,0 +1,43 @@
+# Third-party payloads and bulk archives (re-downloadable, not source)
+/dl/
+/ex/
+/tools/
+/abitest/
+*.7z
+*.zip
+
+# Game/state backups and save data
+/backups/
+/saves/
+
+# Staged Remix runtimes copied per test case (~280 MB each)
+/tests/*/.trex/
+/tests/*/.trex_arm64/
+/tests/*/rtx-remix/
+/tests/*/GAMEDATA/
+/tests/*/videos/
+
+# Binaries and build outputs (source is tracked; artefacts are not)
+*.dll
+*.exe
+*.obj
+*.exp
+*.lib
+*.pdb
+*.ilk
+*.asi
+*.dmp
+*.sample
+
+# Logs at repo root only; per-run evidence logs under tests/ stay tracked
+/*.log
+
+# 103 MB abi.log from the 2026-10 livelock run; the fact is recorded, the blob is not
+/tests/remix_abi_9w02g0cg/abi.log
+
+# Editor/OS noise
+.vscode/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini

@@ -1,0 +1,18 @@
+[
+  {
+    "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\scripts\\BetterRayman3.asi.disabled",
+    "relative_path": "scripts\\BetterRayman3.asi.disabled",
+    "size": 259072,
+    "scope": "scripts",
+    "sha256": "44e79c3bebbee0a9ef435296be6bc549d214472ec3f1de6343628c8c5eb2dbbc",
+    "is_pe": true
+  },
+  {
+    "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\_remix_off\\D3D8.dll.dgvoodoo",
+    "relative_path": "_remix_off\\D3D8.dll.dgvoodoo",
+    "size": 409600,
+    "scope": "_remix_off",
+    "sha256": "c0bb2b88cbbf92fcf7c07e921edbccdab68346dd68025757b8d047441f61b6bd",
+    "is_pe": true
+  }
+]

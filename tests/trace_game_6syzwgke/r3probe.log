@@ -1,0 +1,12 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8_real.dll, Direct3DCreate8=6FB91010
+ExceptionTrace: host RaiseException import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 04280318
+  patched CreateDevice slot 15: 6FB91850 -> 703316D0
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=2880x1800 fmt=21 windowed=0
+CreateDevice -> hr=0x00000000
+device vtable hooked
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=0
+  saw XYZRHW buffers: no | saw XYZ buffers: no

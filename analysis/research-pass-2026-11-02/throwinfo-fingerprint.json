@@ -1,0 +1,10 @@
+{
+  "recorded_bad_count": -956022387,
+  "candidate_image": "d3d9.dll",
+  "throwinfo_rva": "0xc8018",
+  "unwind_rva": "0xfbd0",
+  "unwind_first_four_bytes": "8d4104c7",
+  "decoded_signed_value": -956022387,
+  "exact_match": true,
+  "interpretation": "Independent static fingerprint supports the shim std::system_error candidate; still not a captured dynamic module map or throw stack."
+}

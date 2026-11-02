@@ -1,0 +1,28 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_cejwvdmy\remix_bundled_d3d8to9_proxy\d3d8_real.dll, Direct3DCreate8=70F51010
+ExceptionTrace: host RaiseException import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 03889F48
+  patched CreateDevice slot 15: 70F51850 -> 70F816D0
+Direct3DCreate8(220) call #2 -> 037ED948
+  patched CreateDevice slot 15: 70F816D0 -> 70F816D0
+CreateDevice: adapter=0 type=1 behaviour=0x00000020 backbuffer=320x240 fmt=0 windowed=1
+CreateDevice -> hr=0x00000000
+device vtable hooked
+SetTransform VIEW       [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000044 pos=XYZRHW tex=0 nrm=0 dif=1 stride=20
+RemixAPI: shim present but no remixapi_InitializeLibrary export
+EXCEPTION code=0xE0420001 flags=0x00000001 count=2 tid=11120 caller=0002175B module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_cejwvdmy\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x0000175B
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE0420002 flags=0x00000000 count=2 tid=11120 caller=000217B8 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_cejwvdmy\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x000017B8
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE06D7363 flags=0x00000001 count=3 tid=11120 caller=0002281D module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_cejwvdmy\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x0000281D
+  exception arg[0]=0x19930520
+  exception arg[1]=0x030FFA48
+  exception arg[2]=0x0003E350
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=1
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: no
+  FVF 0x00000044 pos=XYZRHW stride=20  draws=1

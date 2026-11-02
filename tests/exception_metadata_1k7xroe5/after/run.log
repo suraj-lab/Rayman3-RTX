@@ -1,0 +1,1 @@
+PASS: x86 ThrowInfo type array at +12, not destructor at +4

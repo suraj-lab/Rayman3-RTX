@@ -1,0 +1,32 @@
+harness pid=12616 tid=37572
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=0440AE60 present=320x240 windowed=1 flags=0x20
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+LIFECYCLE: begin hwnd=02C21732 image=00E10000
+lifecycle pump 400ms -> 4 messages dispatched
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 400ms -> 1 messages dispatched
+lifecycle WM_SIZE(512x384) -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle pump 600ms -> 1 messages dispatched
+LIFECYCLE: clean (3/3 messages clean)
+reuse-window: second CreateDevice on same hwnd -> hr=0x8876086A device=00000000
+reuse-window: second device released
+lifecycle pump 600ms -> 0 messages dispatched
+PASS: device creation and triangle submission
+Exception record: code=0xE0420001 flags=0x00000001 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+Exception record: code=0xE0420002 flags=0x00000000 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+FIRSTCHANCE C++ throw tid=37572 addr=7558FE35 params=3
+  exception object=00D6F9C4 throwInfo=00E3F558
+  throwInfo has no catchable type array
+  throw stack: 1 frames
+  throw frame[0]=00E11C87 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_4mtl76je\d3d8abi.exe offset=0x1C87
+Exception forwarding: caught=1 noncontinuable=1 continuable=1 continued=1 cpp=1
+lifecycle WM_DESTROY -> entering DestroyWindow
+lifecycle WM_DESTROY -> DestroyWindow returned

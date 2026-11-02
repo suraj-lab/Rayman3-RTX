@@ -1,0 +1,15 @@
+{
+  "created": "2026-11-01T22:57:30.428209+00:00",
+  "candidate": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\src\\d3d8proxy.exit-trace.dll",
+  "candidate_sha256": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+  "matrix_evidence": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\abi_6jd4pkuk",
+  "full_chain_evidence": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\remix_abi_npvuorj_",
+  "source_sha256": {
+    "src/d3d8proxy.cpp": "b34084b9f77fd79a8a6c49082424d87749dfb69f4db28f2390d0ac3a8a930e26",
+    "src/d3d8abi.cpp": "0ba22270d8c698d037a2771de188f1e841805ada71fefa52ab533586dba8739a",
+    "tests/run_abi.py": "8c5db12f3df186d5b52a19878faf0f243947db5f120aa06f57df52e0a29eeeb1",
+    "tests/run_remix_abi.py": "d5a3163d9966026bae9a444405c48f785904ab1dc52832d8c3ea52e65f7f4529"
+  },
+  "installed_proxy_sha256": "bf7adbe3db012c79edfdf98fed8dad837f83e318b8cfa414c72c6b7eca14867e",
+  "deployed_to_game": false
+}

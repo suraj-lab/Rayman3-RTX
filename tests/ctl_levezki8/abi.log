@@ -1,0 +1,8 @@
+harness pid=28220 tid=18748
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x8876086C device=00000000 present=3440x1440 windowed=0 flags=0x44
+slot 15 CreateDevice(HAL, HW) -> hr=0x8876086C device=00000000 present=3440x1440 windowed=0 flags=0x44
+FAIL: no device
+lifecycle WM_DESTROY -> entering DestroyWindow
+lifecycle WM_DESTROY -> DestroyWindow returned

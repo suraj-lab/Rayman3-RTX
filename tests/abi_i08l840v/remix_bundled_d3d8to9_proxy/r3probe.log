@@ -1,0 +1,41 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8_real.dll, Direct3DCreate8=71351010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 02E1B768
+  patched CreateDevice slot 15: 71351850 -> 723C1740
+Direct3DCreate8(220) call #2 -> 02E696D0
+  patched CreateDevice slot 15: 723C1740 -> 723C1740
+CreateDevice: adapter=0 type=1 behaviour=0x00000020 backbuffer=320x240 fmt=0 windowed=1
+CreateDevice -> hr=0x00000000
+device vtable hooked
+SetTransform VIEW       [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000044 pos=XYZRHW tex=0 nrm=0 dif=1 stride=20
+RemixAPI: shim present but no remixapi_InitializeLibrary export
+EXCEPTION code=0xE0420001 flags=0x00000001 count=2 tid=12940 caller=00BF1D2B module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00001D2B
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE0420002 flags=0x00000000 count=2 tid=12940 caller=00BF1D85 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00001D85
+  exception arg[0]=0x13572468
+  exception arg[1]=0x24681357
+EXCEPTION code=0xE06D7363 flags=0x00000001 count=3 tid=12940 caller=00BF3C5D module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00003C5D
+  exception arg[0]=0x19930520
+  exception arg[1]=0x004FF8C4
+  exception arg[2]=0x00C1F618
+EXITPROCESS code=0 tid=12940 caller=00C07944
+  exit stack: 10 Windows-captured frames (may be incomplete)
+  exit frame[0]=723C19FF module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8.dll offset=0x000019FF
+  exit frame[1]=00C07944 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00017944
+  exit frame[2]=00C07911 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00017911
+  exit frame[3]=00C07A41 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00017A41
+  exit frame[4]=00BF2F2F module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_i08l840v\remix_bundled_d3d8to9_proxy\d3d8abi.exe offset=0x00002F2F
+  exit frame[5]=759E8238 module=C:\Windows\System32\KERNEL32.DLL offset=0x000B8238
+  exit frame[6]=7593E86C module=C:\Windows\System32\KERNEL32.DLL offset=0x0000E86C
+  exit frame[7]=7776BDB8 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0008BDB8
+  exit frame[8]=7776BD18 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0008BD18
+  exit frame[9]=778495FC module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001695FC
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=1
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: no
+  FVF 0x00000044 pos=XYZRHW stride=20  draws=1

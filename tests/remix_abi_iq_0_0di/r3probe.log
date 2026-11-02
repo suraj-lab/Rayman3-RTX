@@ -1,0 +1,26 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8_real.dll, Direct3DCreate8=7B841010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 03690998
+  patched CreateDevice slot 15: 7B841850 -> 7B811740
+Direct3DCreate8(220) call #2 -> 0368FEE8
+  patched CreateDevice slot 15: 7B811740 -> 7B811740
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=3440x1440 fmt=0 windowed=0
+EXITPROCESS code=3 tid=32628 caller=00E07FB4
+  exit stack: 11 Windows-captured frames (may be incomplete)
+  exit frame[0]=7B81196F module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8.dll offset=0x0000196F
+  exit frame[1]=00E07FB4 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8abi.exe offset=0x00007FB4
+  exit frame[2]=00E07F81 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8abi.exe offset=0x00007F81
+  exit frame[3]=00E08077 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8abi.exe offset=0x00008077
+  exit frame[4]=00E088F8 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8abi.exe offset=0x000088F8
+  exit frame[5]=00E026F5 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_iq_0_0di\d3d8abi.exe offset=0x000026F5
+  exit frame[6]=7552AE98 module=C:\Windows\System32\KERNELBASE.dll offset=0x0030AE98
+  exit frame[7]=75507D98 module=C:\Windows\System32\KERNELBASE.dll offset=0x002E7D98
+  exit frame[8]=777C50B8 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x000E50B8
+  exit frame[9]=7776BD18 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0008BD18
+  exit frame[10]=778495FC module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001695FC
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=0
+  saw XYZRHW buffers: no | saw XYZ buffers: no

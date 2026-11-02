@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/suraj-lab/Nier-Automata-Rendering",
+  "revision": "79394e598f4bea316837e86bf7003e3a6d6d46ab",
+  "files": {
+    "analysis/remix-probe/README.md": "8b417e89c6acdf87375c9578c5107dead2fb3f9176b45789a9ea6595f2f41c0a",
+    "analysis/remix-probe/triangle.cpp": "56ff65fb7bcc301da495c401cd6c2538bfa42b69bac821ade36a56d6ab395876",
+    "analysis/remix-probe/capture_to_mesh.py": "c38ec6a0fc5958397790d3685d189d7996dee8f4b1dc90d0f5d5ceac2097e8e9",
+    "analysis/remix-probe/scene_from_frame.py": "c42d39696b94353ad9ec9533cf92000816bb5657414503f9bc19507ce5469628",
+    "analysis/remix-probe/vendor/remix_c.h": "829119429af9f922e94df53b31e3106324ce0926c01b77dc650410d24cfcada0",
+    "analysis/checks/remix_live.cpp": "26d45e3ff79053552be335fa5aeed61f82c0796956d609e7b396023e969ab533",
+    "analysis/checks/remix_live.h": "65db4147a45612b23c207f3421569b1a35102c956cd1e87afa37b403b96b226c",
+    "analysis/checks/test_remix_live.py": "ab3d8eef3a2957478dc88b6d5ad7e49b094c7ba4855c3444c4788988882128ca"
+  }
+}

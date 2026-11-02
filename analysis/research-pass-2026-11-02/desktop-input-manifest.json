@@ -1,0 +1,69 @@
+{
+  "scope": "Authorized static analysis only. Do not execute targets.",
+  "artifacts": [
+    {
+      "name": "BetterRayman3.dll",
+      "source": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\ex\\better_rayman3_setup\\app\\BetterRayman3.dll",
+      "sha256": "44e79c3bebbee0a9ef435296be6bc549d214472ec3f1de6343628c8c5eb2dbbc",
+      "size": 259072,
+      "state": "disabled installed ASI has matching content"
+    },
+    {
+      "name": "UltimateASILoader-winmm.dll",
+      "source": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\winmm.dll",
+      "sha256": "baba99929487b005bb9b168acfd852550055f22e5f1059c9032765209bb185e5",
+      "size": 2169856,
+      "state": "installed; recorded loaded in earlier dialog dump"
+    },
+    {
+      "name": "ALchemy-dsound.dll",
+      "source": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dsound.dll",
+      "sha256": "83a6c680a0575eaa6dc937fc7c193c336ea1f6bf2bb63e6fca282e127d3e57c1",
+      "size": 1261568,
+      "state": "installed; recorded loaded in earlier dialog dump"
+    },
+    {
+      "name": "Xidi-dinput8.dll",
+      "source": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\ex\\ray3fix\\files\\added_files\\dinput8.dll",
+      "sha256": "ba38631e804e2bfc313d89115156e44909da747644c42d6d65df0f173e4e4f79",
+      "size": 361760,
+      "state": "extracted pack only; not locally installed as dinput8.dll"
+    },
+    {
+      "name": "BR3-dinput8.dll",
+      "source": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\ex\\better_rayman3_setup\\app\\dinput8.dll",
+      "sha256": "a4e12d245f9212143449b5544296de832bdcebbc62e2270eb98cb3b0677dab8d",
+      "size": 156160,
+      "state": "extracted Better Rayman loader/input wrapper"
+    },
+    {
+      "name": "DXWrapper-d3d8.dll",
+      "source": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\ex\\better_rayman3_setup\\app\\d3d8.dll",
+      "sha256": "5c4a808db809e05889a83977fd0ca984e534c2c7f4fcbbf0b312957776d87c47",
+      "size": 759808,
+      "state": "extracted wrapper; not current installed D3D8"
+    },
+    {
+      "name": "dgVoodoo-D3D8.dll",
+      "source": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\_remix_off\\D3D8.dll.dgvoodoo",
+      "sha256": "c0bb2b88cbbf92fcf7c07e921edbccdab68346dd68025757b8d047441f61b6bd",
+      "size": 409600,
+      "state": "preserved disabled renderer"
+    },
+    {
+      "name": "Remix-d3d9.dll",
+      "source": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d9.dll",
+      "sha256": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+      "size": 908400,
+      "state": "installed; matched-PDB shim reference"
+    },
+    {
+      "name": "d3d8to9.dll",
+      "source": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d8_real.dll",
+      "sha256": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+      "size": 134256,
+      "state": "installed converter"
+    }
+  ],
+  "remote_workspace": "/home/suraj/Projects/rayman3-rtx-analysis/hooks_0s8j6upd"
+}

@@ -1,0 +1,225 @@
+Microsoft (R) COFF/PE Dumper Version 14.51.36260.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file C:\Users\suraj\Projects\Rayman 3 RTX\analysis\shim-symbols-1.6.1\d3d9.dll
+
+File Type: DLL
+
+mtx_do_lock:
+  1007D014: push        ebp
+  1007D015: mov         ebp,esp
+  1007D017: sub         esp,18h
+  1007D01A: mov         eax,dword ptr [___security_cookie]
+  1007D01F: xor         eax,ebp
+  1007D021: mov         dword ptr [ebp-4],eax
+  1007D024: push        ebx
+  1007D025: mov         ebx,dword ptr [ebp+8]
+  1007D028: push        esi
+  1007D029: mov         esi,dword ptr [ebp+0Ch]
+  1007D02C: push        edi
+  1007D02D: mov         eax,dword ptr [ebx]
+  1007D02F: and         eax,0FFFFFEFFh
+  1007D034: mov         dword ptr [ebp-18h],esi
+  1007D037: cmp         eax,1
+  1007D03A: jne         1007D076
+  1007D03C: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D042: cmp         dword ptr [ebx+28h],eax
+  1007D045: je          1007D062
+  1007D047: mov         eax,dword ptr [ebx+4]
+  1007D04A: mov         esi,dword ptr [eax]
+  1007D04C: mov         ecx,esi
+  1007D04E: call        dword ptr [___guard_check_icall_fptr]
+  1007D054: lea         ecx,[ebx+4]
+  1007D057: call        esi
+  1007D059: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D05F: mov         dword ptr [ebx+28h],eax
+  1007D062: inc         dword ptr [ebx+2Ch]
+  1007D065: xor         eax,eax
+  1007D067: mov         ecx,dword ptr [ebp-4]
+  1007D06A: pop         edi
+  1007D06B: pop         esi
+  1007D06C: xor         ecx,ebp
+  1007D06E: pop         ebx
+  1007D06F: call        @__security_check_cookie@4
+  1007D074: leave
+  1007D075: ret
+  1007D076: test        esi,esi
+  1007D078: jne         1007D0A0
+  1007D07A: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D080: cmp         dword ptr [ebx+28h],eax
+  1007D083: je          1007D162
+  1007D089: mov         eax,dword ptr [ebx+4]
+  1007D08C: mov         esi,dword ptr [eax]
+  1007D08E: mov         ecx,esi
+  1007D090: call        dword ptr [___guard_check_icall_fptr]
+  1007D096: lea         ecx,[ebx+4]
+  1007D099: call        esi
+  1007D09B: jmp         1007D162
+  1007D0A0: mov         eax,dword ptr [esi]
+  1007D0A2: xor         edi,edi
+  1007D0A4: cmp         dword ptr [esi+4],edi
+  1007D0A7: jl          1007D13E
+  1007D0AD: jg          1007D0B7
+  1007D0AF: cmp         eax,edi
+  1007D0B1: jb          1007D13E
+  1007D0B7: or          eax,dword ptr [esi+4]
+  1007D0BA: jne         1007D0C1
+  1007D0BC: cmp         dword ptr [esi+8],edi
+  1007D0BF: jle         1007D13E
+  1007D0C1: lea         eax,[ebp-14h]
+  1007D0C4: push        1
+  1007D0C6: push        eax
+  1007D0C7: call        _xtime_get
+  1007D0CC: mov         eax,dword ptr [esi]
+  1007D0CE: pop         ecx
+  1007D0CF: pop         ecx
+  1007D0D0: mov         ecx,dword ptr [ebp-10h]
+  1007D0D3: cmp         ecx,dword ptr [esi+4]
+  1007D0D6: jl          1007D0FD
+  1007D0D8: jg          1007D0DF
+  1007D0DA: cmp         dword ptr [ebp-14h],eax
+  1007D0DD: jb          1007D0FD
+  1007D0DF: cmp         dword ptr [ebp-14h],eax
+  1007D0E2: jne         1007D1B5
+  1007D0E8: cmp         ecx,dword ptr [esi+4]
+  1007D0EB: jne         1007D1B5
+  1007D0F1: mov         eax,dword ptr [ebp-0Ch]
+  1007D0F4: cmp         eax,dword ptr [esi+8]
+  1007D0F7: jge         1007D1B5
+  1007D0FD: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D103: cmp         dword ptr [ebx+28h],eax
+  1007D106: je          1007D162
+  1007D108: mov         eax,dword ptr [ebx+4]
+  1007D10B: mov         esi,dword ptr [eax+8]
+  1007D10E: lea         eax,[ebp-14h]
+  1007D111: push        eax
+  1007D112: push        dword ptr [ebp-18h]
+  1007D115: call        __Xtime_diff_to_millis2
+  1007D11A: pop         ecx
+  1007D11B: pop         ecx
+  1007D11C: push        eax
+  1007D11D: mov         ecx,esi
+  1007D11F: call        dword ptr [___guard_check_icall_fptr]
+  1007D125: lea         ecx,[ebx+4]
+  1007D128: call        esi
+  1007D12A: test        al,al
+  1007D12C: jne         1007D162
+  1007D12E: lea         eax,[ebp-14h]
+  1007D131: push        1
+  1007D133: push        eax
+  1007D134: call        _xtime_get
+  1007D139: mov         esi,dword ptr [ebp-18h]
+  1007D13C: jmp         1007D0CC
+  1007D13E: lea         esi,[ebx+28h]
+  1007D141: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D147: cmp         dword ptr [esi],eax
+  1007D149: je          1007D167
+  1007D14B: mov         eax,dword ptr [ebx+4]
+  1007D14E: mov         esi,dword ptr [eax+4]
+  1007D151: mov         ecx,esi
+  1007D153: call        dword ptr [___guard_check_icall_fptr]
+  1007D159: lea         ecx,[ebx+4]
+  1007D15C: call        esi
+  1007D15E: test        al,al
+  1007D160: je          1007D1B2
+  1007D162: lea         esi,[ebx+28h]
+  1007D165: xor         edi,edi
+  1007D167: mov         ecx,dword ptr [ebx+2Ch]
+  1007D16A: lea         eax,[ecx+1]
+  1007D16D: mov         dword ptr [ebx+2Ch],eax
+  1007D170: cmp         eax,1
+  1007D173: jle         1007D187
+  1007D175: test        dword ptr [ebx],100h
+  1007D17B: jne         1007D18F
+  1007D17D: mov         dword ptr [ebx+2Ch],ecx
+  1007D180: mov         edi,102h
+  1007D185: jmp         1007D18F
+  1007D187: call        dword ptr [__imp__GetCurrentThreadId@0]
+  1007D18D: mov         dword ptr [esi],eax
+  1007D18F: test        edi,edi
+  1007D191: je          1007D065
+  1007D197: cmp         edi,102h
+  1007D19D: je          1007D1A3
+  1007D19F: push        4
+  1007D1A1: jmp         1007D1AC
+  1007D1A3: mov         esi,dword ptr [ebp-18h]
+  1007D1A6: test        esi,esi
+  1007D1A8: jne         1007D1B5
+  1007D1AA: push        3
+  1007D1AC: pop         eax
+  1007D1AD: jmp         1007D067
+  1007D1B2: mov         esi,dword ptr [ebp-18h]
+  1007D1B5: mov         eax,dword ptr [esi]
+  1007D1B7: or          eax,dword ptr [esi+4]
+  1007D1BA: jne         1007D1CB
+  1007D1BC: mov         eax,dword ptr [esi+8]
+  1007D1BF: neg         eax
+  1007D1C1: sbb         eax,eax
+  1007D1C3: add         eax,3
+  1007D1C6: jmp         1007D067
+  1007D1CB: push        2
+  1007D1CD: jmp         1007D1AC
+?try_lock@stl_critical_section_win7@details@Concurrency@@UAE_NXZ:
+  1007D1CF: lea         eax,[ecx+4]
+  1007D1D2: push        eax
+  1007D1D3: call        dword ptr [__imp__TryAcquireSRWLockExclusive@4]
+  1007D1D9: test        al,al
+  1007D1DB: setne       al
+  1007D1DE: ret
+?try_lock_for@stl_critical_section_win7@details@Concurrency@@UAE_NI@Z:
+  1007D1DF: lea         eax,[ecx+4]
+  1007D1E2: push        eax
+  1007D1E3: call        dword ptr [__imp__TryAcquireSRWLockExclusive@4]
+  1007D1E9: test        al,al
+  1007D1EB: setne       al
+  1007D1EE: ret         4
+?unlock@stl_critical_section_win7@details@Concurrency@@UAEXXZ:
+  1007D1F1: lea         eax,[ecx+4]
+  1007D1F4: push        eax
+  1007D1F5: call        dword ptr [__imp__ReleaseSRWLockExclusive@4]
+  1007D1FB: ret
+__Mtx_destroy_in_situ:
+  1007D1FC: push        ebp
+  1007D1FD: mov         ebp,esp
+  1007D1FF: push        esi
+  1007D200: push        edi
+  1007D201: mov         edi,dword ptr [ebp+8]
+  1007D204: mov         eax,dword ptr [edi+4]
+  1007D207: mov         esi,dword ptr [eax+10h]
+  1007D20A: mov         ecx,esi
+  1007D20C: call        dword ptr [___guard_check_icall_fptr]
+  1007D212: lea         ecx,[edi+4]
+  1007D215: call        esi
+  1007D217: pop         edi
+  1007D218: pop         esi
+  1007D219: pop         ebp
+  1007D21A: ret
+__Mtx_init_in_situ:
+  1007D21B: push        ebp
+  1007D21C: mov         ebp,esp
+  1007D21E: push        esi
+  1007D21F: mov         esi,dword ptr [ebp+8]
+  1007D222: lea         ecx,[esi+4]
+  1007D225: call        ??0stl_critical_section_win7@details@Concurrency@@QAE@XZ
+  1007D22A: or          dword ptr [esi+28h],0FFFFFFFFh
+  1007D22E: mov         eax,dword ptr [ebp+0Ch]
+  1007D231: and         dword ptr [esi+2Ch],0
+  1007D235: mov         dword ptr [esi],eax
+  1007D237: pop         esi
+  1007D238: pop         ebp
+  1007D239: ret
+__Mtx_lock:
+  1007D23A: push        ebp
+  1007D23B: mov         ebp,esp
+  1007D23D: push        0
+  1007D23F: push        dword ptr [ebp+8]
+  1007D242: call        1007D014
+  1007D247: pop         ecx
+  1007D248: pop         ecx
+  1007D249: pop         ebp
+  1007D24A: ret
+
+  Summary
+
+       A9000 .text

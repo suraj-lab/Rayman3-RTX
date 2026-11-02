@@ -1,0 +1,120 @@
+harness pid=22056 tid=27016
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=0392FEB0 present=2880x1800 windowed=0 flags=0x44
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+LIFECYCLE: begin hwnd=004A0434 image=00240000
+lifecycle pump 400ms -> 5 messages dispatched
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 400ms -> 0 messages dispatched
+lifecycle WM_SIZE(512x384) -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle pump 600ms -> 0 messages dispatched
+STRESS: begin 8 activate/resize cycles
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 6 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 1 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 0 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 0 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 1 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 0 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 1 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+lifecycle WM_ACTIVATE(ACTIVE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(TRUE) -> LRESULT 0x1
+lifecycle WM_SETFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 60ms -> 0 messages dispatched
+lifecycle WM_SIZE -> LRESULT 0x0
+lifecycle WM_WINDOWPOSCHANGED -> LRESULT 0x0
+lifecycle WM_DISPLAYCHANGE(800x600) -> LRESULT 0x0
+lifecycle WM_KILLFOCUS -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+lifecycle WM_NCACTIVATE(FALSE) -> LRESULT 0x1
+STRESS: clean (80/80 messages clean)
+LIFECYCLE: clean (3/3 messages clean)
+PASS: device creation and triangle submission
+Exception record: code=0xE0420001 flags=0x00000001 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+Exception record: code=0xE0420002 flags=0x00000000 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+FIRSTCHANCE C++ throw tid=27016 addr=7558FE35 params=3
+  exception object=02FBF974 throwInfo=0026F618
+  catchable types=1
+  catchable type[0] name=.H
+  throw stack: 1 frames
+  throw frame[0]=00241C87 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_l0j6koem\d3d8abi.exe offset=0x1C87
+Exception forwarding: caught=1 noncontinuable=1 continuable=1 continued=1 cpp=1
+lifecycle WM_DESTROY -> entering DestroyWindow
+lifecycle WM_DESTROY -> DestroyWindow returned

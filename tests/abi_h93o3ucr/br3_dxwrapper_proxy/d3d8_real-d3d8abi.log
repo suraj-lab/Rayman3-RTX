@@ -1,0 +1,62 @@
+22560 21:58:47.243 Starting dxwrapper v1.0.990.18 DDrawCompat v0.2.1 DxWnd v2.03.60
+22560 21:58:47.251 Windows 10 64-bit (10.0.28000)
+22560 21:58:47.251 d3d8abi.exe (PID:22896)
+22560 21:58:47.251 Reading config file: d3d8_real.ini
+22560 21:58:47.251 Set exception handler
+22560 21:58:47.251 HotPatch: 'UnhandledExceptionFilter' is not patch aware at addr=76F66250
+22560 21:58:47.251 HotPatch: 'SetUnhandledExceptionFilter' is not patch aware at addr=76F65EF0
+22560 21:58:47.251 Disabling High DPI Scaling...
+22560 21:58:47.251 Loading winspool.drv library
+22560 21:58:47.259 Loading cryptsp.dll library
+22560 21:58:47.259 Loading bcrypt.dll library
+22560 21:58:47.260 Loading dplayx.dll library
+22560 21:58:47.263 Loading d3d8.dll library
+22560 21:58:47.263 Hooking d3d8.dll APIs...
+22560 21:58:47.263 HotPatch: 'Direct3DCreate8' is not patch aware at addr=70F81820
+22560 21:58:47.263 Loading dxgi.dll library
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=DXGIRevertToSxS Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=DXGID3D10ETWRundown Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTCloseAdapter Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTDestroyAllocation Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTDestroyContext Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTDestroyDevice Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTDestroySynchronizationObject Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTQueryAdapterInfo Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetDisplayPrivateDriverFormat Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSignalSynchronizationObject Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTUnlock Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=OpenAdapter10 Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=OpenAdapter10_2 Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTCreateAllocation Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTCreateContext Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTCreateDevice Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTCreateSynchronizationObject Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTEscape Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetContextSchedulingPriority Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetDeviceState Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetDisplayModeList Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetMultisampleMethodList Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetRuntimeData Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTGetSharedPrimaryHandle Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTLock Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTOpenAdapterFromHdc Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTOpenResource Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTPresent Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTQueryAllocationResidency Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTQueryResourceInfo Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTRender Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetAllocationPriority Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetContextSchedulingPriority Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetDisplayMode Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetGammaRamp Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTSetVidPnSourceOwner Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTWaitForSynchronizationObject Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=D3DKMTWaitForVerticalBlankEvent Failed to get address.
+22560 21:58:47.266 Loading winmm.dll library
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=winmmDbgOut Failed to get address.
+22560 21:58:47.266 GetFunctionAddress: EXCEPTION module=winmmSetDebugLevel Failed to get address.
+22560 21:58:47.268 Loading dsound.dll library
+22560 21:58:47.269 Loading dinput.dll library
+22560 21:58:47.270 Loading d3d9.dll library
+22560 21:58:47.274 Loading ddraw.dll library
+22560 21:58:47.276 GetFunctionAddress: EXCEPTION module=CheckFullscreen Failed to get address.

@@ -1,0 +1,30 @@
+harness pid=540 tid=33948
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=035A0428 present=2880x1800 windowed=0 flags=0x44
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+LIFECYCLE: begin hwnd=0012080C image=00860000
+lifecycle pump 400ms -> 5 messages dispatched
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 400ms -> 1 messages dispatched
+lifecycle WM_SIZE(512x384) -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+FIRSTCHANCE C++ throw tid=33948 addr=7558FE35 params=3
+  exception object=030FEDE0 throwInfo=70918018
+  catchable types=4
+  catchable type[0] name=.?AVsystem_error@std@@
+  catchable type[1] name=.?AV_System_error@std@@
+  catchable type[2] name=.?AVruntime_error@std@@
+  catchable type[3] name=.?AVexception@std@@
+  object string @+0x3F: "p S["
+  object string @+0x5B: "p S["
+  throw stack: 0 frames
+UNHANDLED code=0xE06D7363 flags=0x00000001 addr=7558FE35 module=C:\Windows\System32\KERNELBASE.dll offset=0x36FE35 params=3
+  unhandled arg[0]=0x19930520
+  unhandled arg[1]=0x30FEDE0
+  unhandled arg[2]=0x70918018

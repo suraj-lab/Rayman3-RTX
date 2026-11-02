@@ -1,0 +1,28 @@
+harness pid=29192 tid=11324
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=0DA31EC8 present=320x240 windowed=1 flags=0x20
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+LIFECYCLE: begin hwnd=03DF1676 image=006C0000
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle WM_SIZE(640x480) -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+LIFECYCLE: clean (3/3 messages clean)
+PASS: device creation and triangle submission
+Exception record: code=0xE0420001 flags=0x00000001 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+Exception record: code=0xE0420002 flags=0x00000000 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+FIRSTCHANCE C++ throw tid=11324 addr=7558FE35 params=3
+  exception object=0285F79C throwInfo=00749C8C
+  throwInfo has no catchable type array
+  object string @+0x8: "q~,Lp"
+  object string @+0x39: "q,Lv"
+  throw stack: 1 frames
+  throw frame[0]=006C8337 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\ctl_kqlglg0s\d3d8abi.exe offset=0x8337
+Exception forwarding: caught=1 noncontinuable=1 continuable=1 continued=1 cpp=1
+lifecycle WM_DESTROY -> entering DestroyWindow
+lifecycle WM_DESTROY -> DestroyWindow returned

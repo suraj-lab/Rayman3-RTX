@@ -1,0 +1,24 @@
+[
+  {
+    "label": "default (fix ON)",
+    "exit": "0",
+    "throw_type": [
+      ".H"
+    ],
+    "verdict": [
+      "LIFECYCLE: clean (3/3 messages clean)"
+    ],
+    "case": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\remix_abi_l0j6koem"
+  },
+  {
+    "label": "R3_NO_WINDOW_CHANGES=0 (fix OFF)",
+    "exit": "3221226525",
+    "throw_type": [
+      ".?AVsystem_error@std@@"
+    ],
+    "verdict": [
+      "LIFECYCLE: begin hwnd=0012080C image=00860000"
+    ],
+    "case": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\remix_abi_cdlwjgb4"
+  }
+]

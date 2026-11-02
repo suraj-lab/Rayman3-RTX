@@ -1,0 +1,22 @@
+{
+  "scope": "CPU-only x86 ThrowInfo parser regression; D3D harness main renamed and never called",
+  "before_exit": 1,
+  "after_exit": 0,
+  "source_hashes": {
+    "src\\d3d8abi.cpp": "293495052238ead476fb3547518fba3fc280cef1a74c9aa1c686ecb4969c0e9f",
+    "tests\\exception_metadata.cpp": "69b34fd6622e283b1c517f09a64a0127bfad0b05e3c7a0c05ba1dd7f4318c139"
+  },
+  "evidence_hashes": {
+    "before.log": "9b9e9ded6dd0e49d40ef55fa911c9a44fe8b8dfaa95c7025eab07fdf3c0739da",
+    "build-before.log": "76418f8b6862e466a926285485cd7f9cc0e8d703f84210e31e524b6eebae2651",
+    "build.cmd": "e1b7125a8517b081523d2fc11ceb35aadd271e301b059486bc3d582d3eba1d5d",
+    "exception_metadata.exe": "ee7d5470050283a7d5f56378ea4837599a8dbedb07d289df8b78fdb0bbb9a64d",
+    "exception_metadata.log": "4547f03fb1f09968a1dc98f71960e82834e418b6297753855502981c438fa348",
+    "exception_metadata.obj": "50ca10c3a5167dc7f1f3a38ec18f1b8a78686477d63ba06737cd6484c83bb107",
+    "after\\build.log": "76418f8b6862e466a926285485cd7f9cc0e8d703f84210e31e524b6eebae2651",
+    "after\\exception_metadata.exe": "9327ccbb294f1141400f4240424960ddb6511e6b2bb6a055e8f24a32604adbb7",
+    "after\\exception_metadata.log": "84d3e9d5e127a5753d42a8838c82fb7ab0b16eb6f808fcc5adaa4d68e563cf43",
+    "after\\exception_metadata.obj": "a2719cfbc25799c6c4ea8598d1bed5e6099b6113d199e53bc50d728fbe49c9e3",
+    "after\\run.log": "a4b24261b2dcf8c2bb44ba73fb63156234ea45d700ea5c5b101204e318a9e57a"
+  }
+}

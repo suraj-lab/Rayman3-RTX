@@ -1,0 +1,30 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8_real.dll, Direct3DCreate8=6FB91010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 0424FC78
+  patched CreateDevice slot 15: 6FB91850 -> 70331740
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=2880x1800 fmt=21 windowed=0
+CreateDevice -> hr=0x00000000
+device vtable hooked
+EXITPROCESS code=3 tid=32464 caller=004028B0
+  exit stack: 15 Windows-captured frames (may be incomplete)
+  exit frame[0]=7033196F module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8.dll offset=0x0000196F
+  exit frame[1]=004028B0 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe offset=0x000028B0
+  exit frame[2]=00551A88 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe offset=0x00151A88
+  exit frame[3]=76967000 module=C:\Windows\System32\KERNELBASE.dll offset=0x00377000
+  exit frame[4]=768D7D98 module=C:\Windows\System32\KERNELBASE.dll offset=0x002E7D98
+  exit frame[5]=77B8D520 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0015D520
+  exit frame[6]=77BBF50C module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0018F50C
+  exit frame[7]=77BE3DA6 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001B3DA6
+  exit frame[8]=77BED854 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001BD854
+  exit frame[9]=77BE3E5F module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001B3E5F
+  exit frame[10]=702BFE2A module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d9.dll offset=0x0007FE2A
+  exit frame[11]=702BD324 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d9.dll offset=0x0007D324
+  exit frame[12]=702BD2E8 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d9.dll offset=0x0007D2E8
+  exit frame[13]=7029FF04 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d9.dll offset=0x0005FF04
+  exit frame[14]=7029E0AA module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d9.dll offset=0x0005E0AA
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=0 DrawPrimitiveUP=0
+  saw XYZRHW buffers: no | saw XYZ buffers: no

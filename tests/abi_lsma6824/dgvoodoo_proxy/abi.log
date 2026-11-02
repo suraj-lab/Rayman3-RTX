@@ -1,0 +1,15 @@
+harness pid=8340 tid=27528
+FIRSTCHANCE C++ throw tid=27528 addr=7558FE35 params=3
+  exception object=001EF2C8 throwInfo=58046A60
+  catchable types=-1957298293
+  throw stack: 0 frames
+FIRSTCHANCE C++ throw tid=27528 addr=7558FE35 params=3
+  exception object=001EF2C8 throwInfo=58046A60
+  catchable types=-1957298293
+  throw stack: 0 frames
+FIRSTCHANCE C++ throw tid=27528 addr=7558FE35 params=3
+  exception object=001EF2C8 throwInfo=58046A60
+  catchable types=-1957298293
+  throw stack: 0 frames
+GetAdapterCount -> 3
+slot 14 GetAdapterMonitor -> 00010091 valid=1

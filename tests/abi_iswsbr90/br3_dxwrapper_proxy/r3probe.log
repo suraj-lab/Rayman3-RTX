@@ -1,0 +1,3 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_iswsbr90\br3_dxwrapper_proxy\d3d8_real.dll, Direct3DCreate8=1004C860
+ExceptionTrace: host RaiseException import hooked; forwarding unchanged

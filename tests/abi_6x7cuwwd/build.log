@@ -1,0 +1,4 @@
+d3d8abi.cpp
+d3d8proxy.cpp
+   Creating library d3d8proxy.lib and object d3d8proxy.exp
+d3d8proxy.exp : warning LNK4070: /OUT:d3d8.dll directive in .EXP differs from output filename 'd3d8proxy.dll'; ignoring directive

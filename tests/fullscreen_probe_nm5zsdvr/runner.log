@@ -1,0 +1,67 @@
+Evidence: C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_snxkrde5
+Launcher exit: 3221226525
+abi.log:
+harness pid=8764 tid=31824
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=0413E1E8 present=2880x1800 windowed=0 flags=0x44
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+LIFECYCLE: begin hwnd=0023039E image=00880000
+lifecycle pump 400ms -> 5 messages dispatched
+lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+lifecycle pump 400ms -> 1 messages dispatched
+lifecycle WM_SIZE(512x384) -> LRESULT 0x0
+lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+FIRSTCHANCE C++ throw tid=31824 addr=7558FE35 params=3
+  exception object=007BEB10 throwInfo=70918018
+  catchable types=-956022387
+  throw stack: 0 frames
+UNHANDLED code=0xE06D7363 flags=0x00000001 addr=7558FE35 module=C:\Windows\System32\KERNELBASE.dll offset=0x36FE35 params=3
+  unhandled arg[0]=0x19930520
+  unhandled arg[1]=0x7BEB10
+  unhandled arg[2]=0x70918018
+
+r3probe.log:
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_snxkrde5\d3d8_real.dll, Direct3DCreate8=71351010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 04133108
+  patched CreateDevice slot 15: 71351850 -> 723C1740
+Direct3DCreate8(220) call #2 -> 04133C50
+  patched CreateDevice slot 15: 723C1740 -> 723C1740
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=2880x1800 fmt=21 windowed=0
+CreateDevice -> hr=0x00000000
+device vtable hooked
+SetTransform VIEW       [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000044 pos=XYZRHW tex=0 nrm=0 dif=1 stride=20
+RemixAPI: InitializeLibrary -> 11  (0=SUCCESS, 11=NOT_INITIALIZED)
+
+Runtime diagnostics:
+[21:49:49.827] warn:  Skipping Emulated GPU adapter: Microsoft Direct3D12 (NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU))
+[21:49:49.827] warn:  Skipping CPU adapter: Microsoft Direct3D12 (Microsoft Basic Render Driver)
+[21:49:49.836] info:  Vulkan instance layers:
+[21:49:49.836] info:  Vulkan instance extensions:
+[21:49:49.843] info:    Vulkan: 1.4.351
+[21:49:50.290] warn:  DXVK: No state cache file found
+[21:49:50.290] warn:  DXVK: Creating new state cache file
+[21:49:56.064] info:    Buffer size:  2880x1800
+[21:49:56.365] info:    Buffer size:  2880x1800
+[21:49:56.389] info:    Buffer size:  2880x1800
+[21:49:56.402] info:  [RTX-Compatibility-Info] Trying to raytrace but not detecting a valid camera.
+Installed game DLL hashes unchanged
+Harness exit: 3221226525
+  lifecycle pump 400ms -> 5 messages dispatched
+  lifecycle WM_ACTIVATEAPP(TRUE) -> LRESULT 0x0
+  lifecycle pump 400ms -> 1 messages dispatched
+  lifecycle WM_SIZE(512x384) -> LRESULT 0x0
+  lifecycle WM_ACTIVATEAPP(FALSE) -> LRESULT 0x0
+Verdict: LIFECYCLE: begin hwnd=0023039E image=00880000
+Exit trace: none recorded
+Shim C++ throws: none recorded
+Evidence dir: C:\Users\suraj\Projects\Rayman 3 RTX\tests\remix_abi_snxkrde5

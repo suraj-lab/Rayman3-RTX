@@ -1,0 +1,432 @@
+{
+  "source": "tests\\runtime_error_jqz5cwkt\\Rayman3.dmp",
+  "source_sha256": "357b42d9b2efcc3b7e3103f07471a5854b9213cdbc9a11b516e15a6f103da33b",
+  "limitation": "Earlier dialog-state run, not latest runtime or current process state",
+  "modules": [
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\Rayman3.exe",
+      "base": "0x400000",
+      "size": 4739072
+    },
+    {
+      "path": "C:\\Windows\\System32\\ntdll.dll",
+      "base": "0x7ff80f570000",
+      "size": 4501504
+    },
+    {
+      "path": "C:\\Windows\\System32\\wow64.dll",
+      "base": "0x7ff80b440000",
+      "size": 352256
+    },
+    {
+      "path": "C:\\Windows\\System32\\wow64base.dll",
+      "base": "0x7ff80b990000",
+      "size": 45056
+    },
+    {
+      "path": "C:\\Windows\\System32\\wow64win.dll",
+      "base": "0x7ff80f0b0000",
+      "size": 524288
+    },
+    {
+      "path": "C:\\Windows\\System32\\wow64con.dll",
+      "base": "0x7ff80c840000",
+      "size": 28672
+    },
+    {
+      "path": "C:\\Windows\\System32\\xtajitse.dll",
+      "base": "0x778b0000",
+      "size": 1495040
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\Rayman3.exe",
+      "base": "0x400000",
+      "size": 4739072
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\ntdll.dll",
+      "base": "0x77a30000",
+      "size": 2445312
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\KERNEL32.DLL",
+      "base": "0x76f60000",
+      "size": 1175552
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\KERNELBASE.dll",
+      "base": "0x765f0000",
+      "size": 4042752
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\apphelp.dll",
+      "base": "0x70fd0000",
+      "size": 733184
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\AcLayers.dll",
+      "base": "0x70d10000",
+      "size": 2695168
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msvcrt.dll",
+      "base": "0x764d0000",
+      "size": 1179648
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\GDI32.dll",
+      "base": "0x76c20000",
+      "size": 376832
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\ucrtbase.dll",
+      "base": "0x76dc0000",
+      "size": 1650688
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\win32u.dll",
+      "base": "0x74470000",
+      "size": 114688
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\gdi32full.dll",
+      "base": "0x76090000",
+      "size": 1368064
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msvcp_win.dll",
+      "base": "0x74580000",
+      "size": 544768
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\sechost.dll",
+      "base": "0x74610000",
+      "size": 544768
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\user32.dll",
+      "base": "0x73ca0000",
+      "size": 2023424
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\RPCRT4.dll",
+      "base": "0x76c80000",
+      "size": 1294336
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\imm32.dll",
+      "base": "0x74ae0000",
+      "size": 151552
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\advapi32.dll",
+      "base": "0x763f0000",
+      "size": 909312
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\shell32.dll",
+      "base": "0x75570000",
+      "size": 10510336
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\shlwapi.dll",
+      "base": "0x74960000",
+      "size": 335872
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\winmm.dll",
+      "base": "0x70a60000",
+      "size": 2777088
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\binkw32.dll",
+      "base": "0x30000000",
+      "size": 364544
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\dsound.dll",
+      "base": "0x10000000",
+      "size": 1273856
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\ole32.dll",
+      "base": "0x761e0000",
+      "size": 2101248
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dinput8.dll",
+      "base": "0x709f0000",
+      "size": 229376
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\combase.dll",
+      "base": "0x77080000",
+      "size": 3899392
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\IPHLPAPI.DLL",
+      "base": "0x72d40000",
+      "size": 151552
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\ws2_32.dll",
+      "base": "0x74ca0000",
+      "size": 438272
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dbghelp.dll",
+      "base": "0x70680000",
+      "size": 2564096
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d9.dll",
+      "base": "0x70900000",
+      "size": 937984
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\OLEAUT32.dll",
+      "base": "0x75f80000",
+      "size": 1105920
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dbgcore.dll",
+      "base": "0x70630000",
+      "size": 241664
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\D3D8.dll",
+      "base": "0x70a30000",
+      "size": 147456
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\bcryptPrimitives.dll",
+      "base": "0x73ea0000",
+      "size": 491520
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\d3d9.dll",
+      "base": "0x703f0000",
+      "size": 2330624
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\version.dll",
+      "base": "0x71340000",
+      "size": 32768
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dwmapi.dll",
+      "base": "0x703c0000",
+      "size": 155648
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dxcore.dll",
+      "base": "0x70350000",
+      "size": 417792
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\hid.dll",
+      "base": "0x70330000",
+      "size": 45056
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\setupapi.dll",
+      "base": "0x73fb0000",
+      "size": 4530176
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\cfgmgr32.dll",
+      "base": "0x702e0000",
+      "size": 262144
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\devobj.dll",
+      "base": "0x702b0000",
+      "size": 151552
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\wintrust.dll",
+      "base": "0x72ea0000",
+      "size": 409600
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\crypt32.dll",
+      "base": "0x72f10000",
+      "size": 1216512
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msasn1.dll",
+      "base": "0x71930000",
+      "size": 65536
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\dinput.dll",
+      "base": "0x70280000",
+      "size": 159744
+    },
+    {
+      "path": "C:\\Program Files\\GOG Galaxy\\Games\\Rayman 3\\d3d8_real.dll",
+      "base": "0x70250000",
+      "size": 139264
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msvcp140.dll",
+      "base": "0x701b0000",
+      "size": 614400
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\VCRUNTIME140.dll",
+      "base": "0x70190000",
+      "size": 118784
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\windows.storage.dll",
+      "base": "0x719c0000",
+      "size": 12693504
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\inputhost.dll",
+      "base": "0x70010000",
+      "size": 1536000
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\CoreMessaging.dll",
+      "base": "0x6ff00000",
+      "size": 1073152
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\SHCore.dll",
+      "base": "0x744a0000",
+      "size": 868352
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\winmm.dll",
+      "base": "0x6fec0000",
+      "size": 208896
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\CRYPTBASE.DLL",
+      "base": "0x718c0000",
+      "size": 40960
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\kernel.appcore.dll",
+      "base": "0x72e00000",
+      "size": 86016
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\clbcatq.dll",
+      "base": "0x75260000",
+      "size": 618496
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\WinTypes.dll",
+      "base": "0x6fdb0000",
+      "size": 1007616
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\Windows.UI.dll",
+      "base": "0x6fc90000",
+      "size": 1093632
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\DSound.dll",
+      "base": "0x6fb80000",
+      "size": 1077248
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\powrprof.dll",
+      "base": "0x72e40000",
+      "size": 352256
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\winmmbase.dll",
+      "base": "0x6fb50000",
+      "size": 151552
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\umpdc.dll",
+      "base": "0x72e20000",
+      "size": 86016
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\MMDevApi.dll",
+      "base": "0x6fa60000",
+      "size": 962560
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\wdmaud.drv",
+      "base": "0x6fa10000",
+      "size": 262144
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\wdmaud2.drv",
+      "base": "0x6f9e0000",
+      "size": 126976
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\avrt.dll",
+      "base": "0x6feb0000",
+      "size": 36864
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\AUDIOSES.DLL",
+      "base": "0x6f780000",
+      "size": 2445312
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msacm32.drv",
+      "base": "0x6f760000",
+      "size": 49152
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msacm32.dll",
+      "base": "0x6f740000",
+      "size": 106496
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\midimap.dll",
+      "base": "0x6f730000",
+      "size": 36864
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\uxtheme.dll",
+      "base": "0x72d70000",
+      "size": 520192
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\resourcepolicyclient.dll",
+      "base": "0x6f710000",
+      "size": 77824
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\msctf.dll",
+      "base": "0x73140000",
+      "size": 1150976
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\textinputframework.dll",
+      "base": "0x6f5f0000",
+      "size": 1130496
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\CoreUIComponents.dll",
+      "base": "0x6f360000",
+      "size": 2641920
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\oleacc.dll",
+      "base": "0x725e0000",
+      "size": 360448
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\D3DX9_43.dll",
+      "base": "0x6f160000",
+      "size": 2093056
+    },
+    {
+      "path": "C:\\Windows\\SysWOW64\\TextShaping.dll",
+      "base": "0x6f060000",
+      "size": 983040
+    }
+  ]
+}

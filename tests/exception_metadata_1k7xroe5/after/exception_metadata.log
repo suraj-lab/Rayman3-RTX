@@ -1,0 +1,3 @@
+  catchable types=1
+  catchable type[0] name=.?AVsystem_error@std@@
+  throwInfo has no catchable type array

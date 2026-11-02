@@ -1,0 +1,14 @@
+{
+  "tag": "NKLvY_Cy",
+  "reason": "deploy proxy with D3DCREATE_NOWINDOWCHANGES (0x800)",
+  "previous_src_proxy_sha256": "bf7adbe3db012c79edfdf98fed8dad837f83e318b8cfa414c72c6b7eca14867e",
+  "installed_before": {
+    "D3D8.dll": "ba32d48ccba9f40e05c1c7b02f07255ded8c955c228968d81658ba1da06125ab",
+    "d3d9.dll": "a2cbebedf6cc495fa47feb79d197756242e547938784011a83f99b86458dc750",
+    "d3d8_real.dll": "de81bdfcacef68c9aa59e54c053115bbc7732dca09838b5383e0a057b3db0eb0",
+    "dgVoodoo.conf": "45ef1864e344c9b7ae5ee641bd21ac4d83dbacf37c2453f56251fe8843743289"
+  },
+  "backup": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\backups\\before_nowindowchanges_NKLvY_Cy",
+  "installed_after": "062d2c7423cc02eefd68af764b91b554e4e7599ece243a763c21769f1cfc8cb4",
+  "new_build": "C:\\Users\\suraj\\Projects\\Rayman 3 RTX\\tests\\abi_edx9z50p\\d3d8proxy.dll"
+}
