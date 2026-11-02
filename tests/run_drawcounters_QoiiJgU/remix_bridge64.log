@@ -1,0 +1,34 @@
+[23:29:28.448] info:  [23:29:28.433] info:  Native arch: arm64
+[23:29:28.448] info:  [23:29:28.446] info:  No default config found for: C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:29:28.448] info:  [23:29:28.446] info:  Trying to open config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:29:28.448] info:  [23:29:28.446] info:  Found user config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:29:28.448] info:  [23:29:28.446] info:  Effective configuration:
+[23:29:28.448] info:  [23:29:28.446] info:    exposeRemixApi = True
+[23:29:28.448] info:  ==================
+[23:29:28.448] info:  NVIDIA RTX Remix Bridge Server
+[23:29:28.448] info:  ==================
+[23:29:28.448] info:  Version: remix-main+5a7eec84
+[23:29:28.448] info:  Running in x64 mode!
+[23:29:28.448] info:  Launched server with GUID 0e9ee993-a8ea-4ce1-b5a8-d5b9d6cad236
+[23:29:28.448] info:  Server started up, waiting for connection from client...
+[23:29:28.448] info:  Registering exit callback in case client exits unexpectedly.
+[23:29:28.448] info:  Registering message channel for asynchronous message handling.
+[23:29:28.448] info:  Initializing D3D9...
+[23:29:28.467] info:  Message channel MessageChannelServer established.
+[23:29:29.001] info:  D3D9 interface object creation succeeded!
+[23:29:29.001] info:  [RemixApi] Initialized RemixApi.
+[23:29:29.001] info:  Loaded D3D9 from C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\d3d9.dll
+[23:29:29.001] info:  Version of d3d9 loaded is DXVK
+[23:29:29.001] info:  Feature version parity confirmed!
+[23:29:29.001] info:  Sync request received, sending ACK response...
+[23:29:29.001] info:  Done! Now waiting for client to consume the response...
+[23:29:29.002] info:  Handshake completed! Now waiting for incoming commands...
+[23:29:31.430] info:  Server side D3D9 Device created successfully!
+[23:31:29.939] info:  D3D9 Module destroyed.
+[23:31:29.964] err:   1 objects discovered in Vertex Declaration map at Direct3D module eviction:
+[23:31:29.964] err:   	d6f -> 000000830DDD6F20
+[23:31:29.964] err:   1 objects discovered in Device map at Direct3D module eviction:
+[23:31:29.964] err:   	2 -> 00000083084D0000
+[23:31:29.964] info:  Command processing loop finished, cleaning up and exiting...
+[23:31:29.964] info:  Shutdown cleanup successful, exiting now!
+[23:31:29.965] info:  [Uptime]: 121s

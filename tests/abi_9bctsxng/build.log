@@ -1,0 +1,5 @@
+d3d8abi.cpp
+d3d8proxy.cpp
+C:\Users\suraj\Projects\Rayman 3 RTX\src\d3d8proxy.cpp(259): error C2065: 'g_texDraws': undeclared identifier
+C:\Users\suraj\Projects\Rayman 3 RTX\src\d3d8proxy.cpp(259): error C2065: 'g_noTexDraws': undeclared identifier
+C:\Users\suraj\Projects\Rayman 3 RTX\src\d3d8proxy.cpp(259): error C2065: 'g_shaderDraws': undeclared identifier

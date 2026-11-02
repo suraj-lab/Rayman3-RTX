@@ -1,0 +1,1805 @@
+d3d8proxy loaded (pre-D3D-init)
+loaded C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8_real.dll, Direct3DCreate8=705A1010
+HostTrace: host RaiseException import hooked; forwarding unchanged
+HostTrace: host ExitProcess import hooked; forwarding unchanged
+Direct3DCreate8(220) call #1 -> 04288890
+  patched CreateDevice slot 15: 705A1850 -> 723C17C0
+CreateDevice: adapter=0 type=1 behaviour=0x00000044 backbuffer=2880x1800 fmt=21 windowed=0
+  R3_NO_WINDOW_CHANGES: behaviour 0x00000044 -> 0x00000844
+CreateDevice -> hr=0x00000000
+device vtable hooked
+  new FVF 0x00000144 pos=XYZRHW tex=1 nrm=0 dif=1 stride=28
+RemixAPI: InitializeLibrary -> 0  (0=SUCCESS, 11=NOT_INITIALIZED)
+RemixAPI: Shutdown=00000000 CreateMaterial=7069BD90 CreateMesh=7069C540 SetupCamera=00000000 DrawInstance=7069C9F0
+SetTransform VIEW       [-0.991 -0.123 -0.056 0.000] [0.135 -0.900 -0.413 0.000] [-0.000 0.417 -0.909 0.000] [0.480 153.930 121.341 1.000]
+SetTransform PROJECTION [1.096 0.000 0.000 0.000] [0.000 1.886 0.000 0.000] [0.000 0.000 1.000 1.000] [0.000 0.000 -0.250 0.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x00000352 pos=XYZ    tex=3 nrm=1 dif=1 stride=52
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+  new FVF 0x8B90B0C4 pos=XYZRHW tex=0 nrm=0 dif=1 stride=48
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform VIEW       [1.000 -0.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 1.000 -0.000 0.000] [-0.000 0.000 0.000 1.000]
+SetTransform PROJECTION [0.895 0.000 0.000 0.000] [0.000 1.586 0.000 0.000] [0.000 0.000 1.000 1.000] [0.000 0.000 -0.250 0.000]
+SetTransform VIEW       [-0.991 -0.122 -0.057 0.000] [0.135 -0.899 -0.417 0.000] [-0.000 0.420 -0.907 0.000] [0.546 153.553 121.771 1.000]
+SetTransform PROJECTION [1.096 0.000 0.000 0.000] [0.000 1.886 0.000 0.000] [0.000 0.000 1.000 1.000] [0.000 0.000 -0.250 0.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform WORLD      [0.085 -0.996 -0.036 0.000] [0.995 0.083 0.060 0.000] [-0.057 -0.041 0.998 0.000] [26.414 190.785 51.427 1.000]
+  new FVF 0x00000002 pos=XYZ    tex=0 nrm=0 dif=0 stride=12
+SetTransform WORLD      [0.585 -0.811 0.000 0.000] [0.811 0.585 0.000 0.000] [0.000 0.000 1.000 0.000] [26.467 190.784 50.577 1.000]
+SetTransform WORLD      [0.085 -0.996 -0.036 0.000] [0.995 0.083 0.060 0.000] [-0.057 -0.041 0.998 0.000] [26.414 190.785 51.427 1.000]
+SetTransform WORLD      [0.585 -0.811 0.000 0.000] [0.811 0.585 0.000 0.000] [0.000 0.000 1.000 0.000] [26.467 190.784 50.577 1.000]
+SetTransform VIEW       [1.000 -0.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 1.000 -0.000 0.000] [-0.000 0.000 0.000 1.000]
+SetTransform PROJECTION [0.895 0.000 0.000 0.000] [0.000 1.586 0.000 0.000] [0.000 0.000 1.000 1.000] [0.000 0.000 -0.250 0.000]
+SetTransform VIEW       [-0.991 -0.121 -0.057 0.000] [0.134 -0.897 -0.422 0.000] [-0.000 0.426 -0.905 0.000] [0.664 152.869 122.576 1.000]
+SetTransform PROJECTION [1.096 0.000 0.000 0.000] [0.000 1.886 0.000 0.000] [0.000 0.000 1.000 1.000] [0.000 0.000 -0.250 0.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [1.000 0.000 0.000 0.000] [0.000 1.000 0.000 0.000] [0.000 0.000 1.000 0.000] [0.000 0.000 0.000 1.000]
+SetTransform WORLD      [0.183 0.983 -0.000 0.000] [-0.983 0.183 0.000 0.000] [0.000 0.000 1.000 0.000] [6.238 81.776 8.200 1.000]
+SetTransform WORLD      [0.085 -0.996 -0.036 0.000] [0.995 0.083 0.060 0.000] [-0.057 -0.041 0.998 0.000] [26.413 190.794 51.319 1.000]
+SetTransform WORLD      [0.585 -0.811 0.000 0.000] [0.811 0.585 0.000 0.000] [0.000 0.000 1.000 0.000] [26.466 190.793 50.470 1.000]
+SetTransform WORLD      [0.085 -0.996 -0.036 0.000] [0.995 0.083 0.060 0.000] [-0.057 -0.041 0.998 0.000] [26.413 190.794 51.319 1.000]
+SetTransform WORLD      [0.585 -0.811 0.000 0.000] [0.811 0.585 0.000 0.000] [0.000 0.000 1.000 0.000] [26.466 190.793 50.470 1.000]
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=5000 DrawPrimitiveUP=0
+  draws with UVs=3696  without UVs=68  vertex-shader handles=1236
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=3532
+  FVF 0x00000352 pos=XYZ    stride=52  draws=164
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=1236
+  FVF 0x00000002 pos=XYZ    stride=12  draws=68
+  new FVF 0x00000112 pos=XYZ    tex=1 nrm=1 dif=0 stride=32
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=10000 DrawPrimitiveUP=0
+  draws with UVs=6970  without UVs=124  vertex-shader handles=2906
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=6430
+  FVF 0x00000352 pos=XYZ    stride=52  draws=534
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=2906
+  FVF 0x00000002 pos=XYZ    stride=12  draws=124
+  FVF 0x00000112 pos=XYZ    stride=32  draws=6
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=15000 DrawPrimitiveUP=0
+  draws with UVs=9747  without UVs=140  vertex-shader handles=5113
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=8669
+  FVF 0x00000352 pos=XYZ    stride=52  draws=1062
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=5113
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=16
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=20000 DrawPrimitiveUP=0
+  draws with UVs=12418  without UVs=140  vertex-shader handles=7442
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=10765
+  FVF 0x00000352 pos=XYZ    stride=52  draws=1626
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=7442
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=27
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=25000 DrawPrimitiveUP=0
+  draws with UVs=15192  without UVs=140  vertex-shader handles=9668
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=12995
+  FVF 0x00000352 pos=XYZ    stride=52  draws=2160
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=9668
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=37
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=30000 DrawPrimitiveUP=0
+  draws with UVs=17882  without UVs=140  vertex-shader handles=11978
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=15116
+  FVF 0x00000352 pos=XYZ    stride=52  draws=2718
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=11978
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=48
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=35000 DrawPrimitiveUP=0
+  draws with UVs=20618  without UVs=140  vertex-shader handles=14242
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=17302
+  FVF 0x00000352 pos=XYZ    stride=52  draws=3258
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=14242
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=58
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=40000 DrawPrimitiveUP=0
+  draws with UVs=23378  without UVs=140  vertex-shader handles=16482
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=19499
+  FVF 0x00000352 pos=XYZ    stride=52  draws=3810
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=16482
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=69
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=45000 DrawPrimitiveUP=0
+  draws with UVs=26054  without UVs=140  vertex-shader handles=18806
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=21652
+  FVF 0x00000352 pos=XYZ    stride=52  draws=4322
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=18806
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=80
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=50000 DrawPrimitiveUP=0
+  draws with UVs=28832  without UVs=140  vertex-shader handles=21028
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=23913
+  FVF 0x00000352 pos=XYZ    stride=52  draws=4828
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=21028
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=91
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=55000 DrawPrimitiveUP=0
+  draws with UVs=31631  without UVs=140  vertex-shader handles=23229
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=26195
+  FVF 0x00000352 pos=XYZ    stride=52  draws=5334
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=23229
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=102
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=60000 DrawPrimitiveUP=0
+  draws with UVs=34508  without UVs=140  vertex-shader handles=25352
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=28555
+  FVF 0x00000352 pos=XYZ    stride=52  draws=5840
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=25352
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=113
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=65000 DrawPrimitiveUP=0
+  draws with UVs=37295  without UVs=140  vertex-shader handles=27565
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=30832
+  FVF 0x00000352 pos=XYZ    stride=52  draws=6348
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=27565
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=70000 DrawPrimitiveUP=0
+  draws with UVs=40062  without UVs=140  vertex-shader handles=29798
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=33087
+  FVF 0x00000352 pos=XYZ    stride=52  draws=6860
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=29798
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=75000 DrawPrimitiveUP=0
+  draws with UVs=42855  without UVs=140  vertex-shader handles=32005
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=35342
+  FVF 0x00000352 pos=XYZ    stride=52  draws=7398
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=32005
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=80000 DrawPrimitiveUP=0
+  draws with UVs=45729  without UVs=140  vertex-shader handles=34131
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=37704
+  FVF 0x00000352 pos=XYZ    stride=52  draws=7910
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=34131
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=85000 DrawPrimitiveUP=0
+  draws with UVs=48596  without UVs=140  vertex-shader handles=36264
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=40057
+  FVF 0x00000352 pos=XYZ    stride=52  draws=8424
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=36264
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=90000 DrawPrimitiveUP=0
+  draws with UVs=51412  without UVs=140  vertex-shader handles=38448
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=42329
+  FVF 0x00000352 pos=XYZ    stride=52  draws=8968
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=38448
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=95000 DrawPrimitiveUP=0
+  draws with UVs=54351  without UVs=140  vertex-shader handles=40509
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=44772
+  FVF 0x00000352 pos=XYZ    stride=52  draws=9464
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=40509
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=115
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=100000 DrawPrimitiveUP=0
+  draws with UVs=56987  without UVs=140  vertex-shader handles=42873
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=46844
+  FVF 0x00000352 pos=XYZ    stride=52  draws=9972
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=42873
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=171
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=105000 DrawPrimitiveUP=0
+  draws with UVs=59626  without UVs=140  vertex-shader handles=45234
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=48835
+  FVF 0x00000352 pos=XYZ    stride=52  draws=10494
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=45234
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=297
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=110000 DrawPrimitiveUP=0
+  draws with UVs=62170  without UVs=140  vertex-shader handles=47690
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=50717
+  FVF 0x00000352 pos=XYZ    stride=52  draws=11030
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=47690
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=423
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=115000 DrawPrimitiveUP=0
+  draws with UVs=64852  without UVs=140  vertex-shader handles=50008
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=52767
+  FVF 0x00000352 pos=XYZ    stride=52  draws=11522
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=50008
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=563
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=120000 DrawPrimitiveUP=0
+  draws with UVs=67546  without UVs=140  vertex-shader handles=52314
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=54817
+  FVF 0x00000352 pos=XYZ    stride=52  draws=12026
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=52314
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=703
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=125000 DrawPrimitiveUP=0
+  draws with UVs=70230  without UVs=140  vertex-shader handles=54630
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=56861
+  FVF 0x00000352 pos=XYZ    stride=52  draws=12526
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=54630
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=843
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=130000 DrawPrimitiveUP=0
+  draws with UVs=72868  without UVs=140  vertex-shader handles=56992
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=58916
+  FVF 0x00000352 pos=XYZ    stride=52  draws=12969
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=56992
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=983
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=135000 DrawPrimitiveUP=0
+  draws with UVs=75469  without UVs=140  vertex-shader handles=59391
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=60967
+  FVF 0x00000352 pos=XYZ    stride=52  draws=13379
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=59391
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1123
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=140000 DrawPrimitiveUP=0
+  draws with UVs=77978  without UVs=140  vertex-shader handles=61882
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=63017
+  FVF 0x00000352 pos=XYZ    stride=52  draws=13698
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=61882
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1263
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=145000 DrawPrimitiveUP=0
+  draws with UVs=80518  without UVs=140  vertex-shader handles=64342
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=65067
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14048
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=64342
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1403
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=150000 DrawPrimitiveUP=0
+  draws with UVs=83034  without UVs=140  vertex-shader handles=66826
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=67117
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14374
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=66826
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1543
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=155000 DrawPrimitiveUP=0
+  draws with UVs=85467  without UVs=140  vertex-shader handles=69393
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=69167
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14634
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=69393
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1666
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=160000 DrawPrimitiveUP=0
+  draws with UVs=88085  without UVs=140  vertex-shader handles=71775
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=71583
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14792
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=71775
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=165000 DrawPrimitiveUP=0
+  draws with UVs=90960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=74290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=170000 DrawPrimitiveUP=0
+  draws with UVs=95960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=79290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=175000 DrawPrimitiveUP=0
+  draws with UVs=100960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=84290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=180000 DrawPrimitiveUP=0
+  draws with UVs=105960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=89290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=185000 DrawPrimitiveUP=0
+  draws with UVs=110960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=94290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=190000 DrawPrimitiveUP=0
+  draws with UVs=115960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=99290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=195000 DrawPrimitiveUP=0
+  draws with UVs=120960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=104290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=200000 DrawPrimitiveUP=0
+  draws with UVs=125960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=109290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=205000 DrawPrimitiveUP=0
+  draws with UVs=130960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=114290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=210000 DrawPrimitiveUP=0
+  draws with UVs=135960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=119290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=215000 DrawPrimitiveUP=0
+  draws with UVs=140960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=124290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=220000 DrawPrimitiveUP=0
+  draws with UVs=145960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=129290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=225000 DrawPrimitiveUP=0
+  draws with UVs=150960  without UVs=140  vertex-shader handles=73900
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=134290
+  FVF 0x00000352 pos=XYZ    stride=52  draws=14960
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=1710
+  new FVF 0x8B89E414 pos=XYZRHW tex=4 nrm=1 dif=0 stride=48
+  new FVF 0x00000312 pos=XYZ    tex=3 nrm=1 dif=0 stride=48
+  new FVF 0x00000142 pos=XYZ    tex=1 nrm=0 dif=1 stride=24
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=230000 DrawPrimitiveUP=0
+  draws with UVs=153353  without UVs=140  vertex-shader handles=76507
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=135829
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15066
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=2294
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=2607
+  FVF 0x00000312 pos=XYZ    stride=48  draws=55
+  FVF 0x00000142 pos=XYZ    stride=24  draws=109
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=235000 DrawPrimitiveUP=0
+  draws with UVs=154744  without UVs=140  vertex-shader handles=80116
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136068
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15218
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=3129
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=6216
+  FVF 0x00000312 pos=XYZ    stride=48  draws=130
+  FVF 0x00000142 pos=XYZ    stride=24  draws=199
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=240000 DrawPrimitiveUP=0
+  draws with UVs=156374  without UVs=140  vertex-shader handles=83486
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136209
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15312
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=4414
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=9586
+  FVF 0x00000312 pos=XYZ    stride=48  draws=178
+  FVF 0x00000142 pos=XYZ    stride=24  draws=261
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=245000 DrawPrimitiveUP=0
+  draws with UVs=158103  without UVs=140  vertex-shader handles=86757
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136326
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15388
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=5833
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=12857
+  FVF 0x00000312 pos=XYZ    stride=48  draws=216
+  FVF 0x00000142 pos=XYZ    stride=24  draws=340
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=250000 DrawPrimitiveUP=0
+  draws with UVs=159834  without UVs=140  vertex-shader handles=90026
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136440
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15466
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=7257
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=16126
+  FVF 0x00000312 pos=XYZ    stride=48  draws=255
+  FVF 0x00000142 pos=XYZ    stride=24  draws=416
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=255000 DrawPrimitiveUP=0
+  draws with UVs=161568  without UVs=140  vertex-shader handles=93292
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136557
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15542
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=8682
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=19392
+  FVF 0x00000312 pos=XYZ    stride=48  draws=293
+  FVF 0x00000142 pos=XYZ    stride=24  draws=494
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=260000 DrawPrimitiveUP=0
+  draws with UVs=163324  without UVs=140  vertex-shader handles=96536
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136674
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15620
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=10125
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=22636
+  FVF 0x00000312 pos=XYZ    stride=48  draws=332
+  FVF 0x00000142 pos=XYZ    stride=24  draws=573
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=265000 DrawPrimitiveUP=0
+  draws with UVs=165050  without UVs=140  vertex-shader handles=99810
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136788
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15698
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=11544
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=25910
+  FVF 0x00000312 pos=XYZ    stride=48  draws=370
+  FVF 0x00000142 pos=XYZ    stride=24  draws=650
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=270000 DrawPrimitiveUP=0
+  draws with UVs=166777  without UVs=140  vertex-shader handles=103083
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=136911
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15778
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=12944
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=29183
+  FVF 0x00000312 pos=XYZ    stride=48  draws=411
+  FVF 0x00000142 pos=XYZ    stride=24  draws=733
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=275000 DrawPrimitiveUP=0
+  draws with UVs=168117  without UVs=140  vertex-shader handles=106743
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137130
+  FVF 0x00000352 pos=XYZ    stride=52  draws=15924
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=13747
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=32843
+  FVF 0x00000312 pos=XYZ    stride=48  draws=484
+  FVF 0x00000142 pos=XYZ    stride=24  draws=832
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=280000 DrawPrimitiveUP=0
+  draws with UVs=169655  without UVs=140  vertex-shader handles=110205
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137277
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16022
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=14935
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=36305
+  FVF 0x00000312 pos=XYZ    stride=48  draws=533
+  FVF 0x00000142 pos=XYZ    stride=24  draws=888
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=285000 DrawPrimitiveUP=0
+  draws with UVs=171353  without UVs=140  vertex-shader handles=113507
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137382
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16094
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=16350
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=39607
+  FVF 0x00000312 pos=XYZ    stride=48  draws=568
+  FVF 0x00000142 pos=XYZ    stride=24  draws=959
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=290000 DrawPrimitiveUP=0
+  draws with UVs=173096  without UVs=140  vertex-shader handles=116764
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137490
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16166
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=17803
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=42864
+  FVF 0x00000312 pos=XYZ    stride=48  draws=605
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1032
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=295000 DrawPrimitiveUP=0
+  draws with UVs=174864  without UVs=140  vertex-shader handles=119996
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137601
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16240
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=19274
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=46096
+  FVF 0x00000312 pos=XYZ    stride=48  draws=642
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1107
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=300000 DrawPrimitiveUP=0
+  draws with UVs=176618  without UVs=140  vertex-shader handles=123242
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137712
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16312
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=20735
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=49342
+  FVF 0x00000312 pos=XYZ    stride=48  draws=678
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1181
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=305000 DrawPrimitiveUP=0
+  draws with UVs=178369  without UVs=140  vertex-shader handles=126491
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137820
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16386
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=22194
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=52591
+  FVF 0x00000312 pos=XYZ    stride=48  draws=715
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1254
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=310000 DrawPrimitiveUP=0
+  draws with UVs=180124  without UVs=140  vertex-shader handles=129736
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=137931
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16458
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=23655
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=55836
+  FVF 0x00000312 pos=XYZ    stride=48  draws=751
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1329
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=315000 DrawPrimitiveUP=0
+  draws with UVs=181874  without UVs=140  vertex-shader handles=132986
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138039
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16532
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=25114
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=59086
+  FVF 0x00000312 pos=XYZ    stride=48  draws=788
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1401
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=320000 DrawPrimitiveUP=0
+  draws with UVs=183629  without UVs=140  vertex-shader handles=136231
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138150
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16604
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=26575
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=62331
+  FVF 0x00000312 pos=XYZ    stride=48  draws=824
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1476
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=325000 DrawPrimitiveUP=0
+  draws with UVs=185377  without UVs=140  vertex-shader handles=139483
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138258
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16678
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=28033
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=65583
+  FVF 0x00000312 pos=XYZ    stride=48  draws=860
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1548
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=330000 DrawPrimitiveUP=0
+  draws with UVs=187134  without UVs=140  vertex-shader handles=142726
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138369
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16750
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=29495
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=68826
+  FVF 0x00000312 pos=XYZ    stride=48  draws=897
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1623
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=335000 DrawPrimitiveUP=0
+  draws with UVs=188911  without UVs=140  vertex-shader handles=145949
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138480
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16824
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=30975
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=72049
+  FVF 0x00000312 pos=XYZ    stride=48  draws=934
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1698
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=340000 DrawPrimitiveUP=0
+  draws with UVs=190680  without UVs=140  vertex-shader handles=149180
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138588
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16898
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=32452
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=75280
+  FVF 0x00000312 pos=XYZ    stride=48  draws=971
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1771
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=345000 DrawPrimitiveUP=0
+  draws with UVs=192417  without UVs=140  vertex-shader handles=152443
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138699
+  FVF 0x00000352 pos=XYZ    stride=52  draws=16970
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=33895
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=78543
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1007
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1846
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=350000 DrawPrimitiveUP=0
+  draws with UVs=194183  without UVs=140  vertex-shader handles=155677
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=138807
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17044
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=35370
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=81777
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1044
+  FVF 0x00000142 pos=XYZ    stride=24  draws=1918
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=355000 DrawPrimitiveUP=0
+  draws with UVs=195580  without UVs=140  vertex-shader handles=159280
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=139011
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17062
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=36373
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=85380
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1111
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2023
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=360000 DrawPrimitiveUP=0
+  draws with UVs=196829  without UVs=140  vertex-shader handles=163031
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=139245
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17062
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=37231
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=89131
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1189
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2102
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=365000 DrawPrimitiveUP=0
+  draws with UVs=198210  without UVs=140  vertex-shader handles=166650
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=139476
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17198
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=38089
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=92750
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1267
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2180
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=370000 DrawPrimitiveUP=0
+  draws with UVs=199565  without UVs=140  vertex-shader handles=170295
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=139704
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17348
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=38914
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=96395
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1342
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2257
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=375000 DrawPrimitiveUP=0
+  draws with UVs=200897  without UVs=140  vertex-shader handles=173963
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=139926
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17496
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=39728
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=100063
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1416
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2331
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=380000 DrawPrimitiveUP=0
+  draws with UVs=202230  without UVs=140  vertex-shader handles=177630
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=140148
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17644
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=40542
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=103730
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1490
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2406
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=385000 DrawPrimitiveUP=0
+  draws with UVs=203563  without UVs=140  vertex-shader handles=181297
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=140370
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17792
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=41356
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=107397
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1564
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2481
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=390000 DrawPrimitiveUP=0
+  draws with UVs=205269  without UVs=140  vertex-shader handles=184591
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=141085
+  FVF 0x00000352 pos=XYZ    stride=52  draws=17924
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=42082
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=110691
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1630
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2548
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=395000 DrawPrimitiveUP=0
+  draws with UVs=207112  without UVs=140  vertex-shader handles=187748
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=141969
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18052
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=42786
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=113848
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1694
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2611
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=400000 DrawPrimitiveUP=0
+  draws with UVs=208955  without UVs=140  vertex-shader handles=190905
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=142865
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18178
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=43479
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=117005
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1757
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2676
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=405000 DrawPrimitiveUP=0
+  draws with UVs=210783  without UVs=140  vertex-shader handles=194077
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=143747
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18304
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=44172
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=120177
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1820
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2740
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=410000 DrawPrimitiveUP=0
+  draws with UVs=212660  without UVs=140  vertex-shader handles=197200
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=144649
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18434
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=44887
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=123300
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1885
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2805
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=415000 DrawPrimitiveUP=0
+  draws with UVs=214502  without UVs=140  vertex-shader handles=200358
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=145544
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18561
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=45580
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=126458
+  FVF 0x00000312 pos=XYZ    stride=48  draws=1948
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2869
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=420000 DrawPrimitiveUP=0
+  draws with UVs=216346  without UVs=140  vertex-shader handles=203514
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=146430
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18688
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=46284
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=129614
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2012
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2932
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=425000 DrawPrimitiveUP=0
+  draws with UVs=218188  without UVs=140  vertex-shader handles=206672
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=147326
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18814
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=46977
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=132772
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2075
+  FVF 0x00000142 pos=XYZ    stride=24  draws=2996
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=430000 DrawPrimitiveUP=0
+  draws with UVs=220016  without UVs=140  vertex-shader handles=209844
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=148208
+  FVF 0x00000352 pos=XYZ    stride=52  draws=18940
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=47670
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=135944
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2138
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3060
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=435000 DrawPrimitiveUP=0
+  draws with UVs=221878  without UVs=140  vertex-shader handles=212982
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=149110
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19068
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=48374
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=139082
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2202
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3124
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=440000 DrawPrimitiveUP=0
+  draws with UVs=223722  without UVs=140  vertex-shader handles=216138
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=149995
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19196
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=49078
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=142238
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2265
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3188
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=445000 DrawPrimitiveUP=0
+  draws with UVs=225541  without UVs=154  vertex-shader handles=219305
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=150822
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19300
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=154
+  FVF 0x00000112 pos=XYZ    stride=32  draws=49845
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=145405
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2325
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3249
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=450000 DrawPrimitiveUP=0
+  draws with UVs=227467  without UVs=224  vertex-shader handles=222309
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=151259
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19358
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=224
+  FVF 0x00000112 pos=XYZ    stride=32  draws=51177
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=148409
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2360
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3313
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=455000 DrawPrimitiveUP=0
+  draws with UVs=229316  without UVs=300  vertex-shader handles=225384
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=151715
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19432
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=300
+  FVF 0x00000112 pos=XYZ    stride=32  draws=52365
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=151484
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2398
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3406
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=460000 DrawPrimitiveUP=0
+  draws with UVs=231098  without UVs=378  vertex-shader handles=228524
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=152183
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19510
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=378
+  FVF 0x00000112 pos=XYZ    stride=32  draws=53483
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=154624
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2437
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3485
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=465000 DrawPrimitiveUP=0
+  draws with UVs=232854  without UVs=456  vertex-shader handles=231690
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=152651
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19588
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=456
+  FVF 0x00000112 pos=XYZ    stride=32  draws=54575
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=157790
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2476
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3564
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=470000 DrawPrimitiveUP=0
+  draws with UVs=234643  without UVs=536  vertex-shader handles=234821
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=153120
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19668
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=536
+  FVF 0x00000112 pos=XYZ    stride=32  draws=55695
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=160921
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2516
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3644
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=475000 DrawPrimitiveUP=0
+  draws with UVs=236678  without UVs=606  vertex-shader handles=237716
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=153999
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19738
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=606
+  FVF 0x00000112 pos=XYZ    stride=32  draws=56675
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=163816
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2551
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3715
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=480000 DrawPrimitiveUP=0
+  draws with UVs=239096  without UVs=668  vertex-shader handles=240236
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=155363
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19802
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=668
+  FVF 0x00000112 pos=XYZ    stride=32  draws=57570
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=166336
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2583
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3778
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=485000 DrawPrimitiveUP=0
+  draws with UVs=241604  without UVs=732  vertex-shader handles=242664
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=156771
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19866
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=732
+  FVF 0x00000112 pos=XYZ    stride=32  draws=58505
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=168764
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2615
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3847
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=490000 DrawPrimitiveUP=0
+  draws with UVs=244079  without UVs=786  vertex-shader handles=245135
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=157959
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19918
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=786
+  FVF 0x00000112 pos=XYZ    stride=32  draws=59604
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=171235
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2641
+  FVF 0x00000142 pos=XYZ    stride=24  draws=3957
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=495000 DrawPrimitiveUP=0
+  draws with UVs=246448  without UVs=838  vertex-shader handles=247714
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=159103
+  FVF 0x00000352 pos=XYZ    stride=52  draws=19972
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=838
+  FVF 0x00000112 pos=XYZ    stride=32  draws=60676
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=173814
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2667
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4030
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=500000 DrawPrimitiveUP=0
+  draws with UVs=248767  without UVs=896  vertex-shader handles=250337
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=160379
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20028
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=896
+  FVF 0x00000112 pos=XYZ    stride=32  draws=61525
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=176437
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2696
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4139
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=505000 DrawPrimitiveUP=0
+  draws with UVs=251128  without UVs=960  vertex-shader handles=252912
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=161787
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20092
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=960
+  FVF 0x00000112 pos=XYZ    stride=32  draws=62302
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=179012
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2728
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4219
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=510000 DrawPrimitiveUP=0
+  draws with UVs=253453  without UVs=1030  vertex-shader handles=255517
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=163355
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1030
+  FVF 0x00000112 pos=XYZ    stride=32  draws=62888
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=181617
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2763
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4289
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=515000 DrawPrimitiveUP=0
+  draws with UVs=256115  without UVs=1084  vertex-shader handles=257801
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=165335
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1084
+  FVF 0x00000112 pos=XYZ    stride=32  draws=63407
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=183901
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2790
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4425
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=520000 DrawPrimitiveUP=0
+  draws with UVs=258897  without UVs=1140  vertex-shader handles=259963
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=167477
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1140
+  FVF 0x00000112 pos=XYZ    stride=32  draws=63879
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=186063
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2818
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4565
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=525000 DrawPrimitiveUP=0
+  draws with UVs=261639  without UVs=1196  vertex-shader handles=262165
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=169583
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1196
+  FVF 0x00000112 pos=XYZ    stride=32  draws=64340
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=188265
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2847
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4711
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=530000 DrawPrimitiveUP=0
+  draws with UVs=264432  without UVs=1254  vertex-shader handles=264314
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=171758
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1254
+  FVF 0x00000112 pos=XYZ    stride=32  draws=64791
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=190414
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2875
+  FVF 0x00000142 pos=XYZ    stride=24  draws=4850
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=535000 DrawPrimitiveUP=0
+  draws with UVs=267189  without UVs=1312  vertex-shader handles=266499
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=173866
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1312
+  FVF 0x00000112 pos=XYZ    stride=32  draws=65255
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=192599
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2904
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5006
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=540000 DrawPrimitiveUP=0
+  draws with UVs=269974  without UVs=1368  vertex-shader handles=268658
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=176033
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1368
+  FVF 0x00000112 pos=XYZ    stride=32  draws=65703
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=194758
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2932
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5148
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=545000 DrawPrimitiveUP=0
+  draws with UVs=272821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=178260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=550000 DrawPrimitiveUP=0
+  draws with UVs=277821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=183260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=555000 DrawPrimitiveUP=0
+  draws with UVs=282821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=188260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=560000 DrawPrimitiveUP=0
+  draws with UVs=287821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=193260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=565000 DrawPrimitiveUP=0
+  draws with UVs=292821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=198260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=570000 DrawPrimitiveUP=0
+  draws with UVs=297821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=203260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=575000 DrawPrimitiveUP=0
+  draws with UVs=302821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=208260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=580000 DrawPrimitiveUP=0
+  draws with UVs=307821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=213260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=585000 DrawPrimitiveUP=0
+  draws with UVs=312821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=218260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=590000 DrawPrimitiveUP=0
+  draws with UVs=317821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=223260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=595000 DrawPrimitiveUP=0
+  draws with UVs=322821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=228260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=600000 DrawPrimitiveUP=0
+  draws with UVs=327821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=233260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=605000 DrawPrimitiveUP=0
+  draws with UVs=332821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=238260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=610000 DrawPrimitiveUP=0
+  draws with UVs=337821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=243260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=615000 DrawPrimitiveUP=0
+  draws with UVs=342821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=248260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=620000 DrawPrimitiveUP=0
+  draws with UVs=347821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=253260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=625000 DrawPrimitiveUP=0
+  draws with UVs=352821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=258260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=630000 DrawPrimitiveUP=0
+  draws with UVs=357821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=263260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=635000 DrawPrimitiveUP=0
+  draws with UVs=362821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=268260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=640000 DrawPrimitiveUP=0
+  draws with UVs=367821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=273260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=645000 DrawPrimitiveUP=0
+  draws with UVs=372821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=278260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=650000 DrawPrimitiveUP=0
+  draws with UVs=377821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=283260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=655000 DrawPrimitiveUP=0
+  draws with UVs=382821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=288260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=660000 DrawPrimitiveUP=0
+  draws with UVs=387821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=293260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=665000 DrawPrimitiveUP=0
+  draws with UVs=392821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=298260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=670000 DrawPrimitiveUP=0
+  draws with UVs=397821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=303260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=675000 DrawPrimitiveUP=0
+  draws with UVs=402821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=308260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=680000 DrawPrimitiveUP=0
+  draws with UVs=407821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=313260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=685000 DrawPrimitiveUP=0
+  draws with UVs=412821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=318260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=690000 DrawPrimitiveUP=0
+  draws with UVs=417821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=323260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=695000 DrawPrimitiveUP=0
+  draws with UVs=422821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=328260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=700000 DrawPrimitiveUP=0
+  draws with UVs=427821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=333260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=705000 DrawPrimitiveUP=0
+  draws with UVs=432821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=338260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=710000 DrawPrimitiveUP=0
+  draws with UVs=437821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=343260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+
+=== summary (periodic) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=715000 DrawPrimitiveUP=0
+  draws with UVs=442821  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=348260
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292
+EXITPROCESS code=0 tid=41872 caller=004028B0
+  exit stack: 7 Windows-captured frames (may be incomplete)
+  exit frame[0]=723C1A7F module=C:\Program Files\GOG Galaxy\Games\Rayman 3\d3d8.dll offset=0x00001A7F
+  exit frame[1]=004028B0 module=C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe offset=0x000028B0
+  exit frame[2]=759E8238 module=C:\Windows\System32\KERNEL32.DLL offset=0x000B8238
+  exit frame[3]=7593E86C module=C:\Windows\System32\KERNEL32.DLL offset=0x0000E86C
+  exit frame[4]=7776BDB8 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0008BDB8
+  exit frame[5]=7776BD18 module=C:\Windows\SYSTEM32\ntdll.dll offset=0x0008BD18
+  exit frame[6]=778495FC module=C:\Windows\SYSTEM32\ntdll.dll offset=0x001695FC
+
+=== summary (detach) ===
+  DrawPrimitive=0 DrawIndexedPrimitive=718274 DrawPrimitiveUP=0
+  draws with UVs=446095  without UVs=1424  vertex-shader handles=270755
+  saw XYZRHW buffers: YES (pre-transformed) | saw XYZ buffers: YES (world space)
+  FVF 0x00000144 pos=XYZRHW stride=28  draws=351534
+  FVF 0x00000352 pos=XYZ    stride=52  draws=20158
+  FVF 0x8B90B0C4 pos=XYZRHW stride=48  draws=73900
+  FVF 0x00000002 pos=XYZ    stride=12  draws=1424
+  FVF 0x00000112 pos=XYZ    stride=32  draws=66151
+  FVF 0x8B89E414 pos=XYZRHW stride=48  draws=196855
+  FVF 0x00000312 pos=XYZ    stride=48  draws=2960
+  FVF 0x00000142 pos=XYZ    stride=24  draws=5292

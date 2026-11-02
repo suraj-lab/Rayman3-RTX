@@ -1,0 +1,324 @@
+[23:29:27.876] info:  [23:29:27.865] info:  Native arch: arm64
+[23:29:27.876] info:  [23:29:27.871] info:  No default config found for: C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:29:27.876] info:  [23:29:27.871] info:  Trying to open config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:29:27.876] info:  [23:29:27.872] info:  Found user config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:29:27.876] info:  [23:29:27.873] info:  Effective configuration:
+[23:29:27.876] info:  [23:29:27.873] info:    exposeRemixApi = True
+[23:29:27.880] info:  ==================
+[23:29:27.880] info:  NVIDIA RTX Remix Bridge Client
+[23:29:27.880] info:  ==================
+[23:29:27.880] info:  Version: remix-main+5a7eec84
+[23:29:27.880] info:  Loaded d3d9.dll from C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:29:27.906] info:  DirectInput8 hook attached.
+[23:29:27.934] info:  DirectInput hook attached.
+[23:29:27.935] info:  Initializing new shared memory object.
+[23:29:27.937] info:  Initializing new shared memory object.
+[23:29:27.938] info:  Initializing new shared memory object.
+[23:29:27.965] info:  Initializing new shared memory object.
+[23:29:28.369] info:  Launching server with GUID 0e9ee993-a8ea-4ce1-b5a8-d5b9d6cad236
+[23:29:28.397] info:  Process set as DPI aware
+[23:29:28.397] info:  Sending SYN command, waiting for ACK from server...
+[23:29:29.001] info:  Ack received! Handshake completed! Telling server to continue waiting for commands...
+[23:29:29.071] info:  Creating a thread-safe D3D9 device.
+[23:29:31.709] info:  Message channel UWM_REMIX_BRIDGE_REGISTER_THREADPROC_MSG handshake complete.
+[23:29:31.712] info:  Remix UI deactivated.
+[23:29:31.712] info:  Remix UI activated.
+[23:29:38.756] info:  Remix UI deactivated.
+[23:29:46.204] warn:  DirectInput: unable to translate VSC: 208
+[23:29:46.216] warn:  DirectInput: unable to translate VSC: 208
+[23:29:46.230] warn:  DirectInput: unable to translate VSC: 208
+[23:29:46.244] warn:  DirectInput: unable to translate VSC: 208
+[23:29:46.258] warn:  DirectInput: unable to translate VSC: 208
+[23:29:46.883] warn:  DirectInput: unable to translate VSC: 200
+[23:29:46.898] warn:  DirectInput: unable to translate VSC: 200
+[23:29:46.911] warn:  DirectInput: unable to translate VSC: 200
+[23:29:46.924] warn:  DirectInput: unable to translate VSC: 200
+[23:29:46.939] warn:  DirectInput: unable to translate VSC: 200
+[23:29:46.952] warn:  DirectInput: unable to translate VSC: 200
+[23:29:47.453] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.467] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.481] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.494] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.508] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.523] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.536] warn:  DirectInput: unable to translate VSC: 208
+[23:29:47.549] warn:  DirectInput: unable to translate VSC: 208
+[23:31:02.029] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.062] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.095] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.128] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.160] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.196] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.228] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.261] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.293] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.327] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.360] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.394] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.428] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.461] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.495] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.531] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.563] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.595] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.629] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.662] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.695] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.728] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.763] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.798] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.829] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.863] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.895] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.929] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.963] warn:  DirectInput: unable to translate VSC: 200
+[23:31:02.997] warn:  DirectInput: unable to translate VSC: 200
+[23:31:03.029] warn:  DirectInput: unable to translate VSC: 200
+[23:31:03.061] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.312] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.343] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.375] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.407] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.440] warn:  DirectInput: unable to translate VSC: 200
+[23:31:04.471] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.005] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.038] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.093] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.123] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.152] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.185] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.217] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.247] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.278] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.311] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.341] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.373] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.404] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.437] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.468] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.499] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.530] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.562] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.593] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.627] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.658] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.692] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.722] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.755] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.787] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.820] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.853] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.883] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.917] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.920] warn:  DirectInput: unable to translate VSC: 203
+[23:31:09.949] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.952] warn:  DirectInput: unable to translate VSC: 203
+[23:31:09.982] warn:  DirectInput: unable to translate VSC: 200
+[23:31:09.985] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.015] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.018] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.045] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.050] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.080] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.084] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.115] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.118] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.145] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.149] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.175] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.179] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.208] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.212] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.239] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.243] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.271] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.273] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.304] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.307] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.337] warn:  DirectInput: unable to translate VSC: 200
+[23:31:10.340] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.368] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.398] warn:  DirectInput: unable to translate VSC: 203
+[23:31:10.432] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.161] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.195] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.228] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.261] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.293] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.328] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.362] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.397] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.432] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.435] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.464] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.468] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.500] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.503] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.531] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.535] warn:  DirectInput: unable to translate VSC: 203
+[23:31:11.565] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.597] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.631] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.663] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.697] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.730] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.763] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.797] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.830] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.863] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.895] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.930] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.963] warn:  DirectInput: unable to translate VSC: 200
+[23:31:11.997] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.032] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.066] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.095] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.130] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.163] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.167] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.196] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.200] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.229] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.230] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.265] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.267] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.295] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.300] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.330] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.333] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.364] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.397] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.431] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.462] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.494] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.527] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.558] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.592] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.623] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.657] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.691] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.722] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.725] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.753] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.756] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.785] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.789] warn:  DirectInput: unable to translate VSC: 203
+[23:31:12.814] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.848] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.880] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.911] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.943] warn:  DirectInput: unable to translate VSC: 200
+[23:31:12.973] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.006] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.037] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.070] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.100] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.130] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.162] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.194] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.226] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.258] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.290] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.322] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.353] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.386] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.418] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.449] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.479] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.511] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.542] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.572] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.605] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.638] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.669] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.700] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.729] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.762] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.793] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.825] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.855] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.887] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.920] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.951] warn:  DirectInput: unable to translate VSC: 200
+[23:31:13.983] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.013] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.045] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.075] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.107] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.140] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.171] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.204] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.236] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.265] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.293] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.326] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.355] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.386] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.415] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.445] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.477] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.507] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.538] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.568] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.583] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.606] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.635] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.667] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.696] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.908] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.942] warn:  DirectInput: unable to translate VSC: 200
+[23:31:14.945] warn:  DirectInput: unable to translate VSC: 205
+[23:31:14.973] warn:  DirectInput: unable to translate VSC: 205
+[23:31:15.005] warn:  DirectInput: unable to translate VSC: 205
+[23:31:15.034] warn:  DirectInput: unable to translate VSC: 205
+[23:31:15.065] warn:  DirectInput: unable to translate VSC: 205
+[23:31:15.095] warn:  DirectInput: unable to translate VSC: 205
+[23:31:15.992] warn:  DirectInput: unable to translate VSC: 203
+[23:31:16.025] warn:  DirectInput: unable to translate VSC: 203
+[23:31:16.055] warn:  DirectInput: unable to translate VSC: 203
+[23:31:16.089] warn:  DirectInput: unable to translate VSC: 203
+[23:31:16.121] warn:  DirectInput: unable to translate VSC: 203
+[23:31:16.632] warn:  DirectInput: unable to translate VSC: 208
+[23:31:16.663] warn:  DirectInput: unable to translate VSC: 208
+[23:31:16.694] warn:  DirectInput: unable to translate VSC: 208
+[23:31:16.722] warn:  DirectInput: unable to translate VSC: 208
+[23:31:16.752] warn:  DirectInput: unable to translate VSC: 208
+[23:31:18.509] warn:  DirectInput: unable to translate VSC: 205
+[23:31:18.539] warn:  DirectInput: unable to translate VSC: 205
+[23:31:18.567] warn:  DirectInput: unable to translate VSC: 205
+[23:31:18.595] warn:  DirectInput: unable to translate VSC: 205
+[23:31:25.373] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.387] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.403] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.415] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.429] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.442] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.456] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.470] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.595] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.610] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.624] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.637] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.652] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.665] warn:  DirectInput: unable to translate VSC: 208
+[23:31:25.679] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.137] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.151] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.166] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.179] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.193] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.206] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.220] warn:  DirectInput: unable to translate VSC: 208
+[23:31:26.237] warn:  DirectInput: unable to translate VSC: 208
+[23:31:28.571] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.583] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.596] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.609] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.624] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.637] warn:  DirectInput: unable to translate VSC: 203
+[23:31:28.652] warn:  DirectInput: unable to translate VSC: 203
+[23:31:29.932] info:  Restoring display mode: 2880x1800@60
+[23:31:29.938] info:  Setting display mode: 2880x1800@60
+[23:31:29.961] info:  About to unload bridge client.
+[23:31:29.961] info:  Sending Terminate command to server...
+[23:31:29.965] info:  Server notified that it has cleanly terminated. Cleaning up.

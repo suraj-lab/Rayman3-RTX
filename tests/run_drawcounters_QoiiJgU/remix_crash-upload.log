@@ -1,0 +1,5 @@
+--- crash-upload: type=CPU, time=2026-11-02 23:20:49 ---
+--- pending crash envelope: 67b2bf82-4579-455d-96f9-50afe0144027.envelope ---
+[sentry info] using database path "C:\Program Files\GOG Galaxy\Games\Rayman 3\rtx-remix\logs\.sentry-native"
+[sentry warn] couldn't retrieve sample_rand from scope to apply to the dynamic sampling context
+[sentry info] started crashpad client handler

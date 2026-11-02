@@ -82,6 +82,7 @@ static FILE *g_log = NULL;
 static DWORD g_fvf = 0;
 static UINT  g_stride = 0;
 static unsigned long g_draws = 0, g_drawsIdx = 0, g_drawsUP = 0;
+static unsigned long g_texDraws = 0, g_noTexDraws = 0, g_shaderDraws = 0;
 static DWORD g_seenFvf[160]; static UINT g_seenStride[160];
 static unsigned long g_seenCount[160]; static int g_seenN = 0;
 static int g_transformLogs = 0, g_createCalls = 0;
@@ -255,6 +256,8 @@ static void DumpSummary(const char *why)
     L("");
     L("=== summary (%s) ===", why);
     L("  DrawPrimitive=%lu DrawIndexedPrimitive=%lu DrawPrimitiveUP=%lu", g_draws, g_drawsIdx, g_drawsUP);
+    L("  draws with UVs=%lu  without UVs=%lu  vertex-shader handles=%lu",
+      g_texDraws, g_noTexDraws, g_shaderDraws);
     L("  saw XYZRHW buffers: %s | saw XYZ buffers: %s",
       g_xyzrhw ? "YES (pre-transformed)" : "no", g_xyz ? "YES (world space)" : "no");
     for (int i = 0; i < g_seenN; i++)
@@ -295,9 +298,23 @@ static HRESULT __stdcall hSetStream(IDirect3DDevice8 *d, UINT s, IDirect3DVertex
     return o_SetStream(d, s, vb, stride);
 }
 
+// A FVF carrying any texture-coordinate set. UVs are what the runtime needs to bind
+// a texture; counting these against UV-less draws decides whether the renderer's
+// "mesh without UVs" warning is benign or the actual defect.
+#define FVF_HAS_TEX(f) (((f) & 0xF00) != 0)
+
+static void CountDraw(void)
+{
+    // A D3D8 vertex-shader handle is not an FVF; it has no valid 0xF00 field.
+    if (g_fvf != 0 && (g_fvf >> 16) != 0) g_shaderDraws++;
+    else if (FVF_HAS_TEX(g_fvf)) g_texDraws++;
+    else g_noTexDraws++;
+    if ((g_texDraws + g_noTexDraws + g_shaderDraws) % 5000 == 0) DumpSummary("periodic");
+}
+
 static HRESULT __stdcall hDraw(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT sv, UINT pc)
 {
-    g_draws++; Note(g_fvf, g_stride);
+    g_draws++; Note(g_fvf, g_stride); CountDraw();
     if (g_draws == 1) ProbeRemixApi();
     if (g_draws % 500 == 0) DumpSummary("periodic");
     return o_DrawPrimitive(d, pt, sv, pc);
@@ -305,14 +322,14 @@ static HRESULT __stdcall hDraw(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT sv
 
 static HRESULT __stdcall hDrawUP(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT pc, const void *data, UINT stride)
 {
-    g_drawsUP++; Note(g_fvf, stride);
+    g_drawsUP++; Note(g_fvf, stride); CountDraw();
     ProbeRemixApi();
     return o_DrawPrimitiveUP(d, pt, pc, data, stride);
 }
 
 static HRESULT __stdcall hDrawIdx(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT mi, UINT nv, UINT si, UINT pc)
 {
-    g_drawsIdx++; Note(g_fvf, g_stride);
+    g_drawsIdx++; Note(g_fvf, g_stride); CountDraw();
     if (g_drawsIdx == 1 && g_draws == 0) ProbeRemixApi();
     return o_DrawIndexedPrimitive(d, pt, mi, nv, si, pc);
 }

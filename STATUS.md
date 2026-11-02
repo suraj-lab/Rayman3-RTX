@@ -35,6 +35,45 @@ indexed draws (currently only every 500 `DrawPrimitive` calls), then compare UV-
 draw counts against the FVF table. Only then decide between a UV/vertex-declaration
 fix and a material/texture-hash investigation.
 
+## 2026-11-02 late — UV warning ruled out by measurement
+
+Capture-free run `tests/run_drawcounters_QoiiJgU` (no screen recording). Per-FVF draw
+counters, written by the proxy at detach:
+
+```
+draws with UVs=446095  without UVs=1424  vertex-shader handles=270755
+FVF 0x00000144 pos=XYZRHW stride=28  draws=351534
+FVF 0x8B89E414 (shader handle) stride=48 draws=196855
+FVF 0x8B90B0C4 (shader handle) stride=48 draws=73900
+FVF 0x00000112 pos=XYZ stride=32  draws=66151
+FVF 0x00000352 pos=XYZ stride=52  draws=20158
+FVF 0x00000142 pos=XYZ stride=24  draws=5292
+FVF 0x00000312 pos=XYZ stride=48  draws=2960
+FVF 0x00000002 pos=XYZ stride=12   draws=1424
+```
+
+The 1,424 UV-less draws are **exactly** the `FVF 0x002` position-only count, i.e. 0.2%
+of all draws. The renderer's single `Trying to bind a texture to a mesh without UVs`
+warning is therefore **benign and explained**; it is not the texture defect. Do not
+"fix" UVs.
+
+Two consequences:
+
+1. **Invisible menu.** The UI path is `FVF 0x144` (XYZRHW, 351,534 draws) and the
+   renderer logs `Skipped drawcall, using pre-transformed vertices which isn't
+   currently supported`. The runtime drops pre-transformed draws, so 2D/UI does not
+   render. That is a runtime limitation, not a proxy bug; submitting UI ourselves via
+   `remixapi_DrawInstance` would be the only workaround. Practical effect: the game
+   cannot be quit from its own menu under Remix — kill the process instead.
+2. **Textures are a material/hash problem.** The textured draws carry UVs (446k of
+   them), so geometry attributes are not the blocker. Investigate texture hashing,
+   material binding and the `Found a null sampler. Fallback to linear-repeat` path.
+   PBR tuning is still premature: without albedo bound, PBR only darkens surfaces.
+
+Also present in this run's renderer log: `InstanceManager: detected unsupported quad
+index layout for billboard creation` and an Opacity Micromap "non triangle list
+topology" fallback. Both are runtime-side, recorded but not yet investigated.
+
 ## FIRST WORKING GAME RUN — 2026-11-02
 
 Rayman 3 **ran** under RTX Remix with no abort. Operator-confirmed: it ran, **no

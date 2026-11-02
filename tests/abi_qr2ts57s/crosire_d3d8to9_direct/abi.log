@@ -1,0 +1,20 @@
+harness pid=16948 tid=34308
+GetAdapterCount -> 1
+slot 14 GetAdapterMonitor -> 000100BB valid=1
+slot 15 CreateDevice(HAL, SW) -> hr=0x00000000 device=0D511D00 present=320x240 windowed=1 flags=0x20
+SetTransform(VIEW) -> 0x00000000
+SetVertexShader(FVF 0x44) -> 0x00000000
+BeginScene -> 0x00000000
+DrawPrimitiveUP -> 0x00000000
+EndScene -> 0x00000000
+Present -> 0x00000000
+PASS: device creation and triangle submission
+Exception record: code=0xE0420001 flags=0x00000001 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+Exception record: code=0xE0420002 flags=0x00000000 count=2 args=0x13572468,0x24681357 error=0x12345678 valid=1
+FIRSTCHANCE C++ throw tid=34308 addr=7558FE35 params=3
+  exception object=0073FD04 throwInfo=00C0F618
+  catchable types=1
+  catchable type[0] name=.H
+  throw stack: 1 frames
+  throw frame[0]=00BE1C87 module=C:\Users\suraj\Projects\Rayman 3 RTX\tests\abi_qr2ts57s\crosire_d3d8to9_direct\d3d8abi.exe offset=0x1C87
+Exception forwarding: caught=1 noncontinuable=1 continuable=1 continued=1 cpp=1
