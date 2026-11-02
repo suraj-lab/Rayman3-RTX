@@ -41,3 +41,6 @@ __pycache__/
 *.pyc
 Thumbs.db
 desktop.ini
+
+# Desktop captures of the assistant terminal; not project evidence
+/analysis/video-frames/

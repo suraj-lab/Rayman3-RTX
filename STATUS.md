@@ -1,5 +1,21 @@
 # Rayman 3 RTX — checkpoint, 2026-11-02
 
+> This project is now a Git repository (branch `main`, initial commit `7559aec`).
+> Binaries, staged Remix runtimes, installers and `backups/` are ignored; source,
+> scripts, analysis and per-run evidence text are tracked. No remote is configured.
+
+## FIRST WORKING GAME RUN — 2026-11-02
+
+Rayman 3 **ran** under RTX Remix with no abort. Operator-confirmed: it ran, **no
+textures**. Read `analysis/first-working-run.md`. Evidence:
+`tests/run_nowindowchanges_AKKDFHGu/`.
+Captured from the real game: VIEW ×5, PROJECTION ×5, WORLD ×30, and six FVFs
+(`0x144` 2D/UI, `0x352`, `0x312`, `0x112`, `0x142`, `0x002` world-space) — the static
+prediction of `0x142` at stride 24 was confirmed live.
+Still open: `RemixAPI: InitializeLibrary -> 11 (NOT_INITIALIZED)`, so nothing is
+submitted to the path tracer — the reason there are no textures. Exit cause of the
+run is unrecorded; ALT+TAB/minimise untested with the new flag.
+
 ## Abort root cause found and fixed in the proxy — 2026-11-02
 
 Read `analysis/abort-fix-findings.md`. The fullscreen abort is the Remix bridge's

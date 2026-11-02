@@ -1,0 +1,74 @@
+[23:12:15.861] info:  [23:12:15.847] info:  Native arch: arm64
+[23:12:15.861] info:  [23:12:15.859] info:  No default config found for: C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:12:15.861] info:  [23:12:15.859] info:  Trying to open config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:12:15.866] info:  ==================
+[23:12:15.866] info:  NVIDIA RTX Remix Bridge Client
+[23:12:15.866] info:  ==================
+[23:12:15.868] info:  Version: remix-main+5a7eec84
+[23:12:15.869] info:  Loaded d3d9.dll from C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:12:15.897] info:  DirectInput8 hook attached.
+[23:12:15.912] info:  DirectInput hook attached.
+[23:12:15.913] info:  Initializing new shared memory object.
+[23:12:15.916] info:  Initializing new shared memory object.
+[23:12:15.918] info:  Initializing new shared memory object.
+[23:12:15.940] info:  Initializing new shared memory object.
+[23:12:16.542] info:  Launching server with GUID 3ad19b24-e0e6-43fe-8924-07efd1df813c
+[23:12:16.572] info:  Process set as DPI aware
+[23:12:16.573] info:  Sending SYN command, waiting for ACK from server...
+[23:12:17.230] info:  Ack received! Handshake completed! Telling server to continue waiting for commands...
+[23:12:17.358] info:  Creating a thread-safe D3D9 device.
+[23:12:20.477] info:  Message channel UWM_REMIX_BRIDGE_REGISTER_THREADPROC_MSG handshake complete.
+[23:12:20.480] info:  Remix UI deactivated.
+[23:12:20.480] info:  Remix UI activated.
+[23:12:20.656] err:   Remix API is not enabled. This is currently an experimental feature and must be explicitly enabled                    in the `bridge.conf`. Please set `exposeRemixApi = True` if you are sure you want it enabled.
+[23:12:23.918] info:  Remix UI deactivated.
+[23:12:29.289] warn:  DirectInput: unable to translate VSC: 208
+[23:12:29.317] warn:  DirectInput: unable to translate VSC: 208
+[23:12:29.344] warn:  DirectInput: unable to translate VSC: 208
+[23:12:29.373] warn:  DirectInput: unable to translate VSC: 208
+[23:12:35.785] info:  Client window became inactive, disabling timeouts for bridge client...
+[23:12:49.286] info:  Restoring display mode: 2880x1800@60
+[23:12:49.286] info:  Setting display mode: 2880x1800@60
+[23:12:49.327] warn:  Window extent != backbuffer extent in fullscreen mode. Forcing window extent to backbuffer size (2880x1800).
+[23:12:49.329] info:  Creating a thread-safe D3D9 device.
+[23:12:49.329] warn:  [WndProc][set] Calling WndProc::set(...) without an intermediate unset(). Calling implicitly...
+[23:12:50.388] warn:  Crash handler: window management suppressed, ghosting disabled
+[23:12:50.390] warn:  Crash handler: server exited (code=0xc0000005, type=CPU)
+[23:12:50.391] info:  Most recent Device Queue commands sent from Client
+[23:12:50.391] info:  Command sent: IDirect3D9Ex_CreateDevice
+[23:12:50.392] info:  Command sent: IDirect3DIndexBuffer9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DVertexBuffer9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DVertexBuffer9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DSurface9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DSurface9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DDevice9Ex_SetTexture
+[23:12:50.393] info:  Command sent: Bridge_UnlinkResource
+[23:12:50.393] info:  Command sent: IDirect3DSwapChain9_Destroy
+[23:12:50.393] info:  Command sent: IDirect3DDevice9Ex_EndScene
+[23:12:50.394] info:  Most recent Device Queue commands received by Server
+[23:12:50.394] info:  Command received: IDirect3D9Ex_CreateDevice
+[23:12:50.399] info:  Command received: IDirect3DIndexBuffer9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DVertexBuffer9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DVertexBuffer9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DSurface9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DSurface9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DDevice9Ex_SetTexture
+[23:12:50.399] info:  Command received: Bridge_UnlinkResource
+[23:12:50.399] info:  Command received: IDirect3DSwapChain9_Destroy
+[23:12:50.399] info:  Command received: IDirect3DDevice9Ex_EndScene
+[23:12:50.400] info:  Most recent Module Queue commands sent from Client
+[23:12:50.400] info:  Command sent: IDirect3D9Ex_CheckDeviceFormat
+[23:12:50.400] info:  Command sent: IDirect3D9Ex_GetAdapterDisplayMode
+[23:12:50.400] info:  Command sent: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.400] info:  Command sent: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.400] info:  Command sent: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.400] info:  Most recent Module Queue commands received by Server
+[23:12:50.400] info:  Command received: IDirect3D9Ex_CheckDeviceFormat
+[23:12:50.400] info:  Command received: IDirect3D9Ex_GetAdapterDisplayMode
+[23:12:50.400] info:  Command received: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.400] info:  Command received: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.400] info:  Command received: IDirect3D9Ex_GetAdapterModeCount
+[23:12:50.408] warn:  Crash window prep: HWND=0x000B010A topmost=1 iconic=0 visible=1 async=1
+[23:12:50.408] warn:  Crash window prep: HWND_NOTOPMOST + SW_FORCEMINIMIZE applied
+[23:12:50.409] warn:  Crash dialog: showing info dialog (consent already given)
+[23:12:53.271] err:   Crash reporting: user already granted permission. Upload triggered.

@@ -1,0 +1,24 @@
+[23:12:16.615] info:  [23:12:16.602] info:  Native arch: arm64
+[23:12:16.615] info:  [23:12:16.615] info:  No default config found for: C:\Program Files\GOG Galaxy\Games\Rayman 3\Rayman3.exe
+[23:12:16.615] info:  [23:12:16.615] info:  Trying to open config file: C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\bridge.conf
+[23:12:16.615] info:  ==================
+[23:12:16.615] info:  NVIDIA RTX Remix Bridge Server
+[23:12:16.615] info:  ==================
+[23:12:16.615] info:  Version: remix-main+5a7eec84
+[23:12:16.615] info:  Running in x64 mode!
+[23:12:16.615] info:  Launched server with GUID 3ad19b24-e0e6-43fe-8924-07efd1df813c
+[23:12:16.615] info:  Server started up, waiting for connection from client...
+[23:12:16.615] info:  Registering exit callback in case client exits unexpectedly.
+[23:12:16.615] info:  Registering message channel for asynchronous message handling.
+[23:12:16.615] info:  Initializing D3D9...
+[23:12:16.733] info:  Message channel MessageChannelServer established.
+[23:12:17.230] info:  D3D9 interface object creation succeeded!
+[23:12:17.230] info:  Loaded D3D9 from C:\Program Files\GOG Galaxy\Games\Rayman 3\.trex_arm64\d3d9.dll
+[23:12:17.230] info:  Version of d3d9 loaded is DXVK
+[23:12:17.230] info:  Feature version parity confirmed!
+[23:12:17.230] info:  Sync request received, sending ACK response...
+[23:12:17.230] info:  Done! Now waiting for client to consume the response...
+[23:12:17.231] info:  Handshake completed! Now waiting for incoming commands...
+[23:12:20.156] info:  Server side D3D9 Device created successfully!
+[23:12:35.786] info:  Client window became inactive, disabling timeouts for bridge server...
+[23:12:49.289] info:  D3D9 Module destroyed.
