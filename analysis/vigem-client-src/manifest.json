@@ -1,0 +1,17 @@
+{
+ "upstream": "nefarius/ViGEmClient",
+ "tag": "v1.16.18.0",
+ "licence": "MIT",
+ "files": {
+  "include/ViGEmClient.h": "b95a0a36530d329b2c88791629492bdd6ba5fa66215840267ae55ca4daa6f63f",
+  "include/ViGEmCommon.h": "2ff57dd39d70a320a1c2cf729c3ed1d3a6dd5115c4f5b246aa8fd55f7ce0ff63",
+  "include/ViGEmUtil.h": "7678be819ba00358d96e45c68bc21a047a3f3ecdc7dbb671a9f61178920119df",
+  "include/km/ViGEmBusShared.h": "e03b4f028f87256ef730b89f6de0cc79cc1932963c8739d35f6af4fa94ec85fb",
+  "src/README.md": "9912e05047bdb64cc5838a057bdf9e6769bc96ddc48cee76095b97e46c18d7ab",
+  "src/ViGEmClient.cpp": "b4ae84ac4aa7837c446446c9d580a34ce52bf671aac680087d5d067b13ebfc96",
+  "src/ViGEmClient.rc": "d945885eea94046a2fce54ee248ff6286db588d4061d7260a2bb536fb0769854",
+  "src/ViGEmClient.vcxproj": "fb0c51a712a3b083a37846f195ccebea80020cb5ae9fdf8eae31dcdd90f4babd",
+  "src/ViGEmClient.vcxproj.filters": "2a4556c03969e15611d1861dfde88b5781c5dffc8bc0daae0d880f63104ca4b8",
+  "src/resource.h": "72e2c3d4e1ee8d4c118e69f8f0c34306f0bea09217a19a3c28a0ce532cc42f03"
+ }
+}

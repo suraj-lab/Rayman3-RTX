@@ -1,0 +1,10 @@
+LIBRARY XINPUT9_1_0
+EXPORTS
+    XInputGetState
+    XInputSetState
+    XInputGetCapabilities
+    XInputEnable
+    XInputGetBatteryInformation
+    XInputGetKeystroke
+    XInputGetDSoundAudioDeviceGuids
+    XInputGetStateEx @100
