@@ -56,3 +56,6 @@ analysis/textures/capture-usd.json
 analysis/tower20-work/*.pkl
 src/d3d8proxy.cpp.bak_states
 src/xinput9_1_0.dll.unsafe-do-not-use
+
+# Per-run stills stay local (regenerable from the source recordings)
+tests/*/shot_*.png
