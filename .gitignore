@@ -44,3 +44,15 @@ desktop.ini
 
 # Desktop captures of the assistant terminal; not project evidence
 /analysis/video-frames/
+
+# Session artefacts: logs, extracted video frames, screenshots, regenerable dumps
+tests/*/*.log
+tests/*/video*/
+tests/*/frames/
+shot_*.png
+analysis/textures/preview/
+analysis/textures/dump-*.json
+analysis/textures/capture-usd.json
+analysis/tower20-work/*.pkl
+src/d3d8proxy.cpp.bak_states
+src/xinput9_1_0.dll.unsafe-do-not-use
