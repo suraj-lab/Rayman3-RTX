@@ -1,0 +1,6 @@
+Derived by lead: camera world pos = -t * R^T from each captured D3D VIEW matrix (row-vector convention).
+camera_pos_if_row_vector=[26.2, 188.59, 46.11] det=-1.000 | SetTransform VIEW       [-0.991 -0.123 -0.056 0.000] [0.135 
+camera_pos_if_row_vector=[-0.0, -0.0, -0.0] det=-1.000 | SetTransform VIEW       [1.000 -0.000 0.000 0.000] [0.000 0.
+camera_pos_if_row_vector=[26.22, 188.75, 45.95] det=-1.000 | SetTransform VIEW       [-0.991 -0.122 -0.057 0.000] [0.135 
+camera_pos_if_row_vector=[-0.0, -0.0, -0.0] det=-1.000 | SetTransform VIEW       [1.000 -0.000 0.000 0.000] [0.000 0.
+camera_pos_if_row_vector=[26.14, 188.76, 45.81] det=-1.001 | SetTransform VIEW       [-0.991 -0.121 -0.057 0.000] [0.134 
