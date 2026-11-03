@@ -151,6 +151,14 @@ Not started. Established groundwork:
 
 ---
 
+## 6b. Related projects consulted
+
+- `analysis/reference-rayman3-hd-recompiled.md` — a native Windows port of **Rayman 3 HD (Xbox 360)**
+  via static recompilation. Cannot host Remix (D3D12, x64, 360 package data), but it names and fixes
+  the same class of colour defects in the game's own code ("Correct HD Lighting Colors", "Correct Sky
+  Colors") and its `docs/PROVENANCE.md` is ground truth for the lighting path we inferred from
+  measurements. Read it before further hue work.
+
 ## 7. Next steps, cheapest first
 
 1. **Reflections**: capture in `swamp_50` or `tower_30`; extract `*_reflect1/2` hashes from the capture's textures; set `rtx.raytracedRenderTargetTextures`. One capture, one config key.
