@@ -1,10 +1,48 @@
-# Rayman 3 RTX — checkpoint, 2026-11-02
+# Rayman 3 RTX — checkpoint, 2026-11-03
 
 > This project is now a Git repository (branch `main`, initial commit `7559aec`).
 > Binaries, staged Remix runtimes, installers and `backups/` are ignored; source,
-> scripts, analysis and per-run evidence text are tracked. No remote is configured.
+> scripts, analysis and per-run evidence text are tracked. Remote: `origin` →
+> `github.com/suraj-lab/Rayman3-RTX`, last pushed 2026-11-03.
 
-## Resume here (session ended 2026-11-02, operator went to bed)
+## Resume here — 2026-11-03 (lighting + materials session)
+
+Full write-up: `analysis/session-findings-20261103.md`. Operating procedure for the
+Toolkit, MCP, the `rtx-remix-modding` skill and ComfyUI: `analysis/remix-toolkit-methodology.md`.
+
+**Done — materials.** 29 materials PBRified through ComfyUI's PBRify workflow and saved:
+`mod.usda` 24,423 bytes, 30 overrides, 30 bindings each of diffuse, roughness, normal,
+height. Those textures appear in **18 of 61 levels** (`wood_veg07` and `wood_canopee02`
+in 8 each). Not yet visible in game — `rtx.enableReplacementAssets = False`, which also
+keeps the capture hotkey alive.
+
+**Done — brightness.** Measured against vanilla and matched: scene luma 42 → ~51 target
+via `exposureBias = 0.3`. No clipping anywhere (0.00 % pixels ≥250).
+
+**Active conf (4 keys, each measured):**
+
+```ini
+rtx.lightmapTextures     = 0x937AA8BB3CCEBDD3
+rtx.lightConverter       = 0x5AFAA700F2860C31
+rtx.autoExposure.enabled = False
+rtx.tonemap.exposureBias = 0.3
+```
+
+**Not fixed — hue.** Rendering is B/R ≈ 3.1 against vanilla's 1.66. Cause is established,
+not guessed: Rayman 3 stores *gamma-space* lighting in vertex colours (stored B/R 1.29,
+linearised 2.37) and Remix consumes it as linear light; the illuminant itself is blue and
+nothing neutral balances it. Cure is authored primitive lights (relighting), not config.
+Eight hypotheses were falsified on the way — see §4.2 of the findings doc, including the
+two that matter most: `rtx.tonemap.colorBalance` is inert in 1.6.1, and auto-exposure was
+silently re-normalising every brightness comparison until it was disabled.
+
+**Not started — reflections.** Needs a capture in `swamp_50` or `tower_30` (the 7 levels
+with `*_reflect1/2` texture paths), then `rtx.raytracedRenderTargetTextures`.
+
+**Next, cheapest first:** reflections capture → `enableReplacementAssets = True` → hue
+(relighting, 1–2 h per room) → emissive via replacement material.
+
+## Previous resume (2026-11-02, operator went to bed)
 
 Read `analysis/light-submission-attempt.md` first. State at session end:
 
