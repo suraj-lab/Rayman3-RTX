@@ -49,7 +49,7 @@ desktop.ini
 tests/*/*.log
 tests/*/video*/
 tests/*/frames/
-shot_*.png
+/shot_*.png
 analysis/textures/preview/
 analysis/textures/dump-*.json
 analysis/textures/capture-usd.json

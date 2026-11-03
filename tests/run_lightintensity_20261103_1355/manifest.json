@@ -1,0 +1,19 @@
+{
+  "run": "run_lightintensity_20261103_1355",
+  "what": "RTX lightConversionIntensityFactor=10 with set-light logging; operator confirmed dim-but-not-black",
+  "device": "2880x1800 fullscreen fmt=21",
+  "frames": 11400,
+  "DrawLightInstance_calls": 44454,
+  "SetLight_lines_capped": 512,
+  "InitializeLibrary": "0 SUCCESS",
+  "R3_REDLIGHT": "off",
+  "result": "no visible brightening vs previous runs",
+  "files": {
+    "bridge.conf.arm64": "9543ef7181ca640d6d6f17652f750fe54184ee73a07414c18e874c9aa7a8450a",
+    "d3d8proxy.dll": "ca56b32b2118db6b0354ec70c90e87bd45c7634a5e56a39b33bd94a412c2e1fd",
+    "r3probe.log": "75e5f1e691463236bf8293170bcd89c7c7fe7270c4ee5864ad2d7e47de81ae99",
+    "remix-dxvk.log": "3469eacbc4fbd693dcf4990a356a8b7f6951f0e01ecf0644618b19e0cc78f72b",
+    "remix_launch.log": "17525cb19cb3d76829e79f0d614067ea031a2cb009cba442be85eea69fa93ecd",
+    "user.conf.used": "a317467bbcf704dc0131381c260a7717e77b3e10fb7334b59d92de4f078a3145"
+  }
+}

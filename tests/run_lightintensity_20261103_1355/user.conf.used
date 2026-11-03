@@ -1,0 +1,7 @@
+rtx.dlssPreset = 2
+rtx.postfx.enableVignette = False
+rtx.dlfg.maxInterpolatedFrames = 1
+rtx.graphicsPreset = 0
+rtx.lightConversionIntensityFactor = 10
+rtx.userBrightness.userBrightness = 50
+rtx.postfx.enableChromaticAberration = False

@@ -1,0 +1,84 @@
+{
+  "run": "baseline_normal_20261103",
+  "what": "vanilla (dgVoodoo + BetterRayman3, no Remix) baseline captures for the darkness comparison",
+  "mode": "python r3mode.py normal, then Rayman3.exe direct; 10 captures at 9 s intervals",
+  "same_scene_pair": [
+    "shot_10.png (vanilla)",
+    "remix_lightrun_02.png (Remix, run_lightintensity_20261103_1355)"
+  ],
+  "measured": {
+    "vanilla_shot_10": {
+      "luma": 50.0,
+      "chroma": 52.5,
+      "dark_pct": 10.2
+    },
+    "remix_lightrun_02": {
+      "luma": 30.3,
+      "chroma": 15.8,
+      "dark_pct": 71.9
+    }
+  },
+  "conclusion": "Remix frame has 60% of the vanilla luminance, 30% of the chroma and 7x the near-black pixels in the same scene: the darkness is a real, measured defect",
+  "files": {
+    "remix_lightrun_01.png": "9915275e8764bcc054376d363f2404fa6e156c60204dbd7e85c731413646b263",
+    "remix_lightrun_02.png": "52589ffda263cd5d8cbfc516512fdb93f7449ad935a2bb25ea18d1b985e56331",
+    "shot_01.png": "864dc299583d35382396c8d14f9bc81d1e1cb91ca8d9e0807d1bf5fceaf4a69c",
+    "shot_02.png": "55f828224166914027c5be425e3d649f6c7eff729094a00beb7cf1482746277d",
+    "shot_03.png": "9381e95fbdd396b56d9f6c9a7612d9de8b16b7b54599a3068a15cc1f54b85e1a",
+    "shot_04.png": "3b22c85c80e75ff3f72e077e1081d29303d8e8d0950540a348590f0b76e0ed2b",
+    "shot_05.png": "b455c955420189053f9c85448dd6950174cc6b44a94eea9406df54f531f5453b",
+    "shot_06.png": "27781441b1578d2171289fabe6b12c1f6820f973cecf042272b9f12f2938329c",
+    "shot_07.png": "7080348eb9d4ea2840662356d58217463ae230b848271022d0ffa4f954ed0185",
+    "shot_08.png": "7080348eb9d4ea2840662356d58217463ae230b848271022d0ffa4f954ed0185",
+    "shot_09.png": "a27d6497b6be9478173f8c4de497b44b387a48ac59b54e7899688a0fe947e5e3",
+    "shot_10.png": "b5b6cf58beb2e7e6bfc9c12f25287769c7f03ae3bbd450eba2c127fca82d4c46"
+  },
+  "video": {
+    "file": "C:\\Users\\suraj\\Videos\\NVIDIA\\Rayman 3\\Rayman 3 2026.11.03 - 13.59.52.03.mp4",
+    "duration_s": 97.3,
+    "resolution": "2880x1800",
+    "fps": 120,
+    "codec": "h264",
+    "size_mb": 442.5,
+    "content": "0-30 s vanilla grotto (tutorial prompt visible), ~30-40 s transition, 40-97 s desktop: the recording outlived the game",
+    "metric": "ffmpeg signalstats YAVG / SATAVG on 320px-wide frames, 1 fps",
+    "per_10s": [
+      {
+        "t": "0-10",
+        "luma": 63.0,
+        "sat": 15.9
+      },
+      {
+        "t": "10-20",
+        "luma": 63.9,
+        "sat": 21.0
+      },
+      {
+        "t": "20-30",
+        "luma": 70.2,
+        "sat": 21.3
+      },
+      {
+        "t": "30-40",
+        "luma": 50.1,
+        "sat": 12.2
+      },
+      {
+        "t": "40-97",
+        "luma": "35-37",
+        "sat": "3-4 (desktop)"
+      }
+    ],
+    "same_metric_stills": {
+      "vanilla_shot_10": {
+        "luma": 58.9,
+        "sat": 20.6
+      },
+      "remix_lightrun_02": {
+        "luma": 41.5,
+        "sat": 6.1
+      }
+    },
+    "conclusion": "same metric, same scene: Remix keeps ~65-70% of vanilla luminance and ~30% of its saturation"
+  }
+}

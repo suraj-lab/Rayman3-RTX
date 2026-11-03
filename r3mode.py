@@ -51,7 +51,7 @@ def normal():
     return "normal: dgVoodoo D3D8 + BetterRayman3, no Remix"
 
 
-def remix():
+def remix(keep_br3=False):
     """Capture chain: our proxy -> d3d8to9 -> Remix d3d9 shim -> ARM64 bridge."""
     os.makedirs(os.path.join(G, "_remix_off"), exist_ok=True)
     if os.path.exists(D3D8) and not is_d3d8to9(D3D8):
@@ -62,8 +62,14 @@ def remix():
         shutil.copy2(os.path.join(STAGE, name), os.path.join(G, name))
     scr = os.path.join(G, "scripts")
     br3 = os.path.join(scr, "BetterRayman3.asi")
-    if os.path.exists(br3):
-        shutil.move(br3, os.path.join(scr, "BetterRayman3.asi.disabled"))
+    br3off = br3 + ".disabled"
+    if keep_br3:
+        # recommended controller path: BR3 stays enabled so the game talks XInput
+        # (it also fixes Rayman 3's DirectInput EnumDevices detection).
+        if os.path.exists(br3off) and not os.path.exists(br3):
+            shutil.move(br3off, br3)
+    elif os.path.exists(br3):
+        shutil.move(br3, br3off)
     log = os.path.join(G, "r3probe.log")
     if os.path.exists(log):
         os.remove(log)
@@ -128,4 +134,5 @@ def status():
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "status"
-    print({"normal": normal, "remix": remix, "probe": probe, "status": status}.get(mode, status)())
+    print({"normal": normal, "remix": remix, "probe": probe, "status": status,
+           "remix-pad": lambda: remix(keep_br3=True)}.get(mode, status)())

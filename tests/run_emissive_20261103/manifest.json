@@ -1,0 +1,38 @@
+{
+  "run": "run_emissive_20261103",
+  "what": "legacy emissive on: does making non-replaced materials emissive restore the object-lit look?",
+  "config": [
+    "rtx.legacyMaterial.enableEmissive = True",
+    "rtx.legacyMaterial.emissiveIntensity = 1",
+    "rtx.legacyMaterial.emissiveColorConstant = 1, 1, 1"
+  ],
+  "option_echo": "remix_launch.log 14:04:23 accepts all three keys",
+  "still_luma_range": "102.9-140.0 (shots 01-13), sat 12.1-32.0",
+  "video": "C:\\Users\\suraj\\Videos\\NVIDIA\\Desktop\\Desktop 2026.11.03 - 14.04.18.04.mp4",
+  "video_stats": {
+    "duration_s": 115.1,
+    "luma": "117-130 throughout",
+    "sat": "15-31"
+  },
+  "references": {
+    "vanilla_grotto": "luma 63-70, sat 16-21",
+    "remix_before_emissive": "luma 41.5, sat 6.1"
+  },
+  "conclusion": "emissive works and restores saturation, but the constant is unmasked: every material glows, so the scene is ~2x vanilla brightness and flat. Needs a much lower intensity, or a tinted constant used as a deliberate ambient fill.",
+  "game_exit": "Rayman3.exe.3144.dmp at 14:06:24 alongside 'common device objects were not disposed of' - exit-time crash, cause unverified, same message as earlier runs",
+  "files": {
+    "shot_01.png": "4a47e5fe6b71239b2b3dc154aa583fde9b9c42c63fe53350c828ddec67cc0a68",
+    "shot_02.png": "f1dbd9fa7f940b51a0dc36a4e7d8b9432f2a28802945720e17f96cbdb67de8cb",
+    "shot_03.png": "f157ea8ce04c7bc08ce2dbd5420d483de93b0e7b58b3793588e5a1798381fe89",
+    "shot_04.png": "2301cbb2643575e8c5666b303cb8c1882adaab629e60672d66cc800cb08f34c9",
+    "shot_05.png": "1774fcf1ce8d9b11a0e5912ad242f147e1c5b559bc7c175f5fffc3d7856aaa03",
+    "shot_06.png": "30528cfed7acd9e16268e82021680033a4874a588fa106671fd3dfe3774baa5d",
+    "shot_07.png": "f50da8b344b9d0b95ebbbcfc0ae3246723415c8bd60596f5ba397672c414978d",
+    "shot_08.png": "15b9dcbe74b70d9aa817875388d96cbc164a85875070dac54c6bb72a3ef69fba",
+    "shot_09.png": "e997eed58e00700f06b0628d0dc1c6f59b74501fc682516c6a849d21a57b972d",
+    "shot_10.png": "23efe91c6387a0f5a5886def9e502bf6f9ef42d329d88ed6bccb8aad5974e613",
+    "shot_11.png": "4c492db8786d9882496659810607aa272ac55f19e1d76a1c9bde5f2610264a4d",
+    "shot_12.png": "3c73e1dbdaf273d43888bf03b0f7516138b476d30cf460cdd699afda2531eff5",
+    "shot_13.png": "55f6fd56fde0472ded7537bd28e19c94ed1738b9f98697b2126d9da7c3dd0d4f"
+  }
+}

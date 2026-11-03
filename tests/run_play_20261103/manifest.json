@@ -1,0 +1,72 @@
+{
+  "run": "run_play_20261103",
+  "what": "first playable session reaching new areas with the DualSense as DirectInput; input fix (dinput8.dll) enabled",
+  "controller": "DualSense over Bluetooth; DirectInput enumerates it with or without ribshark's fix, so the fix is a no-op for this pad. Operator: 'works but does not feel like a controller' = mapping mismatch, not detection.",
+  "config": "user.conf pristine (efcb8a33): NO emissive or light-conversion keys active in this run",
+  "video": {
+    "file": "C:\\Users\\suraj\\Videos\\NVIDIA\\NvRemixBridge\\NvRemixBridge 2026.11.03 - 14.20.28.05.mp4",
+    "duration_s": 45.6,
+    "size_mb": 348
+  },
+  "luma_sat_per_5s": [
+    [
+      0,
+      61.0,
+      14.3
+    ],
+    [
+      5,
+      62.8,
+      19.3
+    ],
+    [
+      10,
+      81.1,
+      38.1
+    ],
+    [
+      15,
+      51.6,
+      14.2
+    ],
+    [
+      20,
+      43.8,
+      11.4
+    ],
+    [
+      25,
+      46.3,
+      12.3
+    ],
+    [
+      30,
+      51.8,
+      15.2
+    ],
+    [
+      35,
+      37.7,
+      7.6
+    ],
+    [
+      40,
+      41.9,
+      8.9
+    ]
+  ],
+  "observations": [
+    "new area reached: lit purple cave with torch glows and teal crystals (t~25 s) looks substantially better than the grotto",
+    "large surfaces render pure white / blown out (snow platforms, leaves)",
+    "t~44 s: object with white/black swirled pattern - looks like a texture or vertex-colour artifact, not lighting"
+  ],
+  "reference": {
+    "vanilla_grotto_luma": "63-70",
+    "remix_grotto_before_luma": "41.5"
+  },
+  "files": {
+    "r3probe.log": "e11583198c79670a0f25b76a3532dd4a698a907dc035b92689165589dd6cf374",
+    "remix_launch.log": "c5229ef631fc31d516478f04c15de70a7bb8be022dc1f926db38618597f91c83",
+    "user.conf.in_use": "efcb8a338e5bd4d0907b9e17e318895ab10cf61e4e52c47f9c26caf38d58505d"
+  }
+}

@@ -1,0 +1,3 @@
+rtx.postfx.enableVignette = False
+rtx.graphicsPreset = 1
+rtx.postfx.enableChromaticAberration = False

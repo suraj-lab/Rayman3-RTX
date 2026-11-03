@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <string.h>
+#include <math.h>
+#include <stdlib.h>
 #include <intrin.h>
 #define REMIX_ALLOW_X86
 #include "remix_c.h"
@@ -59,7 +61,8 @@ enum {
     DEV_DrawPrimitive = 70, DEV_DrawIndexedPrimitive = 71, DEV_DrawPrimitiveUP = 72,
     DEV_SetVertexShader = 76, DEV_SetStreamSource = 83,
     DEV_EndScene = 35,
-    DEV_SetLight = 44, DEV_LightEnable = 46
+    DEV_SetLight = 44, DEV_LightEnable = 46,
+    DEV_SetRenderState = 50, DEV_SetTexture = 61
 };
 
 typedef IDirect3D8 *(__stdcall *Direct3DCreate8_t)(UINT);
@@ -73,6 +76,8 @@ typedef HRESULT (__stdcall *DrawIdx_t)(IDirect3DDevice8 *, D3DPRIMITIVETYPE, UIN
 typedef HRESULT (__stdcall *EndScene_t)(IDirect3DDevice8 *);
 typedef HRESULT (__stdcall *SetLight_t)(IDirect3DDevice8 *, DWORD, const void *);
 typedef HRESULT (__stdcall *LightEnable_t)(IDirect3DDevice8 *, DWORD, BOOL);
+typedef HRESULT (__stdcall *SetRenderState_t)(IDirect3DDevice8 *, DWORD, DWORD);
+typedef HRESULT (__stdcall *SetTexture_t)(IDirect3DDevice8 *, DWORD, void *);
 
 // Layout from Wine's d3d8types.h _D3DLIGHT8 (x86): 100 bytes, verified field order.
 struct D3DLIGHT8X {
@@ -93,6 +98,8 @@ static DrawIdx_t         o_DrawIndexedPrimitive = NULL;
 static EndScene_t        o_EndScene = NULL;
 static SetLight_t        o_SetLight = NULL;
 static LightEnable_t     o_LightEnable = NULL;
+static SetRenderState_t  o_SetRenderState = NULL;
+static SetTexture_t      o_SetTexture = NULL;
 
 // Lights: the game drives fixed-function SetLight/LightEnable. Forwarding those to
 // the runtime is what restores the intended lighting (a dark scene has neither lights
@@ -104,7 +111,18 @@ static int g_lightHave[8];
 static remixapi_LightHandle g_lightH[8];
 struct LightExt { remixapi_LightInfoSphereEXT sphere; remixapi_LightInfoDistantEXT distant; };
 static LightExt g_lightExt[8];
-static unsigned long g_lightFrames = 0;
+static unsigned long g_lightFrames = 0, g_lightsDrawn = 0;
+
+// Decisive experiment (opt-in): R3_REDLIGHT=A|B replaces every light the game sets with an absurdly
+// bright red one, to see whether API lights reach the compat-rendered scene at all.
+//   A: distant light, radiance R3_REDPOWER (default 20), disc R3_REDANGLE degrees (default 2 = the
+//      angle Remix itself uses for converted legacy lights, rtx.lightConversionDistantLightFixedAngle),
+//      direction = the game's own. Only radiance differs from the lights Remix already converts.
+//   B: sphere light R3_REDRADIUS (default 5) placed R3_REDFWD (default 15) units along the latest VIEW camera's +z axis (negative = other side; the handedness of the game's view is unverified).
+// Unset: behaviour is unchanged.
+static char  g_redMode = 0;
+static float g_redPower = 20.0f, g_redRadius = 5.0f, g_redFwd = 15.0f, g_redAngle = 2.0f;
+static float g_lastView[16]; static int g_haveView = 0;
 
 static FILE *g_log = NULL;
 static DWORD g_fvf = 0;
@@ -114,6 +132,24 @@ static unsigned long g_texDraws = 0, g_noTexDraws = 0, g_shaderDraws = 0;
 static DWORD g_seenFvf[160]; static UINT g_seenStride[160];
 static unsigned long g_seenCount[160]; static int g_seenN = 0;
 static int g_transformLogs = 0, g_createCalls = 0;
+
+// Opt-in (R3_LOGSTATES=1): record per-draw texture + blend state, so additive/overlay draws can be
+// told apart from ordinary opaque geometry. Off by default: it patches two more vtable slots, and a
+// wrong slot would crash, so it must be requested explicitly.
+// D3D8 render-state values (no d3d8.h here; the proxy declares its own types)
+#define R3_RS_ZWRITEENABLE     14
+#define R3_RS_SRCBLEND         19
+#define R3_RS_DESTBLEND        20
+#define R3_RS_ALPHABLENDENABLE 27
+#define R3_RS_LIGHTING        137
+
+static int  g_logStates = 0;
+static DWORD g_rsSrcBlend = 1 /*ONE*/, g_rsDestBlend = 2 /*ZERO*/;
+static int   g_rsAlphaBlend = 0, g_rsZWrite = 1, g_rsLighting = 0;
+static void *g_tex0 = NULL;
+static struct { void *tex; DWORD sb, db; int ab, zw, lite; unsigned long draws; } g_blendSeen[256];
+static int g_blendN = 0;
+static unsigned long g_rsBadState = 0;
 static bool g_xyzrhw = false, g_xyz = false;
 
 static void L(const char *fmt, ...)
@@ -124,6 +160,18 @@ static void L(const char *fmt, ...)
     va_end(ap);
     fputc('\n', g_log);
     fflush(g_log);
+}
+
+static void RedInit()
+{
+    static int done = 0; if (done) return; done = 1;
+    char v[32];
+    if (GetEnvironmentVariableA("R3_REDLIGHT", v, sizeof(v)) && (v[0] == 'A' || v[0] == 'B')) g_redMode = v[0];
+    if (GetEnvironmentVariableA("R3_REDPOWER", v, sizeof(v))) g_redPower = (float)atof(v);
+    if (GetEnvironmentVariableA("R3_REDRADIUS", v, sizeof(v))) g_redRadius = (float)atof(v);
+    if (GetEnvironmentVariableA("R3_REDANGLE", v, sizeof(v))) g_redAngle = (float)atof(v);
+    if (GetEnvironmentVariableA("R3_REDFWD", v, sizeof(v))) g_redFwd = (float)atof(v);   // negative = behind the camera
+    L("R3_REDLIGHT mode=%c power=%.2f radius=%.2f fwd=%.1f angle=%.2f", g_redMode ? g_redMode : '-', g_redPower, g_redRadius, g_redFwd, g_redAngle);
 }
 
 typedef void (WINAPI *RaiseException_t)(DWORD, DWORD, DWORD, const ULONG_PTR *);
@@ -291,6 +339,13 @@ static void DumpSummary(const char *why)
       g_texDraws, g_noTexDraws, g_shaderDraws);
     L("  saw XYZRHW buffers: %s | saw XYZ buffers: %s",
       g_xyzrhw ? "YES (pre-transformed)" : "no", g_xyz ? "YES (world space)" : "no");
+    if (g_logStates) {
+        L("  state table: %d combos, implausible SetRenderState calls=%lu", g_blendN, g_rsBadState);
+        for (int i = 0; i < g_blendN; i++)
+            L("  TEX %p src=%lu dest=%lu alpha=%d zwrite=%d lighting=%d draws=%lu",
+              g_blendSeen[i].tex, g_blendSeen[i].sb, g_blendSeen[i].db,
+              g_blendSeen[i].ab, g_blendSeen[i].zw, g_blendSeen[i].lite, g_blendSeen[i].draws);
+    }
     for (int i = 0; i < g_seenN; i++)
         L("  FVF 0x%08lX pos=%-6s stride=%-3lu draws=%lu",
           (unsigned long)g_seenFvf[i], PosName(g_seenFvf[i]), (unsigned long)g_seenStride[i], g_seenCount[i]);
@@ -311,6 +366,7 @@ static void PatchSlot(void **vt, int idx, void *hook, void **orig)
 
 static HRESULT __stdcall hSetTransform(IDirect3DDevice8 *d, D3DTRANSFORMSTATETYPE st, const D3DMATRIX *m)
 {
+    if (st == D3DTS_VIEW && m) { memcpy(g_lastView, &m->m[0][0], sizeof(g_lastView)); g_haveView = 1; }
     if (g_transformLogs < 40 && m && (st == D3DTS_WORLD || st == D3DTS_VIEW || st == D3DTS_PROJECTION)) {
         const char *n = (st == D3DTS_WORLD) ? "WORLD" : (st == D3DTS_VIEW) ? "VIEW" : "PROJECTION";
         const float *f = &m->m[0][0];
@@ -343,9 +399,49 @@ static void CountDraw(void)
     if ((g_texDraws + g_noTexDraws + g_shaderDraws) % 5000 == 0) DumpSummary("periodic");
 }
 
+// One table entry per (texture, blend, zwrite, lighting) combination seen at draw time.
+static void RecordDraw(void)
+{
+    if (!g_logStates) return;
+    for (int i = 0; i < g_blendN; i++) {
+        if (g_blendSeen[i].tex == g_tex0 && g_blendSeen[i].sb == g_rsSrcBlend &&
+            g_blendSeen[i].db == g_rsDestBlend && g_blendSeen[i].ab == g_rsAlphaBlend &&
+            g_blendSeen[i].zw == g_rsZWrite && g_blendSeen[i].lite == g_rsLighting) {
+            g_blendSeen[i].draws++; return;
+        }
+    }
+    if (g_blendN >= 256) return;
+    g_blendSeen[g_blendN].tex = g_tex0;   g_blendSeen[g_blendN].sb = g_rsSrcBlend;
+    g_blendSeen[g_blendN].db = g_rsDestBlend; g_blendSeen[g_blendN].ab = g_rsAlphaBlend;
+    g_blendSeen[g_blendN].zw = g_rsZWrite;    g_blendSeen[g_blendN].lite = g_rsLighting;
+    g_blendSeen[g_blendN].draws = 1; g_blendN++;
+}
+
+static HRESULT __stdcall hSetRenderState(IDirect3DDevice8 *d, DWORD st, DWORD v)
+{
+    // Accept only plausible D3DRS values; anything else means this slot is not what we think.
+    if ((unsigned long)st > 210) { g_rsBadState++; return o_SetRenderState(d, st, v); }
+    switch (st) {
+    case R3_RS_SRCBLEND:         g_rsSrcBlend = v; break;
+    case R3_RS_DESTBLEND:        g_rsDestBlend = v; break;
+    case R3_RS_ALPHABLENDENABLE: g_rsAlphaBlend = (int)v; break;
+    case R3_RS_ZWRITEENABLE:     g_rsZWrite = (int)v; break;
+    case R3_RS_LIGHTING:         g_rsLighting = (int)v; break;
+    default: break;
+    }
+    return o_SetRenderState(d, st, v);
+}
+
+static HRESULT __stdcall hSetTexture(IDirect3DDevice8 *d, DWORD stage, void *tex)
+{
+    if (stage > 7) return o_SetTexture(d, stage, tex);   // wrong slot guard
+    if (stage == 0) g_tex0 = (void *)tex;
+    return o_SetTexture(d, stage, tex);
+}
+
 static HRESULT __stdcall hDraw(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT sv, UINT pc)
 {
-    g_draws++; Note(g_fvf, g_stride); CountDraw();
+    g_draws++; Note(g_fvf, g_stride); CountDraw(); RecordDraw();
     if (g_draws == 1) ProbeRemixApi();
     if (g_draws % 500 == 0) DumpSummary("periodic");
     return o_DrawPrimitive(d, pt, sv, pc);
@@ -353,14 +449,14 @@ static HRESULT __stdcall hDraw(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT sv
 
 static HRESULT __stdcall hDrawUP(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT pc, const void *data, UINT stride)
 {
-    g_drawsUP++; Note(g_fvf, stride); CountDraw();
+    g_drawsUP++; Note(g_fvf, stride); CountDraw(); RecordDraw();
     ProbeRemixApi();
     return o_DrawPrimitiveUP(d, pt, pc, data, stride);
 }
 
 static HRESULT __stdcall hDrawIdx(IDirect3DDevice8 *d, D3DPRIMITIVETYPE pt, UINT mi, UINT nv, UINT si, UINT pc)
 {
-    g_drawsIdx++; Note(g_fvf, g_stride); CountDraw();
+    g_drawsIdx++; Note(g_fvf, g_stride); CountDraw(); RecordDraw();
     if (g_drawsIdx == 1 && g_draws == 0) ProbeRemixApi();
     return o_DrawIndexedPrimitive(d, pt, mi, nv, si, pc);
 }
@@ -392,6 +488,36 @@ static void MakeLight(DWORD idx)
         g_lightExt[idx].sphere.radius = d->Range > 0.0f ? d->Range : 100.0f;
         info.pNext = &g_lightExt[idx].sphere;
     }
+    RedInit();
+    if (g_redMode) {
+        info.radiance.x = g_redPower; info.radiance.y = 0.0f; info.radiance.z = 0.0f;
+        g_lightExt[idx] = LightExt();
+        if (g_redMode == 'A') {
+            float dx = d->Direction[0], dy = d->Direction[1], dz = d->Direction[2];
+            float n = sqrtf(dx * dx + dy * dy + dz * dz);
+            if (n < 1e-4f) { dx = 0; dy = -1; dz = 0; n = 1; }
+            g_lightExt[idx].distant.sType = REMIXAPI_STRUCT_TYPE_LIGHT_INFO_DISTANT_EXT;
+            g_lightExt[idx].distant.direction.x = dx / n; g_lightExt[idx].distant.direction.y = dy / n; g_lightExt[idx].distant.direction.z = dz / n;
+            g_lightExt[idx].distant.angularDiameterDegrees = g_redAngle;
+            g_lightExt[idx].distant.volumetricRadianceScale = 1.0f;
+            info.pNext = &g_lightExt[idx].distant;
+        } else {
+            if (!g_haveView) return;                       // no camera yet; retried on the next LightEnable
+            const float *v = g_lastView;                   // row-vector D3D view: camera = -t * R^T, forward = column 2 of R
+            float c[3], f[3];
+            for (int j = 0; j < 3; j++) {
+                c[j] = -(v[12] * v[j * 4 + 0] + v[13] * v[j * 4 + 1] + v[14] * v[j * 4 + 2]);
+                f[j] = v[j * 4 + 2];
+            }
+            g_lightExt[idx].sphere.sType = REMIXAPI_STRUCT_TYPE_LIGHT_INFO_SPHERE_EXT;
+            g_lightExt[idx].sphere.position.x = c[0] + g_redFwd * f[0];
+            g_lightExt[idx].sphere.position.y = c[1] + g_redFwd * f[1];
+            g_lightExt[idx].sphere.position.z = c[2] + g_redFwd * f[2];
+            g_lightExt[idx].sphere.radius = g_redRadius;
+            g_lightExt[idx].sphere.volumetricRadianceScale = 1.0f;
+            info.pNext = &g_lightExt[idx].sphere;
+        }
+    }
     remixapi_ErrorCode rc = g_api.CreateLight(&info, &g_lightH[idx]);
     if (rc != REMIXAPI_ERROR_CODE_SUCCESS) g_lightH[idx] = NULL;
     L("RemixAPI: light[%lu] type=%lu diffuse=(%.2f %.2f %.2f) -> rc=%d handle=%p",
@@ -399,8 +525,27 @@ static void MakeLight(DWORD idx)
       (int)rc, (void *)g_lightH[idx]);
 }
 
+// Log each distinct light the game sets (world-space position/direction) once. The game sets
+// per-object lights, so logging every call would flood; this gives an anchor to compare against
+// the level-file light list. shortcut: 512-entry FNV-1a set, extra lights are dropped silently.
+static void LogDistinctLight(DWORD idx, const D3DLIGHT8X *l)
+{
+    static unsigned long long seen[512]; static int n = 0;
+    const unsigned char *p = (const unsigned char *)l;
+    unsigned long long h = 1469598103934665603ULL;
+    for (size_t i = 0; i < sizeof(D3DLIGHT8X); i++) { h ^= p[i]; h *= 1099511628211ULL; }
+    for (int i = 0; i < n; i++) if (seen[i] == h) return;
+    if (n >= 512) return;
+    seen[n++] = h;
+    L("SetLight#%d idx=%lu type=%lu diff=(%.3f %.3f %.3f) pos=(%.3f %.3f %.3f) dir=(%.3f %.3f %.3f) range=%.3f atten=(%.3f %.3f %.3f) theta=%.3f phi=%.3f",
+      n, (unsigned long)idx, (unsigned long)l->Type, l->Diffuse[0], l->Diffuse[1], l->Diffuse[2],
+      l->Position[0], l->Position[1], l->Position[2], l->Direction[0], l->Direction[1], l->Direction[2],
+      l->Range, l->Attenuation0, l->Attenuation1, l->Attenuation2, l->Theta, l->Phi);
+}
+
 static HRESULT __stdcall hSetLight(IDirect3DDevice8 *d, DWORD idx, const void *light)
 {
+    if (idx < 8 && light) LogDistinctLight(idx, (const D3DLIGHT8X *)light);
     if (idx < 8 && light) {
         // The game re-sets the same light every frame; only rebuild when it changes,
         // otherwise this creates a Remix light object per frame.
@@ -424,9 +569,9 @@ static HRESULT __stdcall hEndScene(IDirect3DDevice8 *d)
 {
     if (g_apiOk && g_api.DrawLightInstance) {
         for (int i = 0; i < 8; i++)
-            if (g_lightH[i]) g_api.DrawLightInstance(g_lightH[i]);
+            if (g_lightH[i]) { g_api.DrawLightInstance(g_lightH[i]); g_lightsDrawn++; }
     }
-    if ((++g_lightFrames % 600) == 0) L("RemixAPI: %lu frames, lights submitted", g_lightFrames);
+    if ((++g_lightFrames % 600) == 0) L("RemixAPI: %lu frames, lights submitted (%lu DrawLightInstance calls so far)", g_lightFrames, g_lightsDrawn);
     return o_EndScene(d);
 }
 
@@ -469,6 +614,15 @@ static HRESULT __stdcall hCreateDevice(IDirect3D8 *d3d, UINT adapter, D3DDEVTYPE
         PatchSlot(vt, DEV_SetLight,             (void *)hSetLight,             (void **)&o_SetLight);
         PatchSlot(vt, DEV_LightEnable,          (void *)hLightEnable,          (void **)&o_LightEnable);
         PatchSlot(vt, DEV_EndScene,             (void *)hEndScene,             (void **)&o_EndScene);
+        {
+            char v[8];
+            g_logStates = GetEnvironmentVariableA("R3_LOGSTATES", v, sizeof(v)) && v[0] == '1';
+            if (g_logStates) {
+                PatchSlot(vt, DEV_SetRenderState, (void *)hSetRenderState, (void **)&o_SetRenderState);
+                PatchSlot(vt, DEV_SetTexture,     (void *)hSetTexture,     (void **)&o_SetTexture);
+                L("R3_LOGSTATES=1: render-state + texture hooks installed");
+            }
+        }
         L("device vtable hooked");
     }
     return hr;
